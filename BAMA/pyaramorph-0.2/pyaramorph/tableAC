@@ -1,0 +1,1893 @@
+; ===================================================================
+; "tableAC"
+; Portions (c) 2002-2004 QAMUS LLC (www.qamus.org), 
+; (c) 2002-2004 Trustees of the University of Pennsylvania 
+; 
+; LDC USER AGREEMENT
+; 
+; Use of this version of the Buckwalter Arabic Morphological Analyzer Version 2
+; distributed by the Linguistic Data Consortium (LDC) of the University of 
+; Pennsylvania is governed by the following terms: 
+; 
+; This User Agreement is provided by the Linguistic Data Consortium as a 
+; condition of accepting the databases named or described herein. 
+; 
+; This Agreement describes the terms between User/User's Research Group and 
+; Linguistic Data Consortium (LDC), in which User will receive material, as 
+; specified below, from LDC. The terms of this Agreement supercede the terms of 
+; any previous Membership Agreement in regard to the Buckwalter Arabic 
+; Morphological Analyzer Version 2.
+; 
+; Under this agreement User will receive one or more CD-ROM discs, DVDs, 
+; electronic files or other media as appropriate, containing linguistic tools, 
+; speech, video, and/or text data. User agrees to use the material received 
+; under this agreement only for non-commercial linguistic education and research
+; purposes. Unless explicitly permitted herein, User shall have no right to 
+; copy, redistribute, transmit, publish or otherwise use the LDC Databases for 
+; any other purpose and User further agrees not to disclose, copy, or 
+; re-distribute the material to others outside of User's research group. 
+; 
+; Government use, including any use within or among government organizations and
+; use by government contractors to produce or evaluate resources and 
+; technologies for government use, is permitted under this license.
+; 
+; Organizations interested in licensing the Buckwalter Arabic Morphological 
+; Analyzer Version 2 for commercial use should contact: 
+; 
+;    QAMUS LLC 
+;    448 South 48th St. 
+;    Philadelphia, PA 19143 
+;    ATTN: Tim Buckwalter 
+;    email: license@qamus.org
+; 
+; Except for Government use as specified above, commercial uses of this corpus 
+; include, but are not limited to, imbedded use of the Analyzer, Analyzer 
+; methods, Analyzer derived works, Analyzer output data, algorithms, lexicons, 
+; and downloaded data in a commercial product or a fee for service project; 
+; use of the Analyzer, Analyzer methods, Analyzer derived works, Analyzer 
+; output data, algorithms, and downloaded data to create or develop a 
+; commercial product or perform a fee for service project; use of Analyzer, 
+; Analyzer methods, Analyzer derived works, Analyzer output data, algorithms, 
+; lexicons, and downloaded data as a development tool to measure performance of
+; a commercial product or work product developed on a fee for service basis; 
+; redistribution of Analyzer, Analyzer methods, Analyzer derived works, Analyzer 
+; output data, algorithms, lexicons and downloaded data to any third party for 
+; imbedding in a commercial product or fee for service project, for deriving a 
+; commercial product or fee for service project, or for measuring the 
+; performance of a commercial product or fee for service project.
+; 
+; USER ACKNOWLEDGES AND AGREES THAT "CORPORA RECEIVED" ARE PROVIDED ON AN "AS-IS"
+; BASIS AND THAT LDC, ITS HOST INSTITUTION THE UNIVERSITY OF PENNSYLVANIA, AND 
+; ITS DATA PROVIDERS AND CORPUS AUTHORS MAKE NO REPRESENTATIONS OR WARRANTIES OF 
+; ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES 
+; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR CONFORMITY WITH 
+; WHATEVER DOCUMENTATION IS PROVIDED. IN NO EVENT SHALL LDC, ITS HOST 
+; INSTITUTION, DATA PROVIDORS OR CORPUS AUTHORS BE LIABLE FOR SPECIAL, DIRECT, 
+; INDIRECT, CONSEQUENTIAL, PUNITIVE, INCIDENTAL OR OTHER DAMAGES, LOSSES, COSTS, 
+; CHARGES, CLAIMS, DEMANDS, FEES OR EXPENSES OF ANY NATURE OR KIND ARISING IN ANY
+; WAY FROM THE FURNISHING OF OR USER'S USE OF THE CORPORA RECEIVED. 
+; 
+; ==================================================================
+;
+; null prefix + Noun Suffixes
+Pref-0 Suff-0
+Pref-0 NSuff-u
+Pref-0 NSuff-a
+Pref-0 NSuff-u_indef_nom
+Pref-0 NSuff-a_indef_acc
+Pref-0 NSuff-a_indef_gen
+Pref-0 NSuff-i
+Pref-0 NSuff-N
+Pref-0 NSuff-F
+Pref-0 NSuff-F_nom
+Pref-0 NSuff-F_acc
+Pref-0 NSuff-F_gen
+Pref-0 NSuff-K
+Pref-0 NSuff-K_nom
+Pref-0 NSuff-AF
+Pref-0 NSuff-Ah
+Pref-0 NSuff-An
+Pref-0 NSuff-|-ni
+Pref-0 NSuff-|h
+Pref-0 NSuff-At
+Pref-0 NSuff-Atu
+Pref-0 NSuff-Ati_acc
+Pref-0 NSuff-Ati_gen
+Pref-0 NSuff-AtN
+Pref-0 NSuff-AtK_acc
+Pref-0 NSuff-AtK_gen
+Pref-0 NSuff-Ath
+Pref-0 NSuff-atih
+Pref-0 NSuff-|t
+Pref-0 NSuff-|tu
+Pref-0 NSuff-|ti
+Pref-0 NSuff-|tN
+Pref-0 NSuff-|tK
+Pref-0 NSuff-|th
+Pref-0 NSuff-ap
+Pref-0 NSuff-apu
+Pref-0 NSuff-apa
+Pref-0 NSuff-api
+Pref-0 NSuff-apa_gen
+Pref-0 NSuff-apN
+Pref-0 NSuff-apF
+Pref-0 NSuff-apK
+Pref-0 NSuff-atAh
+Pref-0 NSuff-atAn
+Pref-0 NSuff-ath
+Pref-0 NSuff-atha
+Pref-0 NSuff-ayh
+Pref-0 NSuff-An0
+Pref-0 NSuff-ayn0
+Pref-0 NSuff-tayn0
+Pref-0 NSuff-atAn0
+Pref-0 NSuff-ayh00
+Pref-0 NSuff-tay00
+Pref-0 NSuff-Ah00
+Pref-0 NSuff-atAh00
+Pref-0 NSuff-ayn
+Pref-0 NSuff-h
+Pref-0 NSuff-hi
+Pref-0 NSuff-ha
+Pref-0 NSuff-uh
+Pref-0 NSuff-ah
+Pref-0 NSuff-ih
+Pref-0 NSuff-iy
+Pref-0 NSuff-ya
+Pref-0 NSuff-iyh
+Pref-0 NSuff-iyna_acc
+Pref-0 NSuff-iyna_gen
+Pref-0 NSuff-tay
+Pref-0 NSuff-tayn
+Pref-0 NSuff-wh
+Pref-0 NSuff-wn
+Pref-0 NSuff-mA
+;
+; null prefix + Perfect Verb Suffixes
+Pref-0 PVSuff-a
+Pref-0 PVSuff-ah
+Pref-0 PVSuff-A
+Pref-0 PVSuff-Ah
+Pref-0 PVSuff-|
+Pref-0 PVSuff-|h
+Pref-0 PVSuff-at
+Pref-0 PVSuff-ath
+Pref-0 PVSuff-n
+Pref-0 PVSuff-~n
+Pref-0 PVSuff-nh
+Pref-0 PVSuff-~nh
+Pref-0 PVSuff-t
+Pref-0 PVSuff-~t
+Pref-0 PVSuff-th
+Pref-0 PVSuff-~th
+Pref-0 PVSuff-uwA
+Pref-0 PVSuff-uwh
+Pref-0 PVSuff-awA
+Pref-0 PVSuff-awh
+Pref-0 PVSuff-0a
+Pref-0 PVSuff-0ah
+;
+; null prefix + Function Word suffixes
+Pref-0 FWSuff-hi
+Pref-0 FWSuff-hu-he
+Pref-0 FWSuff-hu-him
+Pref-0 FWSuff-k
+Pref-0 FWSuff-~a
+Pref-0 NSuff-~a
+Pref-0 FWSuff-ya
+Pref-0 FWSuff-iy-I
+Pref-0 FWSuff-iy-me
+Pref-0 FWSuff-~iy
+Pref-0 FWSuff-niy-I
+Pref-0 FWSuff-niy-me
+Pref-0 FWSuff-nA-us
+Pref-0 FWSuff-nA-we
+Pref-0 FWSuff-A
+Pref-0 FWSuff-~A
+;
+; conjunction prefixes wa-/fa- + Noun Suffixes
+Pref-Wa FWSuff-0
+Pref-wa Suff-0
+Pref-wa NSuff-u
+Pref-wa NSuff-a
+Pref-wa NSuff-u_indef_nom
+Pref-wa NSuff-a_indef_acc
+Pref-wa NSuff-a_indef_gen
+Pref-wa NSuff-i
+Pref-wa NSuff-N
+Pref-wa NSuff-F
+Pref-wa NSuff-F_nom
+Pref-wa NSuff-F_acc
+Pref-wa NSuff-F_gen
+Pref-wa NSuff-K
+Pref-wa NSuff-K_nom
+Pref-wa NSuff-mA
+Pref-wa FWSuff-hu-he
+;
+Pref-wa NSuff-AF
+Pref-wa NSuff-An
+Pref-wa NSuff-Ah
+Pref-wa NSuff-|-ni
+Pref-wa NSuff-|h
+Pref-wa NSuff-At
+Pref-wa NSuff-Atu
+Pref-wa NSuff-Ati_acc
+Pref-wa NSuff-Ati_gen
+Pref-wa NSuff-AtN
+Pref-wa NSuff-AtK_acc
+Pref-wa NSuff-AtK_gen
+Pref-wa NSuff-Ath
+Pref-wa NSuff-|t
+Pref-wa NSuff-|tu
+Pref-wa NSuff-|ti
+Pref-wa NSuff-|tN
+Pref-wa NSuff-|tK
+Pref-wa NSuff-|th
+Pref-wa NSuff-ap
+Pref-wa NSuff-apu
+Pref-wa NSuff-apa
+Pref-wa NSuff-api
+Pref-wa NSuff-apa_gen
+Pref-wa NSuff-apN
+Pref-wa NSuff-apF
+Pref-wa NSuff-apK
+Pref-wa NSuff-atAh
+Pref-wa NSuff-atAn
+Pref-wa NSuff-ath
+Pref-wa NSuff-atha
+Pref-wa NSuff-ayh
+Pref-wa NSuff-An0
+Pref-wa NSuff-atAn0
+Pref-wa NSuff-ayn0
+Pref-wa NSuff-tayn0
+Pref-wa NSuff-ayh00
+Pref-wa NSuff-Ah00
+Pref-wa NSuff-atAh00
+Pref-wa NSuff-tay00
+Pref-wa NSuff-ayn
+Pref-wa NSuff-h
+Pref-wa NSuff-hi
+Pref-wa NSuff-ha
+Pref-wa NSuff-uh
+Pref-wa NSuff-ah
+Pref-wa NSuff-ih
+Pref-wa NSuff-iy
+Pref-wa NSuff-ya
+Pref-wa NSuff-iyh
+Pref-wa NSuff-~a
+Pref-wa NSuff-iyna_acc
+Pref-wa NSuff-iyna_gen
+Pref-wa NSuff-tay
+Pref-wa NSuff-tayn
+Pref-wa NSuff-wh
+Pref-wa NSuff-wn
+;
+Pref-fa Suff-0
+Pref-fa NSuff-u
+Pref-fa NSuff-a
+Pref-fa NSuff-u_indef_nom
+Pref-fa NSuff-a_indef_acc
+Pref-fa NSuff-a_indef_gen
+Pref-fa NSuff-i
+Pref-fa NSuff-N
+Pref-fa NSuff-F
+Pref-fa NSuff-F_nom
+Pref-fa NSuff-F_acc
+Pref-fa NSuff-F_gen
+Pref-fa NSuff-K
+Pref-fa NSuff-K_nom
+Pref-fa FWSuff-hu-he
+;
+Pref-fa NSuff-AF
+Pref-fa NSuff-An
+Pref-fa NSuff-Ah
+Pref-fa NSuff-|-ni
+Pref-fa NSuff-|h
+Pref-fa NSuff-At
+Pref-fa NSuff-Atu
+Pref-fa NSuff-Ati_acc
+Pref-fa NSuff-Ati_gen
+Pref-fa NSuff-AtN
+Pref-fa NSuff-AtK_acc
+Pref-fa NSuff-AtK_gen
+Pref-fa NSuff-Ath
+Pref-fa NSuff-|t
+Pref-fa NSuff-|tu
+Pref-fa NSuff-|ti
+Pref-fa NSuff-|tN
+Pref-fa NSuff-|tK
+Pref-fa NSuff-|th
+Pref-fa NSuff-ap
+Pref-fa NSuff-apu
+Pref-fa NSuff-apa
+Pref-fa NSuff-api
+Pref-fa NSuff-apa_gen
+Pref-fa NSuff-apN
+Pref-fa NSuff-apF
+Pref-fa NSuff-apK
+Pref-fa NSuff-atAh
+Pref-fa NSuff-atAn
+Pref-fa NSuff-ath
+Pref-fa NSuff-ayh
+Pref-fa NSuff-An0
+Pref-fa NSuff-atAn0
+Pref-fa NSuff-Ah00
+Pref-fa NSuff-atAh00
+Pref-fa NSuff-ayn
+Pref-fa NSuff-ayn0
+Pref-fa NSuff-h
+Pref-fa NSuff-~a
+Pref-fa NSuff-uh
+Pref-fa NSuff-ah
+Pref-fa NSuff-ih
+Pref-fa NSuff-iy
+Pref-fa NSuff-ya
+Pref-fa NSuff-iyh
+Pref-fa NSuff-iyna_acc
+Pref-fa NSuff-iyna_gen
+Pref-fa NSuff-tay
+Pref-fa NSuff-tayn
+Pref-fa NSuff-wh
+Pref-fa NSuff-wn
+Pref-fa NSuff-mA
+;
+Pref-Wa PVSuff-a
+Pref-Wa PVSuff-ah
+Pref-Wa PVSuff-A
+Pref-Wa PVSuff-Ah
+Pref-Wa PVSuff-|
+Pref-Wa PVSuff-|h
+Pref-Wa PVSuff-at
+Pref-Wa PVSuff-ath
+Pref-Wa PVSuff-n
+Pref-Wa PVSuff-~n
+Pref-Wa PVSuff-nh
+Pref-Wa PVSuff-~nh
+Pref-Wa PVSuff-t
+Pref-Wa PVSuff-~t
+Pref-Wa PVSuff-th
+Pref-Wa PVSuff-~th
+Pref-Wa PVSuff-uwA
+Pref-Wa PVSuff-uwh
+Pref-Wa PVSuff-awA
+Pref-Wa PVSuff-awh
+Pref-Wa PVSuff-0a
+Pref-Wa PVSuff-0ah
+;=============================
+; Imperative
+; null prefix + Imperative Verb suffixes
+Pref-0 CVSuff-o
+Pref-0 CVSuff-0_voc
+Pref-0 CVSuff-oh
+Pref-0 CVSuff-nh
+Pref-0 CVSuff-y
+Pref-0 CVSuff-yh
+Pref-0 CVSuff-wA
+Pref-0 CVSuff-wh
+Pref-0 CVSuff-A
+Pref-0 CVSuff-n
+Pref-0 CVSuff-n~
+Pref-0 CVSuff-|
+;
+Pref-Wa CVSuff-o
+Pref-Wa CVSuff-0_voc
+Pref-Wa CVSuff-oh
+Pref-Wa CVSuff-nh
+Pref-Wa CVSuff-y
+Pref-Wa CVSuff-yh
+Pref-Wa CVSuff-wA
+Pref-Wa CVSuff-wh
+Pref-Wa CVSuff-A
+Pref-Wa CVSuff-n
+Pref-Wa CVSuff-n~
+Pref-Wa CVSuff-|
+;
+CVPref-AMS CVSuff-o
+CVPref-AMS CVSuff-0_voc
+CVPref-AuMS CVSuff-0_voc
+CVPref-AMS CVSuff-nh
+CVPref-AMS CVSuff-oh
+CVPref-AFS CVSuff-y
+CVPref-AFS CVSuff-yh
+CVPref-AFS CVSuff-yo
+CVPref-AFS CVSuff-yoh
+CVPref-AFS CVSuff-y
+CVPref-AFP CVSuff-n
+CVPref-AFP CVSuff-noh
+CVPref-AFP CVSuff-n~
+CVPref-AD CVSuff-A
+CVPref-AD CVSuff-|
+CVPref-AMP CVSuff-wA
+CVPref-AMP CVSuff-wAo
+CVPref-AMP CVSuff-wh
+;
+CVPref-AuMS CVSuff-o
+CVPref-AuMS CVSuff-oh
+CVPref-AuFS CVSuff-y
+CVPref-AuFS CVSuff-yh
+CVPref-AuFP CVSuff-nh
+CVPref-AuFP CVSuff-noh
+CVPref-AuFP CVSuff-n
+CVPref-AuFP CVSuff-n~
+CVPref-AuD CVSuff-A
+CVPref-AuD CVSuff-|
+CVPref-AuMP CVSuff-wA
+CVPref-AuMP CVSuff-wh
+;
+;======================================
+; Function Word suffixes
+Pref-Wa FWSuff-hi
+Pref-Wa FWSuff-hu-he
+Pref-Wa FWSuff-hu-him
+Pref-Wa FWSuff-k
+Pref-Wa FWSuff-~a
+Pref-Wa FWSuff-ya
+Pref-Wa FWSuff-iy-I
+Pref-Wa FWSuff-iy-me
+Pref-fa FWSuff-iy-me
+Pref-Wa FWSuff-~iy
+Pref-Wa FWSuff-niy-I
+Pref-Wa FWSuff-niy-me
+Pref-Wa FWSuff-nA-us
+Pref-Wa FWSuff-nA-we
+Pref-Wa FWSuff-A
+Pref-Wa FWSuff-~A
+;
+;-----------------------------
+;
+NPref-Al Suff-0
+NPref-Al NSuff-u
+NPref-Al NSuff-a
+NPref-Al NSuff-i
+NPref-Al NSuff-An
+NPref-Al NSuff-An0
+NPref-Al NSuff-ayn
+NPref-Al NSuff-ayn0
+NPref-Al NSuff-|-ni
+NPref-Al NSuff-wn
+NPref-Al NSuff-iyna_acc
+NPref-Al NSuff-iyna_gen
+NPref-Al NSuff-ap
+NPref-Al NSuff-apu
+NPref-Al NSuff-apa
+NPref-Al NSuff-api
+NPref-Al NSuff-tayn
+NPref-Al NSuff-atAn
+NPref-Al NSuff-At
+NPref-Al NSuff-Atu
+NPref-Al NSuff-Ati_acc
+NPref-Al NSuff-Ati_gen
+NPref-Al NSuff-|t
+NPref-Al NSuff-|tu
+NPref-Al NSuff-|ti
+;
+NPref-Al NSuff-Ah00
+NPref-Al NSuff-atAh00
+NPref-Al NSuff-ayh00
+NPref-Al NSuff-tay00
+NPref-Al NSuff-An0
+NPref-Al NSuff-ayn0
+NPref-Al NSuff-atAn0
+NPref-Al NSuff-tayn0
+;
+NPref-mA Suff-0
+NPref-mA NSuff-u
+NPref-mA NSuff-a
+NPref-mA NSuff-i
+NPref-mA NSuff-An
+NPref-mA NSuff-An0
+NPref-mA NSuff-ayn
+NPref-mA NSuff-|-ni
+NPref-mA NSuff-wn
+NPref-mA NSuff-iyna_acc
+NPref-mA NSuff-iyna_gen
+NPref-mA NSuff-ap
+NPref-mA NSuff-apu
+NPref-mA NSuff-apa
+NPref-mA NSuff-api
+NPref-mA NSuff-tayn
+NPref-mA NSuff-atAn
+NPref-mA NSuff-At
+NPref-mA NSuff-Atu
+NPref-mA NSuff-Ati_acc
+NPref-mA NSuff-Ati_gen
+NPref-mA NSuff-|t
+NPref-mA NSuff-|tu
+NPref-mA NSuff-|ti
+;
+NPref-mA-Al Suff-0
+NPref-mA-Al NSuff-u
+NPref-mA-Al NSuff-a
+NPref-mA-Al NSuff-i
+NPref-mA-Al NSuff-An
+NPref-mA-Al NSuff-An0
+NPref-mA-Al NSuff-ayn
+NPref-mA-Al NSuff-|-ni
+NPref-mA-Al NSuff-wn
+NPref-mA-Al NSuff-iyna_acc
+NPref-mA-Al NSuff-iyna_gen
+NPref-mA-Al NSuff-ap
+NPref-mA-Al NSuff-apu
+NPref-mA-Al NSuff-apa
+NPref-mA-Al NSuff-api
+NPref-mA-Al NSuff-tayn
+NPref-mA-Al NSuff-atAn
+NPref-mA-Al NSuff-At
+NPref-mA-Al NSuff-Atu
+NPref-mA-Al NSuff-Ati_acc
+NPref-mA-Al NSuff-Ati_gen
+NPref-mA-Al NSuff-|t
+NPref-mA-Al NSuff-|tu
+NPref-mA-Al NSuff-|ti
+;
+NPref-BiAl Suff-0
+NPref-BiAl NSuff-i
+NPref-BiAl NSuff-At
+NPref-BiAl NSuff-Ati_gen
+NPref-BiAl NSuff-|t
+NPref-BiAl NSuff-|ti
+NPref-BiAl NSuff-ap
+NPref-BiAl NSuff-api
+NPref-BiAl NSuff-ayn
+NPref-BiAl NSuff-iyna_gen
+NPref-BiAl NSuff-tayn
+;
+NPref-BiAl NSuff-ayh00
+NPref-BiAl NSuff-tay00
+NPref-BiAl NSuff-ayn0
+NPref-BiAl NSuff-tayn0
+;
+NPref-Bi-PR Suff-0
+NPref-Bi-PR NSuff-iy
+NPref-Bi-PR NSuff-hi
+NPref-Bi NSuff-ath
+NPref-Bi Suff-0
+NPref-Bi FWSuff-hi
+NPref-Bi Suff-0
+NPref-Bi FW-WaBi-n~
+NPref-Bi FWSuff-niy-I
+NPref-Bi FWSuff-iy-I
+NPref-Bi FWSuff-hu-he
+NPref-Bi FWSuff-k
+NPref-Bi FWSuff-nA-we
+NPref-Bi NSuff-a_indef_gen
+NPref-Bi NSuff-K
+NPref-Bi NSuff-F_gen
+NPref-Bi NSuff-At
+NPref-Bi NSuff-Ati_gen
+NPref-Bi NSuff-AtK_gen
+NPref-Bi NSuff-Atih
+NPref-Bi NSuff-|t
+NPref-Bi NSuff-|ti
+NPref-Bi NSuff-|tK
+NPref-Bi NSuff-|th
+NPref-Bi NSuff-ap
+NPref-Bi NSuff-api
+NPref-Bi NSuff-apa_gen
+NPref-Bi NSuff-apK
+NPref-Bi NSuff-atih
+NPref-Bi NSuff-ayh
+NPref-Bi NSuff-ayn
+NPref-Bi NSuff-hi
+NPref-Bi NSuff-ih
+NPref-Bi NSuff-iy
+NPref-Bi-PR NSuff-iyp
+NPref-Bi-PR NSuff-hip
+NPref-Bi NSuff-ya
+NPref-Bi NSuff-iyh
+NPref-Bi NSuff-iyna_gen
+NPref-Bi NSuff-tay
+NPref-Bi NSuff-tayn
+NPref-Bi NSuff-h
+;NPref-Bi-PR FWSuff-hu-he
+NPref-La-PR FWSuff-hu-hep
+;
+NPref-Bi NSuff-ayh00
+NPref-Bi NSuff-tay00
+NPref-Bi NSuff-ayn0
+NPref-Bi NSuff-tayn0
+;
+NPref-mA-Bi Suff-0
+NPref-mA-Bi NSuff-i
+NPref-mA-Bi NSuff-a_indef_gen
+NPref-mA-Bi NSuff-K
+NPref-mA-Bi NSuff-F_gen
+NPref-mA-Bi NSuff-At
+NPref-mA-Bi NSuff-Ati_gen
+NPref-mA-Bi NSuff-AtK_gen
+NPref-mA-Bi NSuff-Atih
+NPref-mA-Bi NSuff-|t
+NPref-mA-Bi NSuff-|ti
+NPref-mA-Bi NSuff-|tK
+NPref-mA-Bi NSuff-|th
+NPref-mA-Bi NSuff-ap
+NPref-mA-Bi NSuff-api
+NPref-mA-Bi NSuff-apa_gen
+NPref-mA-Bi NSuff-apK
+NPref-mA-Bi NSuff-atih
+NPref-mA-Bi NSuff-ayh
+NPref-mA-Bi NSuff-ayn
+NPref-mA-Bi NSuff-hi
+NPref-mA-Bi NSuff-ih
+NPref-mA-Bi NSuff-iy
+NPref-mA-Bi NSuff-ya
+NPref-mA-Bi NSuff-iyh
+NPref-mA-Bi NSuff-iyna_gen
+NPref-mA-Bi NSuff-tay
+NPref-mA-Bi NSuff-tayn
+;
+NPref-La Suff-0
+NPref-WaLa Suff-0
+NPref-La NSuff-N
+NPref-La NSuff-u_indef_nom
+NPref-La NSuff-F_nom
+NPref-La NSuff-Ah
+NPref-La NSuff-Ah00
+NPref-La NSuff-atAh00
+NPref-La NSuff-tay00
+NPref-La NSuff-An
+NPref-La NSuff-An0
+NPref-La NSuff-At
+NPref-La NSuff-AtN
+NPref-La NSuff-Atuh
+NPref-La NSuff-|t
+NPref-La NSuff-|tN
+NPref-La NSuff-|th
+NPref-La NSuff-ap
+NPref-La NSuff-apN
+NPref-La NSuff-atAh
+NPref-La NSuff-atAn
+NPref-La NSuff-atuh
+NPref-La NSuff-h
+NPref-La NSuff-hi
+NPref-La NSuff-uh
+NPref-La NSuff-wh
+NPref-La NSuff-wn
+;
+NPref-Li Suff-0
+NPref-Li FWSuff-hi
+NPref-Li NSuff-i
+NPref-Li NSuff-a_indef_gen
+NPref-Li NSuff-K
+NPref-Li NSuff-F_gen
+NPref-Li NSuff-At
+NPref-Li NSuff-Ati_gen
+NPref-Li NSuff-AtK_gen
+NPref-Li NSuff-Atih
+NPref-Li NSuff-|t
+NPref-Li NSuff-|ti
+NPref-Li NSuff-|tK
+NPref-Li NSuff-|th
+NPref-Li NSuff-ap
+NPref-Li NSuff-api
+NPref-Li NSuff-apa_gen
+NPref-Li NSuff-apK
+NPref-Li NSuff-atih
+NPref-Li NSuff-ayh
+NPref-Li NSuff-ayn
+NPref-Li NSuff-h
+NPref-Li NSuff-hi
+NPref-Li NSuff-ih
+NPref-Li NSuff-iy
+NPref-Li NSuff-iyp
+NPref-Li NSuff-ya
+NPref-Li NSuff-iyh
+NPref-Li NSuff-iyna_gen
+NPref-Li NSuff-tay
+NPref-Li NSuff-tayn
+;
+NPref-Li NSuff-ayh00
+NPref-Li NSuff-tay00
+NPref-Li NSuff-ayn0
+NPref-Li NSuff-tayn0
+;
+NPref-Lil Suff-0
+NPref-Lil NSuff-i
+NPref-Lil NSuff-At
+NPref-Lil NSuff-Ati_gen
+NPref-Lil NSuff-|t
+NPref-Lil NSuff-|ti
+NPref-Lil NSuff-ap
+NPref-Lil NSuff-api
+NPref-Lil NSuff-ayn
+NPref-Lil NSuff-iyna_gen
+NPref-Lil NSuff-tayn
+;
+NPref-Lil NSuff-ayh00
+NPref-Lil NSuff-tay00
+NPref-Lil NSuff-ayn0
+NPref-Lil NSuff-tayn0
+;
+NPref-LiAl Suff-0
+NPref-LiAl NSuff-i
+NPref-LiAl NSuff-At
+NPref-LiAl NSuff-Ati_gen
+NPref-LiAl NSuff-|t
+NPref-LiAl NSuff-|ti
+NPref-LiAl NSuff-ap
+NPref-LiAl NSuff-api
+NPref-LiAl NSuff-ayn
+NPref-LiAl NSuff-ayn0
+NPref-LiAl NSuff-iyna_gen
+NPref-LiAl NSuff-tayn
+;
+NPref-LiAl NSuff-ayh00
+NPref-LiAl NSuff-tay00
+NPref-LiAl NSuff-ayn0
+NPref-LiAl NSuff-tayn0
+;
+;---------------------------
+;
+;
+PVPref-La PVSuff-a
+PVPref-La PVSuff-ah
+PVPref-La PVSuff-A
+PVPref-La PVSuff-Ah
+PVPref-La PVSuff-|
+PVPref-La PVSuff-|h
+PVPref-La PVSuff-at
+PVPref-La PVSuff-ath
+PVPref-La PVSuff-n
+PVPref-La PVSuff-~n
+PVPref-La PVSuff-nh
+PVPref-La PVSuff-~nh
+PVPref-La PVSuff-t
+PVPref-La PVSuff-~t
+PVPref-La PVSuff-th
+PVPref-La PVSuff-~th
+PVPref-La PVSuff-uwA
+PVPref-La PVSuff-uwh
+PVPref-La PVSuff-awA
+PVPref-La PVSuff-awh
+PVPref-La PVSuff-0a
+PVPref-La PVSuff-0ah
+;
+;PVPref-mA PVSuff-a
+;PVPref-mA PVSuff-ah
+;PVPref-mA PVSuff-A
+;PVPref-mA PVSuff-Ah
+;PVPref-mA PVSuff-|
+;PVPref-mA PVSuff-|h
+;PVPref-mA PVSuff-at
+;PVPref-mA PVSuff-ath
+;PVPref-mA PVSuff-n
+;PVPref-mA PVSuff-~n
+;PVPref-mA PVSuff-nh
+;PVPref-mA PVSuff-~nh
+;PVPref-mA PVSuff-t
+;PVPref-mA PVSuff-~t
+;PVPref-mA PVSuff-th
+;PVPref-mA PVSuff-~th
+;PVPref-mA PVSuff-uwA
+;PVPref-mA PVSuff-uwh
+;PVPref-mA PVSuff-awA
+;PVPref-mA PVSuff-awh
+;PVPref-mA PVSuff-0a
+;PVPref-mA PVSuff-0ah
+;
+;-------------------------------------
+IVPref-AnA->a IVSuff-0_ind
+IVPref-AnA->a IVSuff-0_sub
+IVPref-AnA->a IVSuff-0_jus
+IVPref-AnA->a IVSuff-u
+IVPref-AnA->a IVSuff-a
+IVPref-AnA->a IVSuff-a_jus
+IVPref-AnA->a IVSuff-o
+IVPref-AnA->a IVSuff-uh
+IVPref-AnA->a IVSuff-ah
+IVPref-AnA->a IVSuff-ah_jus
+IVPref-AnA->a IVSuff-oh
+IVPref-AnA->a IVSuff-h_ind
+IVPref-AnA->a IVSuff-h_sub
+IVPref-AnA->a IVSuff-h_jus
+IVPref-AnA->a IVSuff-hi_ind
+IVPref-AnA->a IVSuff-hi_jus
+IVPref-AnA->a IVSuff-uk
+IVPref-AnA->a IVSuff-ak
+IVPref-AnA->a IVSuff-ak_jus
+IVPref-AnA->a IVSuff-ok
+IVPref-AnA->a IVSuff-k_ind
+IVPref-AnA->a IVSuff-k_sub
+IVPref-AnA->a IVSuff-k_jus
+IVPref-AnA->a IVSuff-uny-nA
+IVPref-AnA->a IVSuff-any-nA
+IVPref-AnA->a IVSuff-any-nA_jus
+IVPref-AnA->a IVSuff-ony-nA
+IVPref-AnA->a IVSuff-ny-nA_ind
+IVPref-AnA->a IVSuff-ny-nA_sub
+IVPref-AnA->a IVSuff-ny-nA_jus
+IVPref-AnA->a IVSuff-~ny-nA
+;
+IVPref-sa-AnA->a IVSuff-0_ind
+IVPref-sa-AnA->a IVSuff-u
+IVPref-sa-AnA->a IVSuff-uh
+IVPref-sa-AnA->a IVSuff-h_ind
+IVPref-sa-AnA->a IVSuff-hi_ind
+IVPref-sa-AnA->a IVSuff-uk
+IVPref-sa-AnA->a IVSuff-k_ind
+IVPref-sa-AnA->a IVSuff-uny-nA
+IVPref-sa-AnA->a IVSuff-ny-nA_ind
+IVPref-sa-AnA->a IVSuff-~ny-nA
+;
+IVPref-AnA->u IVSuff-0_ind
+IVPref-AnA->u IVSuff-0_sub
+IVPref-AnA->u IVSuff-0_jus
+IVPref-AnA->u IVSuff-u
+IVPref-AnA->u IVSuff-a
+IVPref-AnA->u IVSuff-a_jus
+IVPref-AnA->u IVSuff-o
+IVPref-AnA->u IVSuff-uh
+IVPref-AnA->u IVSuff-ah
+IVPref-AnA->u IVSuff-ah_jus
+IVPref-AnA->u IVSuff-oh
+IVPref-AnA->u IVSuff-hi_ind
+IVPref-AnA->u IVSuff-hi_jus
+IVPref-AnA->u IVSuff-uk
+IVPref-AnA->u IVSuff-ak
+IVPref-AnA->u IVSuff-ak_jus
+IVPref-AnA->u IVSuff-ok
+IVPref-AnA->u IVSuff-k_ind
+IVPref-AnA->u IVSuff-k_sub
+IVPref-AnA->u IVSuff-k_jus
+IVPref-AnA->u IVSuff-uny-nA
+IVPref-AnA->u IVSuff-any-nA
+IVPref-AnA->u IVSuff-any-nA_jus
+IVPref-AnA->u IVSuff-ony-nA
+IVPref-AnA->u IVSuff-ny-nA_ind
+IVPref-AnA->u IVSuff-ny-nA_sub
+IVPref-AnA->u IVSuff-ny-nA_jus
+IVPref-AnA->u IVSuff-~ny-nA
+;
+IVPref-sa-AnA->u IVSuff-0_ind
+IVPref-sa-AnA->u IVSuff-u
+IVPref-sa-AnA->u IVSuff-uh
+IVPref-sa-AnA->u IVSuff-hi_ind
+IVPref-sa-AnA->u IVSuff-uk
+IVPref-sa-AnA->u IVSuff-k_ind
+IVPref-sa-AnA->u IVSuff-uny-nA
+IVPref-sa-AnA->u IVSuff-ny-nA_ind
+IVPref-sa-AnA->u IVSuff-~ny-nA
+;
+IVPref-AnA-| IVSuff-0_ind
+IVPref-AnA-| IVSuff-0_sub
+IVPref-AnA-| IVSuff-0_jus
+IVPref-AnA-| IVSuff-u
+IVPref-AnA-| IVSuff-a
+IVPref-AnA-| IVSuff-a_jus
+IVPref-AnA-| IVSuff-o
+IVPref-AnA-| IVSuff-uh
+IVPref-AnA-| IVSuff-ah
+IVPref-AnA-| IVSuff-ah_jus
+IVPref-AnA-| IVSuff-oh
+IVPref-AnA-| IVSuff-h_ind
+IVPref-AnA-| IVSuff-h_sub
+IVPref-AnA-| IVSuff-h_jus
+IVPref-AnA-| IVSuff-hi_ind
+IVPref-AnA-| IVSuff-hi_jus
+IVPref-AnA-| IVSuff-uk
+IVPref-AnA-| IVSuff-ak
+IVPref-AnA-| IVSuff-ak_jus
+IVPref-AnA-| IVSuff-ok
+IVPref-AnA-| IVSuff-k_ind
+IVPref-AnA-| IVSuff-k_sub
+IVPref-AnA-| IVSuff-k_jus
+IVPref-AnA-| IVSuff-uny-nA
+IVPref-AnA-| IVSuff-any-nA
+IVPref-AnA-| IVSuff-any-nA_jus
+IVPref-AnA-| IVSuff-ony-nA
+IVPref-AnA-| IVSuff-ny-nA_ind
+IVPref-AnA-| IVSuff-ny-nA_sub
+IVPref-AnA-| IVSuff-ny-nA_jus
+IVPref-AnA-| IVSuff-~ny-nA
+;
+IVPref-sa-AnA-| IVSuff-0_ind
+IVPref-sa-AnA-| IVSuff-u
+IVPref-sa-AnA-| IVSuff-uh
+IVPref-sa-AnA-| IVSuff-h_ind
+IVPref-sa-AnA-| IVSuff-hi_ind
+IVPref-sa-AnA-| IVSuff-uk
+IVPref-sa-AnA-| IVSuff-k_ind
+IVPref-sa-AnA-| IVSuff-uny-nA
+IVPref-sa-AnA-| IVSuff-ny-nA_ind
+IVPref-sa-AnA-| IVSuff-~ny-nA
+;
+; subjunctive
+IVPref-AnA-li>a IVSuff-0_sub
+IVPref-AnA-li>a IVSuff-a
+IVPref-AnA-li>a IVSuff-ah
+IVPref-AnA-li>a IVSuff-h_sub
+IVPref-AnA-li>a IVSuff-ak
+IVPref-AnA-li>a IVSuff-k_sub
+IVPref-AnA-li>a IVSuff-any-nA
+IVPref-AnA-li>a IVSuff-ny-nA_sub
+;
+IVPref-AnA-li>u IVSuff-0_sub
+IVPref-AnA-li>u IVSuff-a
+IVPref-AnA-li>u IVSuff-ah
+IVPref-AnA-li>u IVSuff-h_sub
+IVPref-AnA-li>u IVSuff-ak
+IVPref-AnA-li>u IVSuff-k_sub
+IVPref-AnA-li>u IVSuff-any-nA
+IVPref-AnA-li>u IVSuff-ny-nA_sub
+;
+IVPref-AnA-li| IVSuff-0_sub
+IVPref-AnA-li| IVSuff-a
+IVPref-AnA-li| IVSuff-ah
+IVPref-AnA-li| IVSuff-h_sub
+IVPref-AnA-li| IVSuff-ak
+IVPref-AnA-li| IVSuff-k_sub
+IVPref-AnA-li| IVSuff-any-nA
+IVPref-AnA-li| IVSuff-ny-nA_sub
+;
+; -----------------------
+;
+IVPref-nHn-na IVSuff-0_ind
+IVPref-nHn-na IVSuff-0_sub
+IVPref-nHn-na IVSuff-0_jus
+IVPref-nHn-na IVSuff-u
+IVPref-nHn-na IVSuff-a
+IVPref-nHn-na IVSuff-a_jus
+IVPref-nHn-na IVSuff-o
+IVPref-nHn-na IVSuff-uh
+IVPref-nHn-na IVSuff-ah
+IVPref-nHn-na IVSuff-ah_jus
+IVPref-nHn-na IVSuff-oh
+IVPref-nHn-na IVSuff-h_ind
+IVPref-nHn-na IVSuff-h_sub
+IVPref-nHn-na IVSuff-h_jus
+IVPref-nHn-na IVSuff-hi_ind
+IVPref-nHn-na IVSuff-hi_jus
+IVPref-nHn-na IVSuff-uk
+IVPref-nHn-na IVSuff-ak
+IVPref-nHn-na IVSuff-ak_jus
+IVPref-nHn-na IVSuff-ok
+IVPref-nHn-na IVSuff-k_ind
+IVPref-nHn-na IVSuff-k_sub
+IVPref-nHn-na IVSuff-k_jus
+IVPref-nHn-na IVSuff-uny-nA
+IVPref-nHn-na IVSuff-any-nA
+IVPref-nHn-na IVSuff-any-nA_jus
+IVPref-nHn-na IVSuff-ony-nA
+IVPref-nHn-na IVSuff-ny-nA_ind
+IVPref-nHn-na IVSuff-ny-nA_sub
+IVPref-nHn-na IVSuff-ny-nA_jus
+IVPref-nHn-na IVSuff-~ny-nA
+;
+IVPref-sa-nHn-na IVSuff-0_ind
+IVPref-sa-nHn-na IVSuff-u
+IVPref-sa-nHn-na IVSuff-uh
+IVPref-sa-nHn-na IVSuff-h_ind
+IVPref-sa-nHn-na IVSuff-hi_ind
+IVPref-sa-nHn-na IVSuff-uk
+IVPref-sa-nHn-na IVSuff-k_ind
+IVPref-sa-nHn-na IVSuff-uny-nA
+IVPref-sa-nHn-na IVSuff-ny-nA_ind
+IVPref-sa-nHn-na IVSuff-~ny-nA
+;
+IVPref-nHn-nu IVSuff-0_ind
+IVPref-nHn-nu IVSuff-0_sub
+IVPref-nHn-nu IVSuff-0_jus
+IVPref-nHn-nu IVSuff-u
+IVPref-nHn-nu IVSuff-a
+IVPref-nHn-nu IVSuff-a_jus
+IVPref-nHn-nu IVSuff-o
+IVPref-nHn-nu IVSuff-uh
+IVPref-nHn-nu IVSuff-ah
+IVPref-nHn-nu IVSuff-ah_jus
+IVPref-nHn-nu IVSuff-oh
+IVPref-nHn-nu IVSuff-hi_ind
+IVPref-nHn-nu IVSuff-hi_jus
+IVPref-nHn-nu IVSuff-uk
+IVPref-nHn-nu IVSuff-ak
+IVPref-nHn-nu IVSuff-ak_jus
+IVPref-nHn-nu IVSuff-ok
+IVPref-nHn-nu IVSuff-k_ind
+IVPref-nHn-nu IVSuff-k_sub
+IVPref-nHn-nu IVSuff-k_jus
+IVPref-nHn-nu IVSuff-uny-nA
+IVPref-nHn-nu IVSuff-any-nA
+IVPref-nHn-nu IVSuff-any-nA_jus
+IVPref-nHn-nu IVSuff-ony-nA
+IVPref-nHn-nu IVSuff-ny-nA_ind
+IVPref-nHn-nu IVSuff-ny-nA_sub
+IVPref-nHn-nu IVSuff-ny-nA_jus
+IVPref-nHn-nu IVSuff-~ny-nA
+;
+IVPref-sa-nHn-nu IVSuff-0_ind
+IVPref-sa-nHn-nu IVSuff-u
+IVPref-sa-nHn-nu IVSuff-uh
+IVPref-sa-nHn-nu IVSuff-hi_ind
+IVPref-sa-nHn-nu IVSuff-uk
+IVPref-sa-nHn-nu IVSuff-k_ind
+IVPref-sa-nHn-nu IVSuff-uny-nA
+IVPref-sa-nHn-nu IVSuff-ny-nA_ind
+IVPref-sa-nHn-nu IVSuff-~ny-nA
+;
+; subjunctive
+IVPref-nHn-lina IVSuff-0_sub
+IVPref-nHn-lina IVSuff-a
+IVPref-nHn-lina IVSuff-ah
+IVPref-nHn-lina IVSuff-h_sub
+IVPref-nHn-lina IVSuff-ak
+IVPref-nHn-lina IVSuff-k_sub
+IVPref-nHn-lina IVSuff-any-nA
+IVPref-nHn-lina IVSuff-ny-nA_sub
+;
+IVPref-nHn-linu IVSuff-0_sub
+IVPref-nHn-linu IVSuff-a
+IVPref-nHn-linu IVSuff-ah
+IVPref-nHn-linu IVSuff-h_sub
+IVPref-nHn-linu IVSuff-ak
+IVPref-nHn-linu IVSuff-k_sub
+IVPref-nHn-linu IVSuff-any-nA
+IVPref-nHn-linu IVSuff-ny-nA_sub
+;
+; jussive
+IVPref-nHn-lina_jus IVSuff-0_jus
+IVPref-nHn-lina_jus IVSuff-o
+IVPref-nHn-lina_jus IVSuff-oh
+IVPref-nHn-lina_jus IVSuff-ok
+IVPref-nHn-lina_jus IVSuff-ony-nA
+IVPref-nHn-lina_jus IVSuff-a_jus
+IVPref-nHn-lina_jus IVSuff-ah_jus
+IVPref-nHn-lina_jus IVSuff-ak_jus
+IVPref-nHn-lina_jus IVSuff-any-nA_jus
+IVPref-nHn-lina_jus IVSuff-h_jus
+IVPref-nHn-lina_jus IVSuff-hi_jus
+IVPref-nHn-lina_jus IVSuff-k_jus
+IVPref-nHn-lina_jus IVSuff-ny-nA_jus
+IVPref-nHn-lina_jus IVSuff-~ny-nA
+;
+IVPref-nHn-linu_jus IVSuff-0_jus
+IVPref-nHn-linu_jus IVSuff-o
+IVPref-nHn-linu_jus IVSuff-oh
+IVPref-nHn-linu_jus IVSuff-ok
+IVPref-nHn-linu_jus IVSuff-ony-nA
+IVPref-nHn-linu_jus IVSuff-a_jus
+IVPref-nHn-linu_jus IVSuff-ah_jus
+IVPref-nHn-linu_jus IVSuff-ak_jus
+IVPref-nHn-linu_jus IVSuff-any-nA_jus
+IVPref-nHn-linu_jus IVSuff-h_jus
+IVPref-nHn-linu_jus IVSuff-hi_jus
+IVPref-nHn-linu_jus IVSuff-k_jus
+IVPref-nHn-linu_jus IVSuff-ny-nA_jus
+IVPref-nHn-linu_jus IVSuff-~ny-nA
+;
+; -----------------------
+;
+IVPref-Anta-ta IVSuff-0_ind
+IVPref-Anta-ta IVSuff-0_sub
+IVPref-Anta-ta IVSuff-0_jus
+IVPref-Anta-ta IVSuff-u
+IVPref-Anta-ta IVSuff-a
+IVPref-Anta-ta IVSuff-a_jus
+IVPref-Anta-ta IVSuff-o
+IVPref-Anta-ta IVSuff-uh
+IVPref-Anta-ta IVSuff-ah
+IVPref-Anta-ta IVSuff-ah_jus
+IVPref-Anta-ta IVSuff-oh
+IVPref-Anta-ta IVSuff-h_ind
+IVPref-Anta-ta IVSuff-h_sub
+IVPref-Anta-ta IVSuff-h_jus
+IVPref-Anta-ta IVSuff-hi_ind
+IVPref-Anta-ta IVSuff-hi_jus
+IVPref-Anta-ta IVSuff-uny-nA
+IVPref-Anta-ta IVSuff-any-nA
+IVPref-Anta-ta IVSuff-any-nA_jus
+IVPref-Anta-ta IVSuff-ony-nA
+IVPref-Anta-ta IVSuff-ny-nA_ind
+IVPref-Anta-ta IVSuff-ny-nA_sub
+IVPref-Anta-ta IVSuff-ny-nA_jus
+IVPref-Anta-ta IVSuff-~ny-nA
+;
+IVPref-sa-Anta-ta IVSuff-0_ind
+IVPref-sa-Anta-ta IVSuff-u
+IVPref-sa-Anta-ta IVSuff-uh
+IVPref-sa-Anta-ta IVSuff-h_ind
+IVPref-sa-Anta-ta IVSuff-hi_ind
+IVPref-sa-Anta-ta IVSuff-uny-nA
+IVPref-sa-Anta-ta IVSuff-ny-nA_ind
+IVPref-sa-Anta-ta IVSuff-~ny-nA
+;
+IVPref-Anta-tu IVSuff-0_ind
+IVPref-Anta-tu IVSuff-0_sub
+IVPref-Anta-tu IVSuff-0_jus
+IVPref-Anta-tu IVSuff-u
+IVPref-Anta-tu IVSuff-a
+IVPref-Anta-tu IVSuff-a_jus
+IVPref-Anta-tu IVSuff-o
+IVPref-Anta-tu IVSuff-uh
+IVPref-Anta-tu IVSuff-ah
+IVPref-Anta-tu IVSuff-ah_jus
+IVPref-Anta-tu IVSuff-oh
+IVPref-Anta-tu IVSuff-hi_ind
+IVPref-Anta-tu IVSuff-hi_jus
+IVPref-Anta-tu IVSuff-uny-nA
+IVPref-Anta-tu IVSuff-any-nA
+IVPref-Anta-tu IVSuff-any-nA_jus
+IVPref-Anta-tu IVSuff-ony-nA
+IVPref-Anta-tu IVSuff-ny-nA_ind
+IVPref-Anta-tu IVSuff-ny-nA_sub
+IVPref-Anta-tu IVSuff-ny-nA_jus
+IVPref-Anta-tu IVSuff-~ny-nA
+;
+IVPref-sa-Anta-tu IVSuff-0_ind
+IVPref-sa-Anta-tu IVSuff-u
+IVPref-sa-Anta-tu IVSuff-uh
+IVPref-sa-Anta-tu IVSuff-hi_ind
+IVPref-sa-Anta-tu IVSuff-uny-nA
+IVPref-sa-Anta-tu IVSuff-ny-nA_ind
+IVPref-sa-Anta-tu IVSuff-~ny-nA
+;
+; subjunctive
+IVPref-Anta-lita IVSuff-0_sub
+IVPref-Anta-lita IVSuff-a
+IVPref-Anta-lita IVSuff-ah
+IVPref-Anta-lita IVSuff-h_sub
+IVPref-Anta-lita IVSuff-any-nA
+IVPref-Anta-lita IVSuff-ny-nA_sub
+;
+IVPref-Anta-litu IVSuff-0_sub
+IVPref-Anta-litu IVSuff-a
+IVPref-Anta-litu IVSuff-ah
+IVPref-Anta-litu IVSuff-h_sub
+IVPref-Anta-litu IVSuff-any-nA
+IVPref-Anta-litu IVSuff-ny-nA_sub
+;
+; jussive
+IVPref-Anta-lita_jus IVSuff-0_jus
+IVPref-Anta-lita_jus IVSuff-o
+IVPref-Anta-lita_jus IVSuff-oh
+IVPref-Anta-lita_jus IVSuff-ony-nA
+IVPref-Anta-lita_jus IVSuff-a_jus
+IVPref-Anta-lita_jus IVSuff-ah_jus
+IVPref-Anta-lita_jus IVSuff-any-nA_jus
+IVPref-Anta-lita_jus IVSuff-h_jus
+IVPref-Anta-lita_jus IVSuff-hi_jus
+IVPref-Anta-lita_jus IVSuff-ny-nA_jus
+IVPref-Anta-lita_jus IVSuff-~ny-nA
+;
+IVPref-Anta-litu_jus IVSuff-0_jus
+IVPref-Anta-litu_jus IVSuff-o
+IVPref-Anta-litu_jus IVSuff-oh
+IVPref-Anta-litu_jus IVSuff-ony-nA
+IVPref-Anta-litu_jus IVSuff-a_jus
+IVPref-Anta-litu_jus IVSuff-ah_jus
+IVPref-Anta-litu_jus IVSuff-any-nA_jus
+IVPref-Anta-litu_jus IVSuff-h_jus
+IVPref-Anta-litu_jus IVSuff-hi_jus
+IVPref-Anta-litu_jus IVSuff-ny-nA_jus
+IVPref-Anta-litu_jus IVSuff-~ny-nA
+; -----------------------
+;
+IVPref-hw-ya IVSuff-0_ind
+IVPref-hw-ya IVSuff-0_sub
+IVPref-hw-ya IVSuff-0_jus
+IVPref-hw-ya IVSuff-u
+IVPref-hw-ya IVSuff-a
+IVPref-hw-ya IVSuff-a_jus
+IVPref-hw-ya IVSuff-o
+IVPref-hw-ya IVSuff-uh
+IVPref-hw-ya IVSuff-ah
+IVPref-hw-ya IVSuff-ah_jus
+IVPref-hw-ya IVSuff-oh
+IVPref-hw-ya IVSuff-h_ind
+IVPref-hw-ya IVSuff-h_sub
+IVPref-hw-ya IVSuff-h_jus
+IVPref-hw-ya IVSuff-hi_ind
+IVPref-hw-ya IVSuff-hi_jus
+IVPref-hw-ya IVSuff-uk
+IVPref-hw-ya IVSuff-ak
+IVPref-hw-ya IVSuff-ak_jus
+IVPref-hw-ya IVSuff-ok
+IVPref-hw-ya IVSuff-k_ind
+IVPref-hw-ya IVSuff-k_sub
+IVPref-hw-ya IVSuff-k_jus
+IVPref-hw-ya IVSuff-uny-nA
+IVPref-hw-ya IVSuff-any-nA
+IVPref-hw-ya IVSuff-any-nA_jus
+IVPref-hw-ya IVSuff-ony-nA
+IVPref-hw-ya IVSuff-ny-nA_ind
+IVPref-hw-ya IVSuff-ny-nA_sub
+IVPref-hw-ya IVSuff-ny-nA_jus
+IVPref-hw-ya IVSuff-~ny-nA
+;
+IVPref-INTERROG->aya IVSuff-0_ind
+IVPref-INTERROG->aya IVSuff-u
+IVPref-INTERROG->aya IVSuff-uh
+IVPref-INTERROG->aya IVSuff-h_ind
+IVPref-INTERROG->aya IVSuff-hi_ind
+IVPref-INTERROG->aya IVSuff-uk
+IVPref-INTERROG->aya IVSuff-k_ind
+IVPref-INTERROG->aya IVSuff-uny-nA
+IVPref-INTERROG->aya IVSuff-ny-nA_ind
+IVPref-INTERROG->aya IVSuff-~ny-nA
+;
+IVPref-INTERROG-saya IVSuff-0_ind
+IVPref-INTERROG-saya IVSuff-u
+IVPref-INTERROG-saya IVSuff-uh
+IVPref-INTERROG-saya IVSuff-h_ind
+IVPref-INTERROG-saya IVSuff-hi_ind
+IVPref-INTERROG-saya IVSuff-uk
+IVPref-INTERROG-saya IVSuff-k_ind
+IVPref-INTERROG-saya IVSuff-uny-nA
+IVPref-INTERROG-saya IVSuff-ny-nA_ind
+IVPref-INTERROG-saya IVSuff-~ny-nA
+;
+IVPref-sa-hw-ya IVSuff-0_ind
+IVPref-sa-hw-ya IVSuff-u
+IVPref-sa-hw-ya IVSuff-uh
+IVPref-sa-hw-ya IVSuff-h_ind
+IVPref-sa-hw-ya IVSuff-hi_ind
+IVPref-sa-hw-ya IVSuff-uk
+IVPref-sa-hw-ya IVSuff-k_ind
+IVPref-sa-hw-ya IVSuff-uny-nA
+IVPref-sa-hw-ya IVSuff-ny-nA_ind
+IVPref-sa-hw-ya IVSuff-~ny-nA
+;
+IVPref-hw-yu IVSuff-0_ind
+IVPref-hw-yu IVSuff-0_sub
+IVPref-hw-yu IVSuff-0_jus
+IVPref-hw-yu IVSuff-u
+IVPref-hw-yu IVSuff-a
+IVPref-hw-yu IVSuff-a_jus
+IVPref-hw-yu IVSuff-o
+IVPref-hw-yu IVSuff-uh
+IVPref-hw-yu IVSuff-ah
+IVPref-hw-yu IVSuff-ah_jus
+IVPref-hw-yu IVSuff-oh
+IVPref-hw-yu IVSuff-hi_ind
+IVPref-hw-yu IVSuff-hi_jus
+IVPref-hw-yu IVSuff-uk
+IVPref-hw-yu IVSuff-ak
+IVPref-hw-yu IVSuff-ak_jus
+IVPref-hw-yu IVSuff-ok
+IVPref-hw-yu IVSuff-k_ind
+IVPref-hw-yu IVSuff-k_sub
+IVPref-hw-yu IVSuff-k_jus
+IVPref-hw-yu IVSuff-uny-nA
+IVPref-hw-yu IVSuff-any-nA
+IVPref-hw-yu IVSuff-any-nA_jus
+IVPref-hw-yu IVSuff-ony-nA
+IVPref-hw-yu IVSuff-ny-nA_ind
+IVPref-hw-yu IVSuff-ny-nA_sub
+IVPref-hw-yu IVSuff-ny-nA_jus
+IVPref-hw-yu IVSuff-~ny-nA
+;
+IVPref-sa-hw-yu IVSuff-0_ind
+IVPref-sa-hw-yu IVSuff-u
+IVPref-sa-hw-yu IVSuff-uh
+IVPref-sa-hw-yu IVSuff-hi_ind
+IVPref-sa-hw-yu IVSuff-uk
+IVPref-sa-hw-yu IVSuff-k_ind
+IVPref-sa-hw-yu IVSuff-uny-nA
+IVPref-sa-hw-yu IVSuff-ny-nA_ind
+IVPref-sa-hw-yu IVSuff-~ny-nA
+;
+; subjunctive
+IVPref-hw-liya IVSuff-0_sub
+IVPref-hw-liya IVSuff-a
+IVPref-hw-liya IVSuff-ah
+IVPref-hw-liya IVSuff-h_sub
+IVPref-hw-liya IVSuff-ak
+IVPref-hw-liya IVSuff-k_sub
+IVPref-hw-liya IVSuff-any-nA
+IVPref-hw-liya IVSuff-ny-nA_sub
+; 
+IVPref-hw-liyu IVSuff-0_sub
+IVPref-hw-liyu IVSuff-a
+IVPref-hw-liyu IVSuff-ah
+IVPref-hw-liyu IVSuff-h_sub
+IVPref-hw-liyu IVSuff-ak
+IVPref-hw-liyu IVSuff-k_sub
+IVPref-hw-liyu IVSuff-any-nA
+IVPref-hw-liyu IVSuff-ny-nA_sub
+;
+; jussive
+IVPref-hw-liya_jus IVSuff-0_jus
+IVPref-hw-liya_jus IVSuff-o
+IVPref-hw-liya_jus IVSuff-oh
+IVPref-hw-liya_jus IVSuff-ok
+IVPref-hw-liya_jus IVSuff-ony-nA
+IVPref-hw-liya_jus IVSuff-a_jus
+IVPref-hw-liya_jus IVSuff-ah_jus
+IVPref-hw-liya_jus IVSuff-ak_jus
+IVPref-hw-liya_jus IVSuff-any-nA_jus
+IVPref-hw-liya_jus IVSuff-h_jus
+IVPref-hw-liya_jus IVSuff-hi_jus
+IVPref-hw-liya_jus IVSuff-k_jus
+IVPref-hw-liya_jus IVSuff-ny-nA_jus
+IVPref-hw-liya_jus IVSuff-~ny-nA
+;
+IVPref-hw-liyu_jus IVSuff-0_jus
+IVPref-hw-liyu_jus IVSuff-o
+IVPref-hw-liyu_jus IVSuff-oh
+IVPref-hw-liyu_jus IVSuff-ok
+IVPref-hw-liyu_jus IVSuff-ony-nA
+IVPref-hw-liyu_jus IVSuff-a_jus
+IVPref-hw-liyu_jus IVSuff-ah_jus
+IVPref-hw-liyu_jus IVSuff-ak_jus
+IVPref-hw-liyu_jus IVSuff-any-nA_jus
+IVPref-hw-liyu_jus IVSuff-h_jus
+IVPref-hw-liyu_jus IVSuff-hi_jus
+IVPref-hw-liyu_jus IVSuff-k_jus
+IVPref-hw-liyu_jus IVSuff-ny-nA_jus
+IVPref-hw-liyu_jus IVSuff-~ny-nA
+;
+; -----------------------
+;
+IVPref-hy-ta IVSuff-0_ind
+IVPref-hy-ta IVSuff-0_sub
+IVPref-hy-ta IVSuff-0_jus
+IVPref-hy-ta IVSuff-u
+IVPref-hy-ta IVSuff-a
+IVPref-hy-ta IVSuff-a_jus
+IVPref-hy-ta IVSuff-o
+IVPref-hy-ta IVSuff-uh
+IVPref-hy-ta IVSuff-ah
+IVPref-hy-ta IVSuff-ah_jus
+IVPref-hy-ta IVSuff-oh
+IVPref-hy-ta IVSuff-h_ind
+IVPref-hy-ta IVSuff-h_sub
+IVPref-hy-ta IVSuff-h_jus
+IVPref-hy-ta IVSuff-hi_ind
+IVPref-hy-ta IVSuff-hi_jus
+IVPref-hy-ta IVSuff-uk
+IVPref-hy-ta IVSuff-ak
+IVPref-hy-ta IVSuff-ak_jus
+IVPref-hy-ta IVSuff-ok
+IVPref-hy-ta IVSuff-k_ind
+IVPref-hy-ta IVSuff-k_sub
+IVPref-hy-ta IVSuff-k_jus
+IVPref-hy-ta IVSuff-uny-nA
+IVPref-hy-ta IVSuff-any-nA
+IVPref-hy-ta IVSuff-any-nA_jus
+IVPref-hy-ta IVSuff-ony-nA
+IVPref-hy-ta IVSuff-ny-nA_ind
+IVPref-hy-ta IVSuff-ny-nA_sub
+IVPref-hy-ta IVSuff-ny-nA_jus
+IVPref-hy-ta IVSuff-~ny-nA
+;
+IVPref-sa-hy-ta IVSuff-0_ind
+IVPref-sa-hy-ta IVSuff-u
+IVPref-sa-hy-ta IVSuff-uh
+IVPref-sa-hy-ta IVSuff-h_ind
+IVPref-sa-hy-ta IVSuff-hi_ind
+IVPref-sa-hy-ta IVSuff-uk
+IVPref-sa-hy-ta IVSuff-k_ind
+IVPref-sa-hy-ta IVSuff-uny-nA
+IVPref-sa-hy-ta IVSuff-ny-nA_ind
+IVPref-sa-hy-ta IVSuff-~ny-nA
+;
+IVPref-hy-tu IVSuff-0_ind
+IVPref-hy-tu IVSuff-0_sub
+IVPref-hy-tu IVSuff-0_jus
+IVPref-hy-tu IVSuff-u
+IVPref-hy-tu IVSuff-a
+IVPref-hy-tu IVSuff-a_jus
+IVPref-hy-tu IVSuff-o
+IVPref-hy-tu IVSuff-uh
+IVPref-hy-tu IVSuff-ah
+IVPref-hy-tu IVSuff-ah_jus
+IVPref-hy-tu IVSuff-oh
+IVPref-hy-tu IVSuff-hi_ind
+IVPref-hy-tu IVSuff-hi_jus
+IVPref-hy-tu IVSuff-uk
+IVPref-hy-tu IVSuff-ak
+IVPref-hy-tu IVSuff-ak_jus
+IVPref-hy-tu IVSuff-ok
+IVPref-hy-tu IVSuff-k_ind
+IVPref-hy-tu IVSuff-k_sub
+IVPref-hy-tu IVSuff-k_jus
+IVPref-hy-tu IVSuff-uny-nA
+IVPref-hy-tu IVSuff-any-nA
+IVPref-hy-tu IVSuff-any-nA_jus
+IVPref-hy-tu IVSuff-ony-nA
+IVPref-hy-tu IVSuff-ny-nA_ind
+IVPref-hy-tu IVSuff-ny-nA_sub
+IVPref-hy-tu IVSuff-ny-nA_jus
+IVPref-hy-tu IVSuff-~ny-nA
+;
+IVPref-sa-hy-tu IVSuff-0_ind
+IVPref-sa-hy-tu IVSuff-u
+IVPref-sa-hy-tu IVSuff-uh
+IVPref-sa-hy-tu IVSuff-hi_ind
+IVPref-sa-hy-tu IVSuff-uk
+IVPref-sa-hy-tu IVSuff-k_ind
+IVPref-sa-hy-tu IVSuff-uny-nA
+IVPref-sa-hy-tu IVSuff-ny-nA_ind
+IVPref-sa-hy-tu IVSuff-~ny-nA
+;
+; subjunctive
+IVPref-hy-lita IVSuff-0_sub
+IVPref-hy-lita IVSuff-a
+IVPref-hy-lita IVSuff-ah
+IVPref-hy-lita IVSuff-h_sub
+IVPref-hy-lita IVSuff-ak
+IVPref-hy-lita IVSuff-k_sub
+IVPref-hy-lita IVSuff-any-nA
+IVPref-hy-lita IVSuff-ny-nA_sub
+;
+IVPref-hy-litu IVSuff-0_sub
+IVPref-hy-litu IVSuff-a
+IVPref-hy-litu IVSuff-ah
+IVPref-hy-litu IVSuff-h_sub
+IVPref-hy-litu IVSuff-ak
+IVPref-hy-litu IVSuff-k_sub
+IVPref-hy-litu IVSuff-any-nA
+IVPref-hy-litu IVSuff-ny-nA_sub
+;
+; jussive
+IVPref-hy-lita_jus IVSuff-0_jus
+IVPref-hy-lita_jus IVSuff-o
+IVPref-hy-lita_jus IVSuff-oh
+IVPref-hy-lita_jus IVSuff-ok
+IVPref-hy-lita_jus IVSuff-ony-nA
+IVPref-hy-lita_jus IVSuff-a_jus
+IVPref-hy-lita_jus IVSuff-ah_jus
+IVPref-hy-lita_jus IVSuff-ak_jus
+IVPref-hy-lita_jus IVSuff-any-nA_jus
+IVPref-hy-lita_jus IVSuff-h_jus
+IVPref-hy-lita_jus IVSuff-hi_jus
+IVPref-hy-lita_jus IVSuff-k_jus
+IVPref-hy-lita_jus IVSuff-ny-nA_jus
+IVPref-hy-lita_jus IVSuff-~ny-nA
+;
+IVPref-hy-litu_jus IVSuff-0_jus
+IVPref-hy-litu_jus IVSuff-o
+IVPref-hy-litu_jus IVSuff-oh
+IVPref-hy-litu_jus IVSuff-ok
+IVPref-hy-litu_jus IVSuff-ony-nA
+IVPref-hy-litu_jus IVSuff-a_jus
+IVPref-hy-litu_jus IVSuff-ah_jus
+IVPref-hy-litu_jus IVSuff-ak_jus
+IVPref-hy-litu_jus IVSuff-any-nA_jus
+IVPref-hy-litu_jus IVSuff-h_jus
+IVPref-hy-litu_jus IVSuff-hi_jus
+IVPref-hy-litu_jus IVSuff-k_jus
+IVPref-hy-litu_jus IVSuff-ny-nA_jus
+IVPref-hy-litu_jus IVSuff-~ny-nA
+;
+; -----------------------
+;
+IVPref-Anti-ta IVSuff-y
+IVPref-Anti-ta IVSuff-yh
+IVPref-Anti-ta IVSuff-yn
+IVPref-Anti-ta IVSuff-ynh
+IVPref-Anti-ta IVSuff-ay
+IVPref-Anti-ta IVSuff-ayh
+IVPref-Anti-ta IVSuff-ayn
+IVPref-Anti-ta IVSuff-aynh
+;
+IVPref-sa-Anti-ta IVSuff-y
+IVPref-sa-Anti-ta IVSuff-yh
+IVPref-sa-Anti-ta IVSuff-yn
+IVPref-sa-Anti-ta IVSuff-ynh
+IVPref-sa-Anti-ta IVSuff-ay
+IVPref-sa-Anti-ta IVSuff-ayh
+IVPref-sa-Anti-ta IVSuff-ayn
+IVPref-sa-Anti-ta IVSuff-aynh
+;
+IVPref-Anti-tu IVSuff-y
+IVPref-Anti-tu IVSuff-yh
+IVPref-Anti-tu IVSuff-yn
+IVPref-Anti-tu IVSuff-ynh
+IVPref-Anti-tu IVSuff-ay
+IVPref-Anti-tu IVSuff-ayn
+;
+IVPref-sa-Anti-tu IVSuff-y
+IVPref-sa-Anti-tu IVSuff-yh
+IVPref-sa-Anti-tu IVSuff-yn
+IVPref-sa-Anti-tu IVSuff-ynh
+IVPref-sa-Anti-tu IVSuff-ay
+IVPref-sa-Anti-tu IVSuff-ayn
+;
+; subjunctive
+IVPref-Anti-lita IVSuff-y
+IVPref-Anti-lita IVSuff-yh
+IVPref-Anti-lita IVSuff-ay
+IVPref-Anti-lita IVSuff-ayh
+;
+IVPref-Anti-litu IVSuff-y
+IVPref-Anti-litu IVSuff-yh
+IVPref-Anti-litu IVSuff-ay
+;
+; jussive
+IVPref-Anti-lita_jus IVSuff-y
+IVPref-Anti-lita_jus IVSuff-yh
+IVPref-Anti-lita_jus IVSuff-ay
+IVPref-Anti-lita_jus IVSuff-ayh
+;
+IVPref-Anti-litu_jus IVSuff-y
+IVPref-Anti-litu_jus IVSuff-yh
+IVPref-Anti-litu_jus IVSuff-ay
+;
+; -----------------------
+IVPref-Antm-ta IVSuff-wn
+IVPref-Antm-ta IVSuff-wnh
+IVPref-Antm-ta IVSuff-wA
+IVPref-Antm-ta IVSuff-wh
+IVPref-Antm-ta IVSuff-awn
+IVPref-Antm-ta IVSuff-awnh
+IVPref-Antm-ta IVSuff-awA
+IVPref-Antm-ta IVSuff-awh
+; -----------------------
+IVPref-sa-Antm-ta IVSuff-wn
+IVPref-sa-Antm-ta IVSuff-wnh
+IVPref-sa-Antm-ta IVSuff-awn
+IVPref-Antm-ta IVSuff-awnh
+;
+IVPref-Antm-tu IVSuff-wn
+IVPref-Antm-tu IVSuff-wnh
+IVPref-Antm-tu IVSuff-wA
+IVPref-Antm-tu IVSuff-wh
+IVPref-Antm-tu IVSuff-awn
+IVPref-Antm-tu IVSuff-awA
+;
+IVPref-sa-Antm-tu IVSuff-wn
+IVPref-sa-Antm-tu IVSuff-wnh
+IVPref-sa-Antm-tu IVSuff-awn
+;
+; subjunctive
+IVPref-Antm-lita IVSuff-wA
+IVPref-Antm-lita IVSuff-wh
+IVPref-Antm-lita IVSuff-awA
+IVPref-Antm-lita IVSuff-awh
+;
+IVPref-Antm-litu IVSuff-wA
+IVPref-Antm-litu IVSuff-wh
+IVPref-Antm-litu IVSuff-awA
+;
+; jusssive
+IVPref-Antm-lita_jus IVSuff-wA
+IVPref-Antm-lita_jus IVSuff-wh
+IVPref-Antm-lita_jus IVSuff-awA
+IVPref-Antm-lita_jus IVSuff-awh
+;
+IVPref-Antm-litu_jus IVSuff-wA
+IVPref-Antm-litu_jus IVSuff-wh
+IVPref-Antm-litu_jus IVSuff-awA
+;
+; -----------------------
+;
+IVPref-AntmA-ta IVSuff-A
+IVPref-AntmA-ta IVSuff-Ah
+IVPref-AntmA-ta IVSuff-An
+IVPref-AntmA-ta IVSuff-Anh
+IVPref-AntmA-ta IVSuff-|
+IVPref-AntmA-ta IVSuff-|h
+IVPref-AntmA-ta IVSuff-|n
+IVPref-AntmA-ta IVSuff-|nh
+;
+IVPref-sa-AntmA-ta IVSuff-An
+IVPref-sa-AntmA-ta IVSuff-Anh
+IVPref-sa-AntmA-ta IVSuff-|n
+IVPref-sa-AntmA-ta IVSuff-|nh
+;
+IVPref-AntmA-tu IVSuff-A
+IVPref-AntmA-tu IVSuff-Ah
+IVPref-AntmA-tu IVSuff-An
+IVPref-AntmA-tu IVSuff-Anh
+IVPref-AntmA-tu IVSuff-|
+IVPref-AntmA-tu IVSuff-|h
+IVPref-AntmA-tu IVSuff-|n
+IVPref-AntmA-tu IVSuff-|nh
+;
+IVPref-sa-AntmA-tu IVSuff-An
+IVPref-sa-AntmA-tu IVSuff-Anh
+IVPref-sa-AntmA-tu IVSuff-|n
+IVPref-sa-AntmA-tu IVSuff-|nh
+;
+; subjunctive
+IVPref-AntmA-lita IVSuff-A
+IVPref-AntmA-lita IVSuff-Ah
+IVPref-AntmA-lita IVSuff-|
+IVPref-AntmA-lita IVSuff-|h
+;
+IVPref-AntmA-litu IVSuff-A
+IVPref-AntmA-litu IVSuff-Ah
+IVPref-AntmA-litu IVSuff-|
+IVPref-AntmA-litu IVSuff-|h
+;
+; jussive
+IVPref-AntmA-lita_jus IVSuff-A
+IVPref-AntmA-lita_jus IVSuff-Ah
+IVPref-AntmA-lita_jus IVSuff-|
+IVPref-AntmA-lita_jus IVSuff-|h
+;
+IVPref-AntmA-litu_jus IVSuff-A
+IVPref-AntmA-litu_jus IVSuff-Ah
+IVPref-AntmA-litu_jus IVSuff-|
+IVPref-AntmA-litu_jus IVSuff-|h
+;
+; -----------------------
+;
+IVPref-Antn-ta IVSuff-n
+IVPref-Antn-ta IVSuff-nh
+IVPref-Antn-ta IVSuff-~n
+IVPref-Antn-ta IVSuff-~nh
+;
+IVPref-sa-Antn-ta IVSuff-n
+IVPref-sa-Antn-ta IVSuff-nh
+IVPref-sa-Antn-ta IVSuff-~n
+IVPref-sa-Antn-ta IVSuff-~nh
+;
+IVPref-Antn-tu IVSuff-n
+IVPref-Antn-tu IVSuff-nh
+IVPref-Antn-tu IVSuff-~n
+IVPref-Antn-tu IVSuff-~nh
+;
+IVPref-sa-Antn-tu IVSuff-n
+IVPref-sa-Antn-tu IVSuff-nh
+IVPref-sa-Antn-tu IVSuff-~n
+IVPref-sa-Antn-tu IVSuff-~nh
+;
+; subjunctive
+IVPref-Antn-lita IVSuff-n
+IVPref-Antn-lita IVSuff-nh
+IVPref-Antn-lita IVSuff-~n
+IVPref-Antn-lita IVSuff-~nh
+;
+IVPref-Antn-litu IVSuff-n
+IVPref-Antn-litu IVSuff-nh
+IVPref-Antn-litu IVSuff-~n
+IVPref-Antn-litu IVSuff-~nh
+;
+; jussive
+IVPref-Antn-lita_jus IVSuff-n
+IVPref-Antn-lita_jus IVSuff-nh
+IVPref-Antn-lita_jus IVSuff-~n
+IVPref-Antn-lita_jus IVSuff-~nh
+;
+IVPref-Antn-litu_jus IVSuff-n
+IVPref-Antn-litu_jus IVSuff-nh
+IVPref-Antn-litu_jus IVSuff-~n
+IVPref-Antn-litu_jus IVSuff-~nh
+;
+; -----------------------
+;
+IVPref-hm-ya IVSuff-wA
+IVPref-hm-ya IVSuff-wh
+IVPref-hm-ya IVSuff-wk
+IVPref-hm-ya IVSuff-wn
+IVPref-hm-ya IVSuff-wnh
+IVPref-hm-ya IVSuff-wnk
+IVPref-hm-ya IVSuff-awA
+IVPref-hm-ya IVSuff-awh
+IVPref-hm-ya IVSuff-awk
+IVPref-hm-ya IVSuff-awn
+IVPref-hm-ya IVSuff-awnh
+IVPref-hm-ya IVSuff-awnk
+;
+IVPref-sa-hm-ya IVSuff-wn
+IVPref-sa-hm-ya IVSuff-wnh
+IVPref-sa-hm-ya IVSuff-wnk
+IVPref-sa-hm-ya IVSuff-awn
+IVPref-sa-hm-ya IVSuff-awnh
+IVPref-sa-hm-ya IVSuff-awnk
+;---
+IVPref-hm-yu IVSuff-wA
+IVPref-hm-yu IVSuff-wh
+IVPref-hm-yu IVSuff-wk
+IVPref-hm-yu IVSuff-wn
+IVPref-hm-yu IVSuff-wnh
+IVPref-hm-yu IVSuff-wnk
+IVPref-hm-yu IVSuff-awA
+IVPref-hm-yu IVSuff-awn
+;
+IVPref-sa-hm-yu IVSuff-wn
+IVPref-sa-hm-yu IVSuff-wnh
+IVPref-sa-hm-yu IVSuff-wnk
+IVPref-sa-hm-yu IVSuff-awn
+;
+; subjunctive
+IVPref-hm-liya IVSuff-wA
+IVPref-hm-liya IVSuff-wh
+IVPref-hm-liya IVSuff-wk
+IVPref-hm-liya IVSuff-awA
+IVPref-hm-liya IVSuff-awh
+IVPref-hm-liya IVSuff-awk
+;
+IVPref-hm-liyu IVSuff-wA
+IVPref-hm-liyu IVSuff-wh
+IVPref-hm-liyu IVSuff-wk
+IVPref-hm-liyu IVSuff-awA
+;
+; jussive
+IVPref-hm-liya_jus IVSuff-wA
+IVPref-hm-liya_jus IVSuff-wh
+IVPref-hm-liya_jus IVSuff-wk
+IVPref-hm-liya_jus IVSuff-awA
+IVPref-hm-liya_jus IVSuff-awh
+IVPref-hm-liya_jus IVSuff-awk
+;
+IVPref-hm-liyu_jus IVSuff-wA
+IVPref-hm-liyu_jus IVSuff-wh
+IVPref-hm-liyu_jus IVSuff-wk
+IVPref-hm-liyu_jus IVSuff-awA
+;
+;---------------------------
+;
+IVPref-hmA-ya IVSuff-A
+IVPref-hmA-ya IVSuff-Ah
+IVPref-hmA-ya IVSuff-Ak
+IVPref-hmA-ya IVSuff-An
+IVPref-hmA-ya IVSuff-Anh
+IVPref-hmA-ya IVSuff-Ank
+IVPref-hmA-ya IVSuff-|
+IVPref-hmA-ya IVSuff-|h
+IVPref-hmA-ya IVSuff-|k
+IVPref-hmA-ya IVSuff-|n
+IVPref-hmA-ya IVSuff-|nh
+IVPref-hmA-ya IVSuff-|nk
+;
+IVPref-sa-hmA-ya IVSuff-An
+IVPref-sa-hmA-ya IVSuff-Anh
+IVPref-sa-hmA-ya IVSuff-Ank
+IVPref-sa-hmA-ya IVSuff-|n
+IVPref-sa-hmA-ya IVSuff-|nh
+IVPref-sa-hmA-ya IVSuff-|nk
+;
+IVPref-hmA-yu IVSuff-A
+IVPref-hmA-yu IVSuff-Ah
+IVPref-hmA-yu IVSuff-Ak
+IVPref-hmA-yu IVSuff-An
+IVPref-hmA-yu IVSuff-Anh
+IVPref-hmA-yu IVSuff-Ank
+IVPref-hmA-yu IVSuff-|
+IVPref-hmA-yu IVSuff-|h
+IVPref-hmA-yu IVSuff-|k
+IVPref-hmA-yu IVSuff-|n
+IVPref-hmA-yu IVSuff-|nh
+IVPref-hmA-yu IVSuff-|nk
+;
+IVPref-sa-hmA-yu IVSuff-An
+IVPref-sa-hmA-yu IVSuff-Anh
+IVPref-sa-hmA-yu IVSuff-Ank
+IVPref-sa-hmA-yu IVSuff-|n
+IVPref-sa-hmA-yu IVSuff-|nh
+IVPref-sa-hmA-yu IVSuff-|nk
+;
+IVPref-hmA-liya IVSuff-A
+IVPref-hmA-liya IVSuff-Ah
+IVPref-hmA-liya IVSuff-Ak
+IVPref-hmA-liya IVSuff-|
+IVPref-hmA-liya IVSuff-|h
+IVPref-hmA-liya IVSuff-|k
+;
+IVPref-hmA-liyu IVSuff-A
+IVPref-hmA-liyu IVSuff-Ah
+IVPref-hmA-liyu IVSuff-Ak
+IVPref-hmA-liyu IVSuff-|
+IVPref-hmA-liyu IVSuff-|h
+IVPref-hmA-liyu IVSuff-|k
+;
+IVPref-hmA-liya_jus IVSuff-A
+IVPref-hmA-liya_jus IVSuff-Ah
+IVPref-hmA-liya_jus IVSuff-Ak
+IVPref-hmA-liya_jus IVSuff-|
+IVPref-hmA-liya_jus IVSuff-|h
+IVPref-hmA-liya_jus IVSuff-|k
+;
+IVPref-hmA-liyu_jus IVSuff-A
+IVPref-hmA-liyu_jus IVSuff-Ah
+IVPref-hmA-liyu_jus IVSuff-Ak
+IVPref-hmA-liyu_jus IVSuff-|
+IVPref-hmA-liyu_jus IVSuff-|h
+IVPref-hmA-liyu_jus IVSuff-|k
+;
+; -----------------------
+;
+IVPref-hmA-ta IVSuff-A
+IVPref-hmA-ta IVSuff-Ah
+IVPref-hmA-ta IVSuff-Ak
+IVPref-hmA-ta IVSuff-An
+IVPref-hmA-ta IVSuff-Anh
+IVPref-hmA-ta IVSuff-Ank
+IVPref-hmA-ta IVSuff-|
+IVPref-hmA-ta IVSuff-|h
+IVPref-hmA-ta IVSuff-|k
+IVPref-hmA-ta IVSuff-|n
+IVPref-hmA-ta IVSuff-|nh
+IVPref-hmA-ta IVSuff-|nk
+;
+IVPref-sa-hmA-ta IVSuff-An
+IVPref-sa-hmA-ta IVSuff-Anh
+IVPref-sa-hmA-ta IVSuff-Ank
+IVPref-sa-hmA-ta IVSuff-|n
+IVPref-sa-hmA-ta IVSuff-|nh
+IVPref-sa-hmA-ta IVSuff-|nk
+;
+IVPref-hmA-tu IVSuff-A
+IVPref-hmA-tu IVSuff-Ah
+IVPref-hmA-tu IVSuff-Ak
+IVPref-hmA-tu IVSuff-An
+IVPref-hmA-tu IVSuff-Anh
+IVPref-hmA-tu IVSuff-Ank
+IVPref-hmA-tu IVSuff-|
+IVPref-hmA-tu IVSuff-|h
+IVPref-hmA-tu IVSuff-|k
+IVPref-hmA-tu IVSuff-|n
+IVPref-hmA-tu IVSuff-|nh
+IVPref-hmA-tu IVSuff-|nk
+;
+IVPref-sa-hmA-tu IVSuff-An
+IVPref-sa-hmA-tu IVSuff-Anh
+IVPref-sa-hmA-tu IVSuff-Ank
+IVPref-sa-hmA-tu IVSuff-|n
+IVPref-sa-hmA-tu IVSuff-|nh
+IVPref-sa-hmA-tu IVSuff-|nk
+;
+IVPref-hmA-lita IVSuff-A
+IVPref-hmA-lita IVSuff-Ah
+IVPref-hmA-lita IVSuff-Ak
+IVPref-hmA-lita IVSuff-|
+IVPref-hmA-lita IVSuff-|h
+IVPref-hmA-lita IVSuff-|k
+;
+IVPref-hmA-litu IVSuff-A
+IVPref-hmA-litu IVSuff-Ah
+IVPref-hmA-litu IVSuff-Ak
+IVPref-hmA-litu IVSuff-|
+IVPref-hmA-litu IVSuff-|h
+IVPref-hmA-litu IVSuff-|k
+;
+IVPref-hmA-lita_jus IVSuff-A
+IVPref-hmA-lita_jus IVSuff-Ah
+IVPref-hmA-lita_jus IVSuff-Ak
+IVPref-hmA-lita_jus IVSuff-|
+IVPref-hmA-lita_jus IVSuff-|h
+IVPref-hmA-lita_jus IVSuff-|k
+;
+IVPref-hmA-litu_jus IVSuff-A
+IVPref-hmA-litu_jus IVSuff-Ah
+IVPref-hmA-litu_jus IVSuff-Ak
+IVPref-hmA-litu_jus IVSuff-|
+IVPref-hmA-litu_jus IVSuff-|h
+IVPref-hmA-litu_jus IVSuff-|k
+;
+; -----------------------
+;
+IVPref-hn-ya IVSuff-n
+IVPref-hn-ya IVSuff-nh
+IVPref-hn-ya IVSuff-nk
+IVPref-hn-ya IVSuff-~n
+IVPref-hn-ya IVSuff-~nh
+IVPref-hn-ya IVSuff-~nk
+;
+IVPref-sa-hn-ya IVSuff-n
+IVPref-sa-hn-ya IVSuff-nh
+IVPref-sa-hn-ya IVSuff-nk
+IVPref-sa-hn-ya IVSuff-~n
+IVPref-sa-hn-ya IVSuff-~nh
+IVPref-sa-hn-ya IVSuff-~nk
+;
+IVPref-hn-yu IVSuff-n
+IVPref-hn-yu IVSuff-nh
+IVPref-hn-yu IVSuff-nk
+IVPref-hn-yu IVSuff-~n
+IVPref-hn-yu IVSuff-~nh
+IVPref-hn-yu IVSuff-~nk
+;
+IVPref-sa-hn-yu IVSuff-n
+IVPref-sa-hn-yu IVSuff-nh
+IVPref-sa-hn-yu IVSuff-nk
+IVPref-sa-hn-yu IVSuff-~n
+IVPref-sa-hn-yu IVSuff-~nh
+IVPref-sa-hn-yu IVSuff-~nk
+;
+IVPref-hn-liya IVSuff-n
+IVPref-hn-liya IVSuff-nh
+IVPref-hn-liya IVSuff-nk
+IVPref-hn-liya IVSuff-~n
+IVPref-hn-liya IVSuff-~nh
+IVPref-hn-liya IVSuff-~nk
+;
+IVPref-hn-liyu IVSuff-n
+IVPref-hn-liyu IVSuff-nh
+IVPref-hn-liyu IVSuff-nk
+IVPref-hn-liyu IVSuff-~n
+IVPref-hn-liyu IVSuff-~nh
+IVPref-hn-liyu IVSuff-~nk
+;
+; ===================================================================

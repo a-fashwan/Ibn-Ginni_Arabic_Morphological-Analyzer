@@ -1,0 +1,1553 @@
+; ==========================================================================
+; "dictSuffixes"
+; Portions (c) 2002-2004 QAMUS LLC (www.qamus.org), 
+; (c) 2002-2004 Trustees of the University of Pennsylvania 
+; 
+; LDC USER AGREEMENT
+; 
+; Use of this version of the Buckwalter Arabic Morphological Analyzer Version 2
+; distributed by the Linguistic Data Consortium (LDC) of the University of 
+; Pennsylvania is governed by the following terms: 
+; 
+; This User Agreement is provided by the Linguistic Data Consortium as a 
+; condition of accepting the databases named or described herein. 
+; 
+; This Agreement describes the terms between User/User's Research Group and 
+; Linguistic Data Consortium (LDC), in which User will receive material, as 
+; specified below, from LDC. The terms of this Agreement supercede the terms of 
+; any previous Membership Agreement in regard to the Buckwalter Arabic 
+; Morphological Analyzer Version 2.
+; 
+; Under this agreement User will receive one or more CD-ROM discs, DVDs, 
+; electronic files or other media as appropriate, containing linguistic tools, 
+; speech, video, and/or text data. User agrees to use the material received 
+; under this agreement only for non-commercial linguistic education and research
+; purposes. Unless explicitly permitted herein, User shall have no right to 
+; copy, redistribute, transmit, publish or otherwise use the LDC Databases for 
+; any other purpose and User further agrees not to disclose, copy, or 
+; re-distribute the material to others outside of User's research group. 
+; 
+; Government use, including any use within or among government organizations and
+; use by government contractors to produce or evaluate resources and 
+; technologies for government use, is permitted under this license.
+; 
+; Organizations interested in licensing the Buckwalter Arabic Morphological 
+; Analyzer Version 2 for commercial use should contact: 
+; 
+;    QAMUS LLC 
+;    448 South 48th St. 
+;    Philadelphia, PA 19143 
+;    ATTN: Tim Buckwalter 
+;    email: license@qamus.org
+; 
+; Except for Government use as specified above, commercial uses of this corpus 
+; include, but are not limited to, imbedded use of the Analyzer, Analyzer 
+; methods, Analyzer derived works, Analyzer output data, algorithms, lexicons, 
+; and downloaded data in a commercial product or a fee for service project; 
+; use of the Analyzer, Analyzer methods, Analyzer derived works, Analyzer 
+; output data, algorithms, and downloaded data to create or develop a 
+; commercial product or perform a fee for service project; use of Analyzer, 
+; Analyzer methods, Analyzer derived works, Analyzer output data, algorithms, 
+; lexicons, and downloaded data as a development tool to measure performance of
+; a commercial product or work product developed on a fee for service basis; 
+; redistribution of Analyzer, Analyzer methods, Analyzer derived works, Analyzer 
+; output data, algorithms, lexicons and downloaded data to any third party for 
+; imbedding in a commercial product or fee for service project, for deriving a 
+; commercial product or fee for service project, or for measuring the 
+; performance of a commercial product or fee for service project.
+; 
+; USER ACKNOWLEDGES AND AGREES THAT "CORPORA RECEIVED" ARE PROVIDED ON AN "AS-IS"
+; BASIS AND THAT LDC, ITS HOST INSTITUTION THE UNIVERSITY OF PENNSYLVANIA, AND 
+; ITS DATA PROVIDERS AND CORPUS AUTHORS MAKE NO REPRESENTATIONS OR WARRANTIES OF 
+; ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES 
+; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR CONFORMITY WITH 
+; WHATEVER DOCUMENTATION IS PROVIDED. IN NO EVENT SHALL LDC, ITS HOST 
+; INSTITUTION, DATA PROVIDORS OR CORPUS AUTHORS BE LIABLE FOR SPECIAL, DIRECT, 
+; INDIRECT, CONSEQUENTIAL, PUNITIVE, INCIDENTAL OR OTHER DAMAGES, LOSSES, COSTS, 
+; CHARGES, CLAIMS, DEMANDS, FEES OR EXPENSES OF ANY NATURE OR KIND ARISING IN ANY
+; WAY FROM THE FURNISHING OF OR USER'S USE OF THE CORPORA RECEIVED. 
+; 
+; ==================================================================
+; Contents: Each entry consists of four tab-delimited fields:
+; (1) the suffix (or concatenation of suffixes) WITHOUT short vowels and diacritics
+; (2) the suffix (or concatenation of suffixes) WITH    short vowels and diacritics
+; (3) its morphological category (for controlling its compatibility with prefixes & stems)
+; (4) its English gloss(es): includes POS data within tags <pos>...</pos>
+; ==========================================================================
+;
+; null suffix (all fields empty except for morph_category)
+		Suff-0	
+;
+; imperative (CV = command verb; PV = perfect verb; IV = imperfect verb)
+		CVSuff-0_voc	<pos>/CVSUFF_SUBJ:2MS</pos>
+		CVSuff-o	you                   <pos>ْ/CVSUFF_SUBJ:2MS</pos>
+ه	هُ	CVSuff-oh	you + it/him          <pos>ْ/CVSUFF_SUBJ:2MS+هُ/PRN:3MS</pos>
+هما	هُما	CVSuff-oh	you + them (both)     <pos>ْ/CVSUFF_SUBJ:2MS+هُما/PRN:3D</pos>
+هم	هُم	CVSuff-oh	you + them            <pos>ْ/CVSUFF_SUBJ:2MS+هُم/PRN:3MP</pos>
+ها	ها	CVSuff-oh	you + it/them/her     <pos>ْ/CVSUFF_SUBJ:2MS+ها/PRN:3FS</pos>
+هن	هُنَّ	CVSuff-oh	you + them            <pos>ْ/CVSUFF_SUBJ:2MS+هُنَّ/PRN:3FP</pos>
+ك	كَ	CVSuff-oh	you + you            <pos>ْ/CVSUFF_SUBJ:2MS+كَ/PRN:2MS</pos>
+ني	نِي	CVSuff-oh	you + me              <pos>ْ/CVSUFF_SUBJ:2MS+نِي/PRN:1S</pos>
+نني	نَنِي	CVSuff-noh	you + me              <pos>نَ/CVSUFF_SUBJ:2FP+نِي/PRN:1S</pos>
+نا	نا	CVSuff-oh	you + us              <pos>ْ/CVSUFF_SUBJ:2MS+نا/PRN:1P</pos>
+ه	هِ	CVSuff-nh	you + it/him          <pos>ْ/CVSUFF_SUBJ:2MS+هُ/PRN:3MS</pos>
+هما	هِما	CVSuff-nh	you + them (both)     <pos>ْ/CVSUFF_SUBJ:2MS+هُما/PRN:3D</pos>
+هم	هِم	CVSuff-nh	you + them            <pos>ْ/CVSUFF_SUBJ:2MS+هُم/PRN:3MP</pos>
+ها	ها	CVSuff-nh	you + it/them/her     <pos>ْ/CVSUFF_SUBJ:2MS+ها/PRN:3FS</pos>
+هن	هِنَّ	CVSuff-nh	you + them            <pos>ْ/CVSUFF_SUBJ:2MS+هُنَّ/PRN:3FP</pos>
+ني	نِي	CVSuff-nh	you + me              <pos>/CVSUFF_SUBJ:2MS+نِي/PRN:1S</pos>
+نا	نا	CVSuff-nh	you + me              <pos>/CVSUFF_SUBJ:2MS+نا/PRN:1P</pos>
+;
+; perfect verb, -a suffix
+	َ	PVSuff-a	he/it                 <pos>َ/PVSUFF_SUBJ:3MS</pos>
+;
+; perfect verb, null suffix: banaY
+		PVSuff-0a	he/it                 <pos>/PVSUFF_SUBJ:3MS</pos>
+; perfect verb, null suffix: banA-h, daEA-h
+ه	هُ	PVSuff-0ah	he/it + it/him          <pos>/PVSUFF_SUBJ:3MS+هُ/PRN:3MS</pos>
+هما	هُما	PVSuff-0ah	he/it + them (both)     <pos>/PVSUFF_SUBJ:3MS+هُما/PRN:3D</pos>
+هم	هُم	PVSuff-0ah	he/it + them            <pos>/PVSUFF_SUBJ:3MS+هُم/PRN:3MP</pos>
+ها	ها	PVSuff-0ah	he/it + it/them/her     <pos>/PVSUFF_SUBJ:3MS+ها/PRN:3FS</pos>
+هن	هُنَّ	PVSuff-0ah	he/it + them            <pos>/PVSUFF_SUBJ:3MS+هُنَّ/PRN:3FP</pos>
+ك	كَ	PVSuff-0ah	he/it + you <pos>/PVSUFF_SUBJ:3MS+كَ/PRN:2MS</pos>
+ك	كِ	PVSuff-0ah	he/it + you <pos>/PVSUFF_SUBJ:3MS+كِ/PRN:2FS</pos>
+كما	كُما	PVSuff-0ah	he/it + you <pos>/PVSUFF_SUBJ:3MS+كُما/PRN:2D</pos>
+كم	كُم	PVSuff-0ah	he/it + you <pos>/PVSUFF_SUBJ:3MS+كُم/PRN:2MP</pos>
+كن	كُنَّ	PVSuff-0ah	he/it + you <pos>/PVSUFF_SUBJ:3MS+كُنَّ/PRN:2FP</pos>
+ني	نِي	PVSuff-0ah	he/it + me              <pos>/PVSUFF_SUBJ:3MS+نِي/PRN:1S</pos>
+نا	نا	PVSuff-0ah	he/it + us              <pos>/PVSUFF_SUBJ:3MS+نا/PRN:1P</pos>
+;
+;
+; =====================================================================
+; NOUN SUFFIXES
+; =====================================================================
+; triptote definite:
+	ُ	NSuff-u	[def.nom.]   <pos>ُ/CASE_DEF_NOM</pos>
+	َ	NSuff-a	[def.acc.]   <pos>َ/CASE_DEF_ACC</pos>
+	ِ	NSuff-i	[def.gen.]   <pos>ِ/CASE_DEF_GEN</pos>
+; triptote indefinite:
+	ٌ	NSuff-N	[indef.nom.] <pos>ٌ/CASE_INDEF_NOM</pos>
+	َ	NSuff-F	[indef.acc.] <pos>َ/CASE_INDEF_ACC</pos>
+	ٍ	NSuff-K	[indef.gen.] <pos>ٍ/CASE_INDEF_GEN</pos>
+; diptote indefinite:
+; ma$AriyE+u jadiyd+ap+N, ma$AriyE+a jadiyd+ap+F, ma$AriyE+a jadiyd+ap+K
+; EAlam+N >afoDal+u, EAlam+AF >afoDal+a, EAlam+K >afoDal+a
+	ُ	NSuff-u_indef_nom	[indef.nom.]   <pos>ُ/CASE_INDEF_NOM</pos>
+	َ	NSuff-a_indef_acc	[indef.acc.]   <pos>َ/CASE_INDEF_ACC</pos>
+	َ	NSuff-a_indef_gen	[indef.gen.]   <pos>َ/CASE_INDEF_GEN</pos>
+; for defective: qAD+K layAl+K
+	ٍ	NSuff-K_nom	[indef.nom.] <pos>ٍ/CASE_INDEF_NOM</pos>
+; for indeclinable: "NF_indec" EaSAF, mabonYF, musam~YF
+	َ	NSuff-F_nom	[indef.nom.] <pos>َ/CASE_INDEF_NOM</pos>
+َ	َ	NSuff-F_nom	[indef.nom.] <pos>َ/CASE_INDEF_NOM</pos>
+;
+	َ	NSuff-F_acc	[indef.acc.] <pos>َ/CASE_INDEF_ACC</pos>
+َ	َ	NSuff-F_acc	[indef.acc.] <pos>َ/CASE_INDEF_ACC</pos>
+;
+	َ	NSuff-F_gen	[indef.gen.] <pos>َ/CASE_INDEF_GEN</pos>
+َ	َ	NSuff-F_gen	[indef.gen.] <pos>َ/CASE_INDEF_GEN</pos>
+;
+ما	ما	NSuff-mA	what <pos>ما/REL_PEON</pos>
+;
+; ==========
+; fem. dual: acc./gen. (ACCGEN)
+تين	َتَيْنِ	NSuff-tayn	two <pos>َتَيْنِ/NSUFF</pos>
+تين	َتَيْنِ	NSuff-tayn0	 <pos>َتَيْنِ/NSUFF</pos>
+;
+; ==========
+; feminine dual: nom.
+تان	َتانِ	NSuff-atAn	two <pos>َتانِ/NSUFF</pos>
+تان	َتانِ	NSuff-atAn0	 <pos>َتانِ/NSUFF</pos>
+;
+; ==========
+; feminine dual: poss., nom.
+تا	َتا	NSuff-atAh	two                         <pos>َتا/NSUFF_FEM_DU_NOM_POSS</pos>
+تا	َتا	NSuff-atAh00	two                         <pos>َتا/NSUFF_FEM_DU_NOM_POSS</pos>
+تاه	َتاهُ	NSuff-atAh	two + his/its               <pos>َتا/NSUFF_FEM_DU_NOM_POSS+هُ/POSS_PRON_3MS</pos>
+تاهما	َتاهُما	NSuff-atAh	two + their                 <pos>َتا/NSUFF_FEM_DU_NOM_POSS+هُما/POSS_PRON_3D</pos>
+تاهم	َتاهُم	NSuff-atAh	two + their                 <pos>َتا/NSUFF_FEM_DU_NOM_POSS+هُم/POSS_PRON_3MP</pos>
+تاها	َتاها	NSuff-atAh	two + its/their/her         <pos>َتا/NSUFF_FEM_DU_NOM_POSS+ها/POSS_PRON_3FS</pos>
+تاهن	َتاهُنَّ	NSuff-atAh	two + their                 <pos>َتا/NSUFF_FEM_DU_NOM_POSS+هُنَّ/POSS_PRON_3FP</pos>
+تاك	َتاكَ	NSuff-atAh	two + your [masc.sg.]                 <pos>َتا/NSUFF_FEM_DU_NOM_POSS+كَ/POSS_PRON_2MS</pos>
+تاك	َتاكِ	NSuff-atAh	two + your [fem.sg.]        <pos>َتا/NSUFF_FEM_DU_NOM_POSS+كِ/POSS_PRON_2FS</pos>
+تاكما	َتاكُما	NSuff-atAh	two + your [du.]            <pos>َتا/NSUFF_FEM_DU_NOM_POSS+كُما/POSS_PRON_2D</pos>
+تاكم	َتاكُم	NSuff-atAh	two + your [masc.pl.]       <pos>َتا/NSUFF_FEM_DU_NOM_POSS+كُم/POSS_PRON_2MP</pos>
+تاكن	َتاكُنَّ	NSuff-atAh	two + your [fem.pl.]        <pos>َتا/NSUFF_FEM_DU_NOM_POSS+كُنَّ/POSS_PRON_2FP</pos>
+تاي	َتايَ	NSuff-atAh	two + my                    <pos>َتا/NSUFF_FEM_DU_NOM_POSS+يَ/POSS_PRON_1S</pos>
+تانا	َتانا	NSuff-atAh	two + our                   <pos>َتا/NSUFF_FEM_DU_NOM_POSS+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; feminine dual: poss., acc./gen. (ACCGEN)
+تي	َتَيْ	NSuff-tay	two [acc.]                    <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS</pos>
+تي	َتَيْ	NSuff-tay00	two [acc.]                    <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS</pos>
+تيه	َتَيْهِ	NSuff-tay	two [acc.] + his/its          <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+هِ/POSS_PRON_3MS</pos>
+تيهما	َتَيْهِما	NSuff-tay	two [acc.] + their            <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+هِما/POSS_PRON_3D</pos>
+تيهم	َتَيْهِم	NSuff-tay	two [acc.] + their            <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+هِم/POSS_PRON_3MP</pos>
+تيها	َتَيْها	NSuff-tay	two [acc.] + its/their/her    <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+ها/POSS_PRON_3FS</pos>
+تيهن	َتَيْهِنَّ	NSuff-tay	two [acc.] + their            <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+هِنَّ/POSS_PRON_3FP</pos>
+تيك	َتَيْكَ	NSuff-tay	two [acc.] + your [masc.sg.]  <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+كَ/POSS_PRON_2MS</pos>
+تيك	َتَيْكِ	NSuff-tay	two [acc.] + your [fem.sg.]   <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+كِ/POSS_PRON_2FS</pos>
+تيكما	َتَيْكُما	NSuff-tay	two [acc.] + your [du.]       <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+كُما/POSS_PRON_2D</pos>
+تيكم	َتَيْكُم	NSuff-tay	two [acc.] + your [masc.pl.]  <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+كُم/POSS_PRON_2MP</pos>
+تيكن	َتَيْكُنَّ	NSuff-tay	two [acc.] + your [fem.pl.]   <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+كُنَّ/POSS_PRON_2FP</pos>
+تي	َتَيَّ	NSuff-tay	two [acc.] + my               <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+يَ/POSS_PRON_1S</pos>
+تينا	َتَيْنا	NSuff-tay	two [acc.] + our              <pos>َتَيْ/NSUFF_FEM_DU_ACC_POSS+نا/POSS_PRON_1P</pos>
+;
+تي	َتَيْ	NSuff-tay	two [gen.]                    <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS</pos>
+تيه	َتَيْهِ	NSuff-tay	two [gen.] + his/its          <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+هِ/POSS_PRON_3MS</pos>
+تيهما	َتَيْهِما	NSuff-tay	two [gen.] + their            <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+هِما/POSS_PRON_3D</pos>
+تيهم	َتَيْهِم	NSuff-tay	two [gen.] + their            <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+هِم/POSS_PRON_3MP</pos>
+تيها	َتَيْها	NSuff-tay	two [gen.] + its/their/her    <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+ها/POSS_PRON_3FS</pos>
+تيهن	َتَيْهِنَّ	NSuff-tay	two [gen.] + their            <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+هِنَّ/POSS_PRON_3FP</pos>
+تيك	َتَيْكَ	NSuff-tay	two [gen.] + your [masc.sg.]  <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+كَ/POSS_PRON_2MS</pos>
+تيك	َتَيْكِ	NSuff-tay	two [gen.] + your [fem.sg.]   <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+كِ/POSS_PRON_2FS</pos>
+تيكما	َتَيْكُما	NSuff-tay	two [gen.] + your [du.]       <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+كُما/POSS_PRON_2D</pos>
+تيكم	َتَيْكُم	NSuff-tay	two [gen.] + your [masc.pl.]  <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+كُم/POSS_PRON_2MP</pos>
+تيكن	َتَيْكُنَّ	NSuff-tay	two [gen.] + your [fem.pl.]   <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+كُنَّ/POSS_PRON_2FP</pos>
+تي	َتَيَّ	NSuff-tay	two [gen.] + my               <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+يَ/POSS_PRON_1S</pos>
+تينا	َتَيْنا	NSuff-tay	two [gen.] + our              <pos>َتَيْ/NSUFF_FEM_DU_GEN_POSS+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; fem.sg.
+ة	َة	NSuff-ap	           <pos>َة/NSUFF</pos>
+	َّ	NSuff-~a	me                <pos>َّ/PRN:1S</pos>
+;y	~a	NSuff-~a	me                <pos>~a/PRN:1S</pos> 
+;
+;=== case
+ة	َةُ	NSuff-apu	[fem.sg.] + [def.nom.]      <pos>َة/NSUFF_FEM_SG+ُ/CASE_DEF_NOM</pos>
+ة	َةَ	NSuff-apa	[fem.sg.] + [def.acc.]      <pos>َة/NSUFF_FEM_SG+َ/CASE_DEF_ACC</pos>
+ة	َةِ	NSuff-api	[fem.sg.] + [def.gen.]      <pos>َة/NSUFF_FEM_SG+ِ/CASE_DEF_GEN</pos>
+ة	َةٌ	NSuff-apN	[fem.sg.] + [indef.nom.]    <pos>َة/NSUFF_FEM_SG+ٌ/CASE_INDEF_NOM</pos>
+ة	َةَ	NSuff-apF	[fem.sg.] + [indef.acc.]    <pos>َة/NSUFF_FEM_SG+َ/CASE_INDEF_ACC</pos>
+ة	َةٍ	NSuff-apK	[fem.sg.] + [indef.gen.]    <pos>َة/NSUFF_FEM_SG+ٍ/CASE_INDEF_GEN</pos>
+; diptote: bi+>noqar+ap+a
+ة	َةَ	NSuff-apa_gen	[fem.sg.] + [def.gen.]      <pos>َة/NSUFF_FEM_SG+َ/CASE_DEF_GEN</pos>
+; ==========
+; fem.sg. poss. (without case ending)
+;th	athu	NSuff-ath	his/its             <pos>at/NSUFF+hu/PRN:3MS</pos>
+;thmA	athumA	NSuff-ath	their               <pos>at/NSUFF+humA/PRN:3D</pos>
+;thm	athum	NSuff-ath	their               <pos>at/NSUFF+hum/PRN:3MP</pos>
+;thA	athA	NSuff-ath	its/their/her       <pos>at/NSUFF+hA/PRN:3FS</pos>
+;thn	athun~a	NSuff-ath	their               <pos>at/NSUFF+hun~a/PRN:3FP</pos>
+;tk	atka	NSuff-ath	your    <pos>at/NSUFF+ka/PRN:2MS</pos>
+;tk	atki	NSuff-ath	your    <pos>at/NSUFF+ki/PRN:2FS</pos>
+;tkmA	atkumA	NSuff-ath	your    <pos>at/NSUFF+kumA/PRN:2D</pos>
+;tkm	atkum	NSuff-ath	your    <pos>at/NSUFF+kum/PRN:2MP</pos>
+;tkn	atkun~a	NSuff-ath	your    <pos>at/NSUFF+kun~a/PRN:2FP</pos>
+تي	َتِي	NSuff-ath	my                  <pos>َت/NSUFF+ِي/PRN:1S</pos>
+;tnA	atnA	NSuff-ath	our                 <pos>at/NSUFF+nA/PRN:1P</pos>
+;
+;=== case (keep one instance of "atiy" if you comment out the above set)
+ته	َتُهُ	NSuff-ath	[fem.sg.] + [def.nom] + his/its          <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+هُ/POSS_PRON_3MS</pos>
+تهما	َتُهُما	NSuff-ath	[fem.sg.] + [def.nom] + their            <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+هُما/POSS_PRON_3D</pos>
+تهم	َتُهُم	NSuff-ath	[fem.sg.] + [def.nom] + their            <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+هُم/POSS_PRON_3MP</pos>
+تها	َتُها	NSuff-ath	[fem.sg.] + [def.nom] + its/their/her    <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+ها/POSS_PRON_3FS</pos>
+تهن	َتُهُنَّ	NSuff-ath	[fem.sg.] + [def.nom] + their            <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+هُنَّ/POSS_PRON_3FP</pos>
+تك	َتُكَ	NSuff-ath	[fem.sg.] + [def.nom] + your [masc.sg.]  <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+كَ/POSS_PRON_2MS</pos>
+تك	َتُكِ	NSuff-ath	[fem.sg.] + [def.nom] + your [fem.sg.]   <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+كِ/POSS_PRON_2FS</pos>
+تكما	َتُكُما	NSuff-ath	[fem.sg.] + [def.nom] + your [du.]       <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+كُما/POSS_PRON_2D</pos>
+تكم	َتُكُم	NSuff-ath	[fem.sg.] + [def.nom] + your [masc.pl.]  <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+كُم/POSS_PRON_2MP</pos>
+تكن	َتُكُنَّ	NSuff-ath	[fem.sg.] + [def.nom] + your [fem.pl]    <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+كُنَّ/POSS_PRON_2FP</pos>
+تنا	َتُنا	NSuff-ath	[fem.sg.] + [def.nom] + our              <pos>َت/NSUFF_FEM_SG+ُ/CASE_DEF_NOM+نا/POSS_PRON_1P</pos>
+;
+ته	َتَهُ	NSuff-ath	[fem.sg.] + [def.acc.] + his/its         <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+هُ/POSS_PRON_3MS</pos>
+تهما	َتَهُما	NSuff-ath	[fem.sg.] + [def.acc.] + their           <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+هُما/POSS_PRON_3D</pos>
+تهم	َتَهُم	NSuff-ath	[fem.sg.] + [def.acc.] + their           <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+هُم/POSS_PRON_3MP</pos>
+تها	َتَها	NSuff-ath	[fem.sg.] + [def.acc.] + its/their/her   <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+ها/POSS_PRON_3FS</pos>
+تهن	َتَهُنَّ	NSuff-ath	[fem.sg.] + [def.acc.] + their           <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+هُنَّ/POSS_PRON_3FP</pos>
+تك	َتَكَ	NSuff-ath	[fem.sg.] + [def.acc.] + your [masc.sg.] <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+كَ/POSS_PRON_2MS</pos>
+تك	َتَكِ	NSuff-ath	[fem.sg.] + [def.acc.] + your [fem.sg.]  <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+كِ/POSS_PRON_2FS</pos>
+تكما	َتَكُما	NSuff-ath	[fem.sg.] + [def.acc.] + your [du.]      <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+كُما/POSS_PRON_2D</pos>
+تكم	َتَكُم	NSuff-ath	[fem.sg.] + [def.acc.] + your [masc.pl.] <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+كُم/POSS_PRON_2MP</pos>
+تكن	َتَكُنَّ	NSuff-ath	[fem.sg.] + [def.acc.] + your [fem.pl.]  <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+كُنَّ/POSS_PRON_2FP</pos>
+تنا	َتَنا	NSuff-ath	[fem.sg.] + [def.acc.] + our             <pos>َت/NSUFF_FEM_SG+َ/CASE_DEF_ACC+نا/POSS_PRON_1P</pos>
+;
+ته	َتِهِ	NSuff-ath	[fem.sg.] + [def.gen.] + his/its         <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+هِ/POSS_PRON_3MS</pos>
+تهما	َتِهِما	NSuff-ath	[fem.sg.] + [def.gen.] + their           <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+هِما/POSS_PRON_3D</pos>
+تهم	َتِهِم	NSuff-ath	[fem.sg.] + [def.gen.] + their           <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+هِم/POSS_PRON_3MP</pos>
+تها	َتِها	NSuff-ath	[fem.sg.] + [def.gen.] + its/their/her   <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+ها/POSS_PRON_3FS</pos>
+تهن	َتِهِنَّ	NSuff-ath	[fem.sg.] + [def.gen.] + their           <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+هِنَّ/POSS_PRON_3FP</pos>
+تك	َتِكَ	NSuff-ath	[fem.sg.] + [def.gen.] + your [masc.sg.] <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+كَ/POSS_PRON_2MS</pos>
+تك	َتِكِ	NSuff-ath	[fem.sg.] + [def.gen.] + your [fem.sg.]  <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+كِ/POSS_PRON_2FS</pos>
+تكما	َتِكُما	NSuff-ath	[fem.sg.] + [def.gen.] + your [du.]      <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+كُما/POSS_PRON_2D</pos>
+تكم	َتِكُم	NSuff-ath	[fem.sg.] + [def.gen.] + your [masc.pl.] <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+كُم/POSS_PRON_2MP</pos>
+تكن	َتِكُنَّ	NSuff-ath	[fem.sg.] + [def.gen.] + your [fem.pl.]  <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+كُنَّ/POSS_PRON_2FP</pos>
+تنا	َتِنا	NSuff-ath	[fem.sg.] + [def.gen.] + our             <pos>َت/NSUFF_FEM_SG+ِ/CASE_DEF_GEN+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; masc.du., acc./gen. (ACCGEN)
+ين	َيْنِ	NSuff-ayn	two [acc.]               <pos>َيْنِ/NSUFF_MASC_DU_ACC</pos>
+ين	َيْنِ	NSuff-ayn	two [gen.]               <pos>َيْنِ/NSUFF_MASC_DU_GEN</pos>
+ين	َيْنِ	NSuff-ayn0	two [acc.]               <pos>َيْنِ/NSUFF_MASC_DU_ACC</pos>
+ين	َيْنِ	NSuff-ayn0	two [gen.]               <pos>َيْنِ/NSUFF_MASC_DU_GEN;</pos>
+; ==========
+; masc.du., acc./gen., poss.
+ي	َيْ	NSuff-ayh	two [acc.]                   <pos>َيْ/NSUFF_MASC_DU_ACC_POSS</pos>
+ي	َيْ	NSuff-ayh00	two [acc.]                   <pos>َيْ/NSUFF_MASC_DU_ACC_POSS</pos>
+يه	َيْهِ	NSuff-ayh	two [acc.] + his/its         <pos>َيْ/NSUFF_MASC_DU_ACC+هِ/POSS_PRON_3MS</pos>
+يهما	َيْهِما	NSuff-ayh	two [acc.] + their           <pos>َيْ/NSUFF_MASC_DU_ACC+هِما/POSS_PRON_3D</pos>
+يهم	َيْهِم	NSuff-ayh	two [acc.] + their           <pos>َيْ/NSUFF_MASC_DU_ACC+هِم/POSS_PRON_3MP</pos>
+يها	َيْها	NSuff-ayh	two [acc.] + its/their/her   <pos>َيْ/NSUFF_MASC_DU_ACC+ها/POSS_PRON_3FS</pos>
+يهن	َيْهِنَّ	NSuff-ayh	two [acc.] + their           <pos>َيْ/NSUFF_MASC_DU_ACC+هِنَّ/POSS_PRON_3FP</pos>
+يك	َيْكَ	NSuff-ayh	two [acc.] + your [masc.sg.] <pos>َيْ/NSUFF_MASC_DU_ACC+كَ/POSS_PRON_2MS</pos>
+يك	َيْكِ	NSuff-ayh	two [acc.] + your [fem.sg.]  <pos>َيْ/NSUFF_MASC_DU_ACC+كِ/POSS_PRON_2FS</pos>
+يكما	َيْكُما	NSuff-ayh	two [acc.] + your [du.]      <pos>َيْ/NSUFF_MASC_DU_ACC+كُما/POSS_PRON_2D</pos>
+يكم	َيْكُم	NSuff-ayh	two [acc.] + your [masc.pl.] <pos>َيْ/NSUFF_MASC_DU_ACC+كُم/POSS_PRON_2MP</pos>
+يكن	َيْكُنَّ	NSuff-ayh	two [acc.] + your [fem.pl.]  <pos>َيْ/NSUFF_MASC_DU_ACC+كُنَّ/POSS_PRON_2FP</pos>
+ي	َيَّ	NSuff-ayh	two [acc.] + my              <pos>َيْ/NSUFF_MASC_DU_ACC+يَ/POSS_PRON_1S</pos>
+ينا	َيْنا	NSuff-ayh	two [acc.] + our             <pos>َيْ/NSUFF_MASC_DU_ACC+نا/POSS_PRON_1P</pos>
+;
+ي	َيْ	NSuff-ayh	two [gen.]                   <pos>َيْ/NSUFF_MASC_DU_GEN_POSS</pos>
+يه	َيْهِ	NSuff-ayh	two [gen.] + his/its         <pos>َيْ/NSUFF_MASC_DU_GEN+هِ/POSS_PRON_3MS</pos>
+يهما	َيْهِما	NSuff-ayh	two [gen.] + their           <pos>َيْ/NSUFF_MASC_DU_GEN+هِما/POSS_PRON_3D</pos>
+يهم	َيْهِم	NSuff-ayh	two [gen.] + their           <pos>َيْ/NSUFF_MASC_DU_GEN+هِم/POSS_PRON_3MP</pos>
+يها	َيْها	NSuff-ayh	two [gen.] + its/their/her   <pos>َيْ/NSUFF_MASC_DU_GEN+ها/POSS_PRON_3FS</pos>
+يهن	َيْهِنَّ	NSuff-ayh	two [gen.] + their           <pos>َيْ/NSUFF_MASC_DU_GEN+هِنَّ/POSS_PRON_3FP</pos>
+يك	َيْكَ	NSuff-ayh	two [gen.] + your [masc.sg.] <pos>َيْ/NSUFF_MASC_DU_GEN+كَ/POSS_PRON_2MS</pos>
+يك	َيْكِ	NSuff-ayh	two [gen.] + your [fem.sg.]  <pos>َيْ/NSUFF_MASC_DU_GEN+كِ/POSS_PRON_2FS</pos>
+يكما	َيْكُما	NSuff-ayh	two [gen.] + your [du.]      <pos>َيْ/NSUFF_MASC_DU_GEN+كُما/POSS_PRON_2D</pos>
+يكم	َيْكُم	NSuff-ayh	two [gen.] + your [masc.pl.] <pos>َيْ/NSUFF_MASC_DU_GEN+كُم/POSS_PRON_2MP</pos>
+يكن	َيْكُنَّ	NSuff-ayh	two [gen.] + your [fem.pl.]  <pos>َيْ/NSUFF_MASC_DU_GEN+كُنَّ/POSS_PRON_2FP</pos>
+ي	َيَّ	NSuff-ayh	two [gen.] + my              <pos>َيْ/NSUFF_MASC_DU_GEN+يَ/POSS_PRON_1S</pos>
+ينا	َيْنا	NSuff-ayh	two [gen.] + our             <pos>َيْ/NSUFF_MASC_DU_GEN+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; masc.acc., indef.
+ا	ًا	NSuff-AF	[acc.indef.]               <pos>ًا/CASE_INDEF_ACC</pos>
+ًا	ًا	NSuff-AF	[acc.indef.]               <pos>ًا/CASE_INDEF_ACC</pos>
+َا	ًا	NSuff-AF	[acc.indef.]               <pos>ًا/CASE_INDEF_ACC</pos>
+;
+; ==========
+; "-Ani" masc.du., nom.
+ان	انِ	NSuff-An	two                        <pos>انِ/NSUFF_MASC_DU_NOM</pos>
+ان	انِ	NSuff-An0	 two                       <pos>انِ/NSUFF_MASC_DU_NOM</pos>
+;
+; ==========
+; masc.du., nom., poss.
+ا	ا	NSuff-Ah	two                        <pos>ا/NSUFF_MASC_DU_NOM_POSS</pos>
+ا	ا	NSuff-Ah00	two                        <pos>ا/NSUFF_MASC_DU_NOM_POSS</pos>
+اه	اهُ	NSuff-Ah	two + its/his              <pos>ا/NSUFF_MASC_DU_NOM+هُ/POSS_PRON_3MS</pos>
+اهما	اهُما	NSuff-Ah	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُما/POSS_PRON_3D</pos>
+اهم	اهُم	NSuff-Ah	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُم/POSS_PRON_3MP</pos>
+اها	اها	NSuff-Ah	two + its/their/her        <pos>ا/NSUFF_MASC_DU_NOM+ها/POSS_PRON_3FS</pos>
+اهن	اهُنَّ	NSuff-Ah	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُنَّ/POSS_PRON_3FP</pos>
+اك	اكَ	NSuff-Ah	two + your [masc.sg.]      <pos>ا/NSUFF_MASC_DU_NOM+كَ/POSS_PRON_2MS</pos>
+اك	اكِ	NSuff-Ah	two + your [fem.sg.]       <pos>ا/NSUFF_MASC_DU_NOM+كِ/POSS_PRON_2FS</pos>
+اكما	اكُما	NSuff-Ah	two + your [du.]           <pos>ا/NSUFF_MASC_DU_NOM+كُما/POSS_PRON_2D</pos>
+اكم	اكُم	NSuff-Ah	two + your [masc.pl.]      <pos>ا/NSUFF_MASC_DU_NOM+كُم/POSS_PRON_2MP</pos>
+اكن	اكُنَّ	NSuff-Ah	two + your [fem.pl.]       <pos>ا/NSUFF_MASC_DU_NOM+كُنَّ/POSS_PRON_2FP</pos>
+اي	ايَ	NSuff-Ah	two + my                   <pos>ا/NSUFF_MASC_DU_NOM+يَ/POSS_PRON_1S</pos>
+انا	انا	NSuff-Ah	two + our                  <pos>ا/NSUFF_MASC_DU_NOM+نا/POSS_PRON_1P</pos>
+; ==========
+; fem.pl.
+ات	ات	NSuff-At	          <pos>ات/NSUFF</pos>
+هات	هات	NSuff-At	          <pos>هات/NSUFF</pos>
+;
+;=== case
+ات	اتُ	NSuff-Atu	[fem.pl.] + [def.nom.]           <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM</pos>
+ات	اتِ	NSuff-Ati_acc	[fem.pl.] + [def.acc.]           <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC</pos>
+ات	اتِ	NSuff-Ati_gen	[fem.pl.] + [def.gen.]           <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN</pos>
+ات	اتٌ	NSuff-AtN	[fem.pl.] + [indef.nom.]         <pos>ات/NSUFF_FEM_PL+ٌ/CASE_INDEF_NOM</pos>
+ات	اتٍ	NSuff-AtK_acc	[fem.pl.] + [indef.acc.]         <pos>ات/NSUFF_FEM_PL+ٍ/CASE_INDEF_ACC</pos>
+ات	اتٍ	NSuff-AtK_gen	[fem.pl.] + [indef.gen.]         <pos>ات/NSUFF_FEM_PL+ٍ/CASE_INDEF_GEN</pos>
+; ==========
+; fem.pl., poss. (no case ending)
+;Ath	Ath	NSuff-Ath	its/his              <pos>At/NSUFF+hu/PRN:3MS</pos>
+;AthmA	AthmA	NSuff-Ath	their                <pos>At/NSUFF+humA/PRN:3D</pos>
+;Athm	Athm	NSuff-Ath	their                <pos>At/NSUFF+hum/PRN:3MP</pos>
+;AthA	AthA	NSuff-Ath	its/their/her        <pos>At/NSUFF+hA/PRN:3FS</pos>
+;Athn	Athn~a	NSuff-Ath	their                <pos>At/NSUFF+hun~a/PRN:3FP</pos>
+;Atk	Atka	NSuff-Ath	your     <pos>At/NSUFF+ka/PRN:2MS</pos>
+;Atk	Atki	NSuff-Ath	your     <pos>At/NSUFF+ki/PRN:2FS</pos>
+;AtkmA	AtkumA	NSuff-Ath	your     <pos>At/NSUFF+kumA/PRN:2D</pos>
+;Atkm	Atkum	NSuff-Ath	your     <pos>At/NSUFF+kum/PRN:2MP</pos>
+;Atkn	Atkun~a	NSuff-Ath	your     <pos>At/NSUFF+kun~a/PRN:2FP</pos>
+اتي	اتِي	NSuff-Ath	my                   <pos>ات/NSUFF+ِي/PRN:1S</pos>
+;AtnA	AtnA	NSuff-Ath	our                  <pos>At/NSUFF+nA/PRN:1P</pos>
+;
+;=== case (keep one instance of "Atiy" if you comment out the above set)
+اته	اتُهُ	NSuff-Ath	[fem.pl.] + [def.nom.] + its/his          <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُ/POSS_PRON_3MS</pos>
+اتهما	اتُهُما	NSuff-Ath	[fem.pl.] + [def.nom.] + their            <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُما/POSS_PRON_3D</pos>
+اتهم	اتُهُم	NSuff-Ath	[fem.pl.] + [def.nom.] + their            <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُم/POSS_PRON_3MP</pos>
+اتها	اتُها	NSuff-Ath	[fem.pl.] + [def.nom.] + its/their/her    <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+ها/POSS_PRON_3FS</pos>
+اتهن	اتُهُنَّ	NSuff-Ath	[fem.pl.] + [def.nom.] + their            <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُنَّ/POSS_PRON_3FP</pos>
+اتك	اتُكَ	NSuff-Ath	[fem.pl.] + [def.nom.] + your [masc.sg.]  <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كَ/POSS_PRON_2MS</pos>
+اتك	اتُكِ	NSuff-Ath	[fem.pl.] + [def.nom.] + your [fem.sg.]   <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كِ/POSS_PRON_2FS</pos>
+اتكما	اتُكُما	NSuff-Ath	[fem.pl.] + [def.nom.] + your [du.]       <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُما/POSS_PRON_2D</pos>
+اتكم	اتُكُم	NSuff-Ath	[fem.pl.] + [def.nom.] + your [masc.pl.]  <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُم/POSS_PRON_2MP</pos>
+اتكن	اتُكُنَّ	NSuff-Ath	[fem.pl.] + [def.nom.] + your [fem.pl.]   <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُنَّ/POSS_PRON_2FP</pos>
+اتنا	اتُنا	NSuff-Ath	[fem.pl.] + [def.nom.] + our              <pos>ات/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+نا/POSS_PRON_1P</pos>
+;
+اته	اتُهُ	NSuff-Atuh	its/his          <pos>ات/NSUFF+هُ/PRN:3MS</pos>
+اتهما	اتُهُما	NSuff-Atuh	their            <pos>ات/NSUFF+هُما/PRN:3D</pos>
+اتهم	اتُهُم	NSuff-Atuh	their            <pos>ات/NSUFF+هُم/PRN:3MP</pos>
+اتها	اتُها	NSuff-Atuh	its/their/her    <pos>ات/NSUFF+ها/PRN:3FS</pos>
+اتهن	اتُهُنَّ	NSuff-Atuh	their            <pos>ات/NSUFF+هُنَّ/PRN:3FP</pos>
+اتك	اتُكَ	NSuff-Atuh	your <pos>ات/NSUFF+كَ/PRN:2MS</pos>
+اتك	اتُكِ	NSuff-Atuh	your <pos>ات/NSUFF+كِ/PRN:2FS</pos>
+اتكما	اتُكُما	NSuff-Atuh	your <pos>ات/NSUFF+كُما/PRN:2D</pos>
+اتكم	اتُكُم	NSuff-Atuh	your <pos>ات/NSUFF+كُم/PRN:2MP</pos>
+اتكن	اتُكُنَّ	NSuff-Atuh	your <pos>ات/NSUFF+كُنَّ/PRN:2FP</pos>
+اتنا	اتُنا	NSuff-Atuh	our              <pos>ات/NSUFF+نا/PRN:1P</pos>
+;
+اته	اتِهِ	NSuff-Ath	[fem.pl.] + [def.acc.] + its/his          <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِ/POSS_PRON_3MS</pos>
+اتهما	اتِهِما	NSuff-Ath	[fem.pl.] + [def.acc.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِما/POSS_PRON_3D</pos>
+اتهم	اتِهِم	NSuff-Ath	[fem.pl.] + [def.acc.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِم/POSS_PRON_3MP</pos>
+اتها	اتِها	NSuff-Ath	[fem.pl.] + [def.acc.] + its/their/her    <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+ها/POSS_PRON_3FS</pos>
+اتهن	اتِهِنَّ	NSuff-Ath	[fem.pl.] + [def.acc.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِنَّ/POSS_PRON_3FP</pos>
+اتك	اتِكَ	NSuff-Ath	[fem.pl.] + [def.acc.] + your [masc.sg.]  <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كَ/POSS_PRON_2MS</pos>
+اتك	اتِكِ	NSuff-Ath	[fem.pl.] + [def.acc.] + your [fem.sg.]   <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كِ/POSS_PRON_2FS</pos>
+اتكما	اتِكُما	NSuff-Ath	[fem.pl.] + [def.acc.] + your [du.]       <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُما/POSS_PRON_2D</pos>
+اتكم	اتِكُم	NSuff-Ath	[fem.pl.] + [def.acc.] + your [masc.pl.]  <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُم/POSS_PRON_2MP</pos>
+اتكن	اتِكُنَّ	NSuff-Ath	[fem.pl.] + [def.acc.] + your [fem.pl.]   <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُنَّ/POSS_PRON_2FP</pos>
+اتنا	اتِنا	NSuff-Ath	[fem.pl.] + [def.acc.] + our              <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+نا/POSS_PRON_1P</pos>
+;
+اته	اتِهِ	NSuff-Ath	[fem.pl.] + [def.gen.] + its/his          <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِ/POSS_PRON_3MS</pos>
+اتهما	اتِهِما	NSuff-Ath	[fem.pl.] + [def.gen.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِما/POSS_PRON_3D</pos>
+اتهم	اتِهِم	NSuff-Ath	[fem.pl.] + [def.gen.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِم/POSS_PRON_3MP</pos>
+اتها	اتِها	NSuff-Ath	[fem.pl.] + [def.gen.] + its/their/her    <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+ها/POSS_PRON_3FS</pos>
+اتهن	اتِهِنَّ	NSuff-Ath	[fem.pl.] + [def.gen.] + their            <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِنَّ/POSS_PRON_3FP</pos>
+اتك	اتِكَ	NSuff-Ath	[fem.pl.] + [def.gen.] + your [masc.sg.]  <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كَ/POSS_PRON_2MS</pos>
+اتك	اتِكِ	NSuff-Ath	[fem.pl.] + [def.gen.] + your [fem.sg.]   <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كِ/POSS_PRON_2FS</pos>
+اتكما	اتِكُما	NSuff-Ath	[fem.pl.] + [def.gen.] + your [du.]       <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُما/POSS_PRON_2D</pos>
+اتكم	اتِكُم	NSuff-Ath	[fem.pl.] + [def.gen.] + your [masc.pl.]  <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُم/POSS_PRON_2MP</pos>
+اتكن	اتِكُنَّ	NSuff-Ath	[fem.pl.] + [def.gen.] + your [fem.pl.]   <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُنَّ/POSS_PRON_2FP</pos>
+اتنا	اتِنا	NSuff-Ath	[fem.pl.] + [def.gen.] + our              <pos>ات/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+نا/POSS_PRON_1P</pos>
+;
+; fem.pl. for stems ending in >: mn$> -At = mn$|t
+;|t	|t	NSuff-|t	          <pos>At/NSUFF</pos>
+;
+;=== case
+آت	آتُ	NSuff-|tu	[fem.pl.] + [def.nom.]                 <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM</pos>
+آت	آتِ	NSuff-|ti	[fem.pl.] + [def.acc.]                 <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC</pos>
+آت	آتِ	NSuff-|ti	[fem.pl.] + [def.gen.]                 <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN</pos>
+آت	آتٌ	NSuff-|tN	[fem.pl.] + [indef.nom.]                 <pos>آت/NSUFF_FEM_PL+ٌ/CASE_INDEF_NOM</pos>
+آت	آتٍ	NSuff-|tK	[fem.pl.] + [indef.acc.]                 <pos>آت/NSUFF_FEM_PL+ٍ/CASE_INDEF_ACC</pos>
+آت	آتٍ	NSuff-|tK	[fem.pl.] + [indef.gen.]                 <pos>آت/NSUFF_FEM_PL+ٍ/CASE_INDEF_GEN</pos>
+;
+; ==========
+; fem.pl., poss.
+;|th	|th	NSuff-|th	its/his          <pos>|t/NSUFF+hu/PRN:3MS</pos>
+;|thmA	|thmA	NSuff-|th	their            <pos>|t/NSUFF+humA/PRN:3D</pos>
+;|thm	|thm	NSuff-|th	their            <pos>|t/NSUFF+hum/PRN:3MP</pos>
+;|thA	|thA	NSuff-|th	its/their/her    <pos>|t/NSUFF+hA/PRN:3FS</pos>
+;|thn	|thn~a	NSuff-|th	their            <pos>|t/NSUFF+hun~a/PRN:3FP</pos>
+;|tk	|tka	NSuff-|th	your             <pos>|t/NSUFF+ka/PRN:2MS</pos>
+;|tk	|tki	NSuff-|th	your             <pos>|t/NSUFF+ki/PRN:2FS</pos>
+;|tkmA	|tkumA	NSuff-|th	your             <pos>|t/NSUFF+kumA/PRN:2D</pos>
+;|tkm	|tkum	NSuff-|th	your             <pos>|t/NSUFF+kum/PRN:2MP</pos>
+;|tkn	|tkun~a	NSuff-|th	your             <pos>|t/NSUFF+kun~a/PRN:2FP</pos>
+آتي	آتِي	NSuff-|th	[fem.pl.] + my               <pos>آت/NSUFF_FEM_PL+ِي/POSS_PRON_1S</pos>
+;|tnA	|tnA	NSuff-|th	our              <pos>|t/NSUFF+nA/PRN:1P</pos>
+;
+;=== case (keep one instance of "|tiy" if you comment out the above set)
+آته	آتُهُ	NSuff-|th	[fem.pl.] + [nom.] + its/his            <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُ/POSS_PRON_3MS</pos>
+آتهما	آتُهُما	NSuff-|th	[fem.pl.] + [nom.] + their              <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُما/POSS_PRON_3D</pos>
+آتهم	آتُهُم	NSuff-|th	[fem.pl.] + [nom.] + their              <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُم/POSS_PRON_3MP</pos>
+آتها	آتُها	NSuff-|th	[fem.pl.] + [nom.] + its/their/her      <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+ها/POSS_PRON_3FS</pos>
+آتهن	آتُهُنَّ	NSuff-|th	[fem.pl.] + [nom.] + their              <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+هُنَّ/POSS_PRON_3FP</pos>
+آتك	آتُكَ	NSuff-|th	[fem.pl.] + [nom.] + your [masc.sg.]    <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كَ/POSS_PRON_2MS</pos>
+آتك	آتُكِ	NSuff-|th	[fem.pl.] + [nom.] + your [fem.sg.]     <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كِ/POSS_PRON_2FS</pos>
+آتكما	آتُكُما	NSuff-|th	[fem.pl.] + [nom.] + your [du.]         <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُما/POSS_PRON_2D</pos>
+آتكم	آتُكُم	NSuff-|th	[fem.pl.] + [nom.] + your [masc.pl.]    <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُم/POSS_PRON_2MP</pos>
+آتكن	آتُكُنَّ	NSuff-|th	[fem.pl.] + [nom.] + your [fem.pl.]     <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+كُنَّ/POSS_PRON_2FP</pos>
+آتنا	آتُنا	NSuff-|th	[fem.pl.] + [nom.] + our                <pos>آت/NSUFF_FEM_PL+ُ/CASE_DEF_NOM+نا/POSS_PRON_1P</pos>
+;
+آته	آتِهِ	NSuff-|th	[fem.pl.] + [acc.] + its/his            <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِ/POSS_PRON_3MS</pos>
+آتهما	آتِهِما	NSuff-|th	[fem.pl.] + [acc.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِما/POSS_PRON_3D</pos>
+آتهم	آتِهِم	NSuff-|th	[fem.pl.] + [acc.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِم/POSS_PRON_3MP</pos>
+آتها	آتِها	NSuff-|th	[fem.pl.] + [acc.] + its/their/her      <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+ها/POSS_PRON_3FS</pos>
+آتهن	آتِهِنَّ	NSuff-|th	[fem.pl.] + [acc.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+هِنَّ/POSS_PRON_3FP</pos>
+آتك	آتِكَ	NSuff-|th	[fem.pl.] + [acc.] + your [masc.sg.]    <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كَ/POSS_PRON_2MS</pos>
+آتك	آتِكِ	NSuff-|th	[fem.pl.] + [acc.] + your [fem.sg.]     <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كِ/POSS_PRON_2FS</pos>
+آتكما	آتِكُما	NSuff-|th	[fem.pl.] + [acc.] + your [du.]         <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُما/POSS_PRON_2D</pos>
+آتكم	آتِكُم	NSuff-|th	[fem.pl.] + [acc.] + your [masc.pl.]    <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُم/POSS_PRON_2MP</pos>
+آتكن	آتِكُنَّ	NSuff-|th	[fem.pl.] + [acc.] + your [fem.pl.]     <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+كُنَّ/POSS_PRON_2FP</pos>
+آتنا	آتِنا	NSuff-|th	[fem.pl.] + [acc.] + our                <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_ACC+نا/POSS_PRON_1P</pos>
+;
+آته	آتِهِ	NSuff-|th	[fem.pl.] + [gen.] + its/his            <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِ/POSS_PRON_3MS</pos>
+آتهما	آتِهِما	NSuff-|th	[fem.pl.] + [gen.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِما/POSS_PRON_3D</pos>
+آتهم	آتِهِم	NSuff-|th	[fem.pl.] + [gen.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِم/POSS_PRON_3MP</pos>
+آتها	آتِها	NSuff-|th	[fem.pl.] + [gen.] + its/their/her      <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+ها/POSS_PRON_3FS</pos>
+آتهن	آتِهِنَّ	NSuff-|th	[fem.pl.] + [gen.] + their              <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+هِنَّ/POSS_PRON_3FP</pos>
+آتك	آتِكَ	NSuff-|th	[fem.pl.] + [gen.] + your [masc.sg.]    <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كَ/POSS_PRON_2MS</pos>
+آتك	آتِكِ	NSuff-|th	[fem.pl.] + [gen.] + your [fem.sg.]     <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كِ/POSS_PRON_2FS</pos>
+آتكما	آتِكُما	NSuff-|th	[fem.pl.] + [gen.] + your [du.]         <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُما/POSS_PRON_2D</pos>
+آتكم	آتِكُم	NSuff-|th	[fem.pl.] + [gen.] + your [masc.pl.]    <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُم/POSS_PRON_2MP</pos>
+آتكن	آتِكُنَّ	NSuff-|th	[fem.pl.] + [gen.] + your [fem.pl.]     <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+كُنَّ/POSS_PRON_2FP</pos>
+آتنا	آتِنا	NSuff-|th	[fem.pl.] + [gen.] + our                <pos>آت/NSUFF_FEM_PL+ِ/CASE_DEF_GEN+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; poss.pron (does not include "-iy")
+ه	هُ	NSuff-h	its/his                    <pos>هُ/PRN:3MS</pos>
+هما	هُما	NSuff-h	their                      <pos>هُما/PRN:3D</pos>
+هم	هُم	NSuff-h	their                      <pos>هُم/PRN:3MP</pos>
+ها	ها	NSuff-h	its/their/her              <pos>ها/PRN:3FS</pos>
+هن	هُنَّ	NSuff-h	their                      <pos>هُنَّ/PRN:3FP</pos>
+ك	كَ	NSuff-h	your           <pos>كَ/PRN:2MS</pos>
+ك	كِ	NSuff-h	your      <pos>كِ/PRN:2FS</pos>
+كما	كُما	NSuff-h	your      <pos>كُما/PRN:2D</pos>
+كم	كُم	NSuff-h	your      <pos>كُم/PRN:2MP</pos>
+كن	كُنَّ	NSuff-h	your      <pos>كُنَّ/PRN:2FP</pos>
+نا	نا	NSuff-h	our                        <pos>نا/PRN:1P</pos>
+;
+; vowel harmony forms (preceeded by finally weak _iy: __iy+hi)
+ه	هِ	NSuff-hi	its/his                    <pos>هِ/PRN:3MS</pos>
+هما	هِما	NSuff-hi	their                      <pos>هِما/PRN:3D</pos>
+هم	هِم	NSuff-hi	their                      <pos>هِم/PRN:3MP</pos>
+ها	ها	NSuff-hi	its/their/her              <pos>ها/PRN:3FS</pos>
+هن	هِنَّ	NSuff-hi	their                      <pos>هِنَّ/PRN:3FP</pos>
+ك	كَ	NSuff-hi	your           <pos>كَ/PRN:2MS</pos>
+ك	كِ	NSuff-hi	your      <pos>كِ/PRN:2FS</pos>
+كما	كُما	NSuff-hi	your      <pos>كُما/PRN:2D</pos>
+كم	كُم	NSuff-hi	your      <pos>كُم/PRN:2MP</pos>
+كن	كُنَّ	NSuff-hi	your      <pos>كُنَّ/PRN:2FP</pos>
+نا	نا	NSuff-hi	our                        <pos>نا/PRN:1P</pos>
+;
+; vowel harmony forms (preceeded by finally weak _iy: __iy+hi)
+ه	هِ	NSuff-hip	its/his                    <pos>هِ/PRN:3MS</pos>
+هما	هِما	NSuff-hip	their                      <pos>هِما/PRN:3D</pos>
+هم	هِم	NSuff-hip	their                      <pos>هِم/PRN:3MP</pos>
+ها	ها	NSuff-hip	its/their/her              <pos>ها/PRN:3FS</pos>
+هن	هِنَّ	NSuff-hip	their                      <pos>هِنَّ/PRN:3FP</pos>
+ك	كَ	NSuff-hip	your           <pos>كَ/PRN:2MS</pos>
+ك	كِ	NSuff-hip	your      <pos>كِ/PRN:2FS</pos>
+كما	كُما	NSuff-hip	your      <pos>كُما/PRN:2D</pos>
+كم	كُم	NSuff-hip	your      <pos>كُم/PRN:2MP</pos>
+كن	كُنَّ	NSuff-hip	your      <pos>كُنَّ/PRN:2FP</pos>
+نا	نا	NSuff-hip	our                        <pos>نا/PRN:1P</pos>
+نا	نا	NSuff-nA	our                        <pos>نا/PRN:1P</pos>
+ه	هُ	NSuff-ha	its/his                    <pos>هُ/PRN:3MS</pos>
+هما	هُما	NSuff-ha	their                      <pos>هُما/PRN:3D</pos>
+هم	هُم	NSuff-ha	their                      <pos>هُم/PRN:3MP</pos>
+ها	ها	NSuff-ha	its/their/her              <pos>ها/PRN:3FS</pos>
+هن	هُنَّ	NSuff-ha	their                      <pos>هُنَّ/PRN:3FP</pos>
+ك	كَ	NSuff-ha	your           <pos>كَ/PRN:2MS</pos>
+ك	كِ	NSuff-ha	your      <pos>كِ/PRN:2FS</pos>
+كما	كُما	NSuff-ha	your      <pos>كُما/PRN:2D</pos>
+كم	كُم	NSuff-ha	your      <pos>كُم/PRN:2MP</pos>
+كن	كُنَّ	NSuff-ha	your      <pos>كُنَّ/PRN:2FP</pos>
+نا	نا	NSuff-ha	our                        <pos>نا/PRN:1P</pos>
+;
+;=== case
+ه	ُهُ	NSuff-uh	[def.nom] + its/his                    <pos>ُ/CASE_DEF_NOM+هُ/POSS_PRON_3MS</pos>
+هما	ُهُما	NSuff-uh	[def.nom] + their                      <pos>ُ/CASE_DEF_NOM+هُما/POSS_PRON_3D</pos>
+هم	ُهُم	NSuff-uh	[def.nom] + their                      <pos>ُ/CASE_DEF_NOM+هُم/POSS_PRON_3MP</pos>
+ها	ُها	NSuff-uh	[def.nom] + its/their/her              <pos>ُ/CASE_DEF_NOM+ها/POSS_PRON_3FS</pos>
+هن	ُهُنَّ	NSuff-uh	[def.nom] + their                      <pos>ُ/CASE_DEF_NOM+هُنَّ/POSS_PRON_3FP</pos>
+ك	ُكَ	NSuff-uh	[def.nom] + your [masc.sg.]            <pos>ُ/CASE_DEF_NOM+كَ/POSS_PRON_2MS</pos>
+ك	ُكِ	NSuff-uh	[def.nom] + your [fem.sg.]             <pos>ُ/CASE_DEF_NOM+كِ/POSS_PRON_2FS</pos>
+كما	ُكُما	NSuff-uh	[def.nom] + your [du.]                 <pos>ُ/CASE_DEF_NOM+كُما/POSS_PRON_2D</pos>
+كم	ُكُم	NSuff-uh	[def.nom] + your [masc.pl.]            <pos>ُ/CASE_DEF_NOM+كُم/POSS_PRON_2MP</pos>
+كن	ُكُنَّ	NSuff-uh	[def.nom] + your [fem.pl.]             <pos>ُ/CASE_DEF_NOM+كُنَّ/POSS_PRON_2FP</pos>
+نا	ُنا	NSuff-uh	[def.nom] + our                        <pos>ُ/CASE_DEF_NOM+نا/POSS_PRON_1P</pos>
+;
+ه	َهُ	NSuff-ah	[def.acc.] + its/his                    <pos>َ/CASE_DEF_ACC+هُ/POSS_PRON_3MS</pos>
+هما	َهُما	NSuff-ah	[def.acc.] + their                      <pos>َ/CASE_DEF_ACC+هُما/POSS_PRON_3D</pos>
+هم	َهُم	NSuff-ah	[def.acc.] + their                      <pos>َ/CASE_DEF_ACC+هُم/POSS_PRON_3MP</pos>
+ها	َها	NSuff-ah	[def.acc.] + its/their/her              <pos>َ/CASE_DEF_ACC+ها/POSS_PRON_3FS</pos>
+هن	َهُنَّ	NSuff-ah	[def.acc.] + their                      <pos>َ/CASE_DEF_ACC+هُنَّ/POSS_PRON_3FP</pos>
+ك	َكَ	NSuff-ah	[def.acc.] + your [masc.sg.]            <pos>َ/CASE_DEF_ACC+كَ/POSS_PRON_2MS</pos>
+ك	َكِ	NSuff-ah	[def.acc.] + your [fem.sg.]             <pos>َ/CASE_DEF_ACC+كِ/POSS_PRON_2FS</pos>
+كما	َكُما	NSuff-ah	[def.acc.] + your [du.]                 <pos>َ/CASE_DEF_ACC+كُما/POSS_PRON_2D</pos>
+كم	َكُم	NSuff-ah	[def.acc.] + your [masc.pl.]            <pos>َ/CASE_DEF_ACC+كُم/POSS_PRON_2MP</pos>
+كن	َكُنَّ	NSuff-ah	[def.acc.] + your [fem.pl.]             <pos>َ/CASE_DEF_ACC+كُنَّ/POSS_PRON_2FP</pos>
+نا	َنا	NSuff-ah	[def.acc.] + our                        <pos>َ/CASE_DEF_ACC+نا/POSS_PRON_1P</pos>
+;
+ه	ِهِ	NSuff-ih	[def.gen.] + its/his                    <pos>ِ/CASE_DEF_GEN+هِ/POSS_PRON_3MS</pos>
+هما	ِهِما	NSuff-ih	[def.gen.] + their                      <pos>ِ/CASE_DEF_GEN+هِما/POSS_PRON_3D</pos>
+هم	ِهِم	NSuff-ih	[def.gen.] + their                      <pos>ِ/CASE_DEF_GEN+هِم/POSS_PRON_3MP</pos>
+ها	ِها	NSuff-ih	[def.gen.] + its/their/her              <pos>ِ/CASE_DEF_GEN+ها/POSS_PRON_3FS</pos>
+هن	ِهِنَّ	NSuff-ih	[def.gen.] + their                      <pos>ِ/CASE_DEF_GEN+هِنَّ/POSS_PRON_3FP</pos>
+ك	ِكَ	NSuff-ih	[def.gen.] + your [masc.sg.]            <pos>ِ/CASE_DEF_GEN+كَ/POSS_PRON_2MS</pos>
+ك	ِكِ	NSuff-ih	[def.gen.] + your [fem.sg.]             <pos>ِ/CASE_DEF_GEN+كِ/POSS_PRON_2FS</pos>
+كما	ِكُما	NSuff-ih	[def.gen.] + your [du.]                 <pos>ِ/CASE_DEF_GEN+كُما/POSS_PRON_2D</pos>
+كم	ِكُم	NSuff-ih	[def.gen.] + your [masc.pl.]            <pos>ِ/CASE_DEF_GEN+كُم/POSS_PRON_2MP</pos>
+كن	ِكُنَّ	NSuff-ih	[def.gen.] + your [fem.pl.]             <pos>ِ/CASE_DEF_GEN+كُنَّ/POSS_PRON_2FP</pos>
+نا	ِنا	NSuff-ih	[def.gen.] + our                        <pos>ِ/CASE_DEF_GEN+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; masc.pl., gen./acc.
+ين	ِينَ	NSuff-iyna_acc	[masc.pl.acc.]             <pos>ِينَ/NSUFF_MASC_PL_ACC</pos>
+ين	ِينَ	NSuff-iyna_gen	[masc.pl.gen.]             <pos>ِينَ/NSUFF_MASC_PL_GEN</pos>
+;
+; ========== 
+; masc.pl., gen./acc., poss.
+ي	ِي	NSuff-iyh	[masc.pl.acc.]                    <pos>ِي/NSUFF_MASC_PL_ACC_POSS</pos>
+يه	ِيهِ	NSuff-iyh	[masc.pl.acc.] + his;its          <pos>ِي/NSUFF_MASC_PL_ACC+هِ/POSS_PRON_3MS</pos>
+يهما	ِيهِما	NSuff-iyh	[masc.pl.acc.] + their            <pos>ِي/NSUFF_MASC_PL_ACC+هِما/POSS_PRON_3D</pos>
+يهم	ِيهِم	NSuff-iyh	[masc.pl.acc.] + their            <pos>ِي/NSUFF_MASC_PL_ACC+هِم/POSS_PRON_3MP</pos>
+يها	ِيها	NSuff-iyh	[masc.pl.acc.] + its;their;her    <pos>ِي/NSUFF_MASC_PL_ACC+ها/POSS_PRON_3FS</pos>
+يهن	ِيهِنَّ	NSuff-iyh	[masc.pl.acc.] + their            <pos>ِي/NSUFF_MASC_PL_ACC+هِنَّ/POSS_PRON_3FP</pos>
+يك	ِيكَ	NSuff-iyh	[masc.pl.acc.] + your [masc.sg.]  <pos>ِي/NSUFF_MASC_PL_ACC+كَ/POSS_PRON_2MS</pos>
+يك	ِيكِ	NSuff-iyh	[masc.pl.acc.] + your [fem.sg.]   <pos>ِي/NSUFF_MASC_PL_ACC+كِ/POSS_PRON_2FS</pos>
+يكما	ِيكُما	NSuff-iyh	[masc.pl.acc.] + your [du.]       <pos>ِي/NSUFF_MASC_PL_ACC+كُما/POSS_PRON_2D</pos>
+يكم	ِيكُم	NSuff-iyh	[masc.pl.acc.] + your [masc.pl.]  <pos>ِي/NSUFF_MASC_PL_ACC+كُم/POSS_PRON_2MP</pos>
+يكن	ِيكُنَّ	NSuff-iyh	[masc.pl.acc.] + your [fem.pl.]   <pos>ِي/NSUFF_MASC_PL_ACC+كُنَّ/POSS_PRON_2FP</pos>
+ي	ِيَّ	NSuff-iyh	[masc.pl.acc.] + my               <pos>ِي/NSUFF_MASC_PL_ACC+يَ/POSS_PRON_1S</pos>
+ينا	ِينا	NSuff-iyh	[masc.pl.acc.] + our              <pos>ِي/NSUFF_MASC_PL_ACC+نا/POSS_PRON_1P</pos>
+;
+ي	ِي	NSuff-iyh	[masc.pl.gen.]                    <pos>ِي/NSUFF_MASC_PL_GEN_POSS</pos>
+يه	ِيهِ	NSuff-iyh	[masc.pl.gen.] + his;its          <pos>ِي/NSUFF_MASC_PL_GEN+هِ/POSS_PRON_3MS</pos>
+يهما	ِيهِما	NSuff-iyh	[masc.pl.gen.] + their            <pos>ِي/NSUFF_MASC_PL_GEN+هِما/POSS_PRON_3D</pos>
+يهم	ِيهِم	NSuff-iyh	[masc.pl.gen.] + their            <pos>ِي/NSUFF_MASC_PL_GEN+هِم/POSS_PRON_3MP</pos>
+يها	ِيها	NSuff-iyh	[masc.pl.gen.] + its;their;her    <pos>ِي/NSUFF_MASC_PL_GEN+ها/POSS_PRON_3FS</pos>
+يهن	ِيهِنَّ	NSuff-iyh	[masc.pl.gen.] + their            <pos>ِي/NSUFF_MASC_PL_GEN+هِنَّ/POSS_PRON_3FP</pos>
+يك	ِيكَ	NSuff-iyh	[masc.pl.gen.] + your [masc.sg.]  <pos>ِي/NSUFF_MASC_PL_GEN+كَ/POSS_PRON_2MS</pos>
+يك	ِيكِ	NSuff-iyh	[masc.pl.gen.] + your [fem.sg.]   <pos>ِي/NSUFF_MASC_PL_GEN+كِ/POSS_PRON_2FS</pos>
+يكما	ِيكُما	NSuff-iyh	[masc.pl.gen.] + your [du.]       <pos>ِي/NSUFF_MASC_PL_GEN+كُما/POSS_PRON_2D</pos>
+يكم	ِيكُم	NSuff-iyh	[masc.pl.gen.] + your [masc.pl.]  <pos>ِي/NSUFF_MASC_PL_GEN+كُم/POSS_PRON_2MP</pos>
+يكن	ِيكُنَّ	NSuff-iyh	[masc.pl.gen.] + your [fem.pl.]   <pos>ِي/NSUFF_MASC_PL_GEN+كُنَّ/POSS_PRON_2FP</pos>
+ي	ِيَّ	NSuff-iyh	[masc.pl.gen.] + my               <pos>ِي/NSUFF_MASC_PL_GEN+يَ/POSS_PRON_1S</pos>
+ينا	ِينا	NSuff-iyh	[masc.pl.gen.] + our              <pos>ِي/NSUFF_MASC_PL_GEN+نا/POSS_PRON_1P</pos>
+;
+; ==========
+; 1st person pos.pron.
+ي	ِي	NSuff-iy	my                         <pos>ِي/POSS_PRON_1S</pos>
+ي	ِي	NSuff-iyp	my                         <pos>ِي/POSS_PRON_1S</pos>
+; EaSA+ya
+ي	يَ	NSuff-ya	my                         <pos>يَ/POSS_PRON_1S</pos>
+; ==========
+; "-Ani" as |-ni: maboda|-ni
+ن	نِ	NSuff-|-ni	two                        <pos>انِ/NSUFF_MASC_DU_NOM</pos>
+;
+		NSuff-|h	two                        <pos>ا/NSUFF_MASC_DU_NOM_POSS</pos>
+ه	هُ	NSuff-|h	two + its/his              <pos>ا/NSUFF_MASC_DU_NOM+هُ/POSS_PRON_3MS</pos>
+هما	هُما	NSuff-|h	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُما/POSS_PRON_3D</pos>
+هم	هُم	NSuff-|h	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُم/POSS_PRON_3MP</pos>
+ها	ها	NSuff-|h	two + its/their/her        <pos>ا/NSUFF_MASC_DU_NOM+ها/POSS_PRON_3FS</pos>
+هن	هُنَّ	NSuff-|h	two + their                <pos>ا/NSUFF_MASC_DU_NOM+هُنَّ/POSS_PRON_3FP</pos>
+ك	كَ	NSuff-|h	two + your [masc.sg.]      <pos>ا/NSUFF_MASC_DU_NOM+كَ/POSS_PRON_2MS</pos>
+ك	كِ	NSuff-|h	two + your [fem.sg.]       <pos>ا/NSUFF_MASC_DU_NOM+كِ/POSS_PRON_2FS</pos>
+كما	كُما	NSuff-|h	two + your [du.]           <pos>ا/NSUFF_MASC_DU_NOM+كُما/POSS_PRON_2D</pos>
+كم	كُم	NSuff-|h	two + your [masc.pl.]      <pos>ا/NSUFF_MASC_DU_NOM+كُم/POSS_PRON_2MP</pos>
+كن	كُنَّ	NSuff-|h	two + your [fem.pl.]       <pos>ا/NSUFF_MASC_DU_NOM+كُنَّ/POSS_PRON_2FP</pos>
+ي	يَ	NSuff-|h	two + my                   <pos>ا/NSUFF_MASC_DU_NOM+يَ/POSS_PRON_1S</pos>
+نا	نا	NSuff-|h	two + our                  <pos>ا/NSUFF_MASC_DU_NOM+نا/POSS_PRON_1P</pos>
+; ==========
+; masc.pl., nom.
+ون	ُونَ	NSuff-wn	[masc.pl.]                   <pos>ُونَ/NSUFF_MASC_PL_NOM</pos>
+;
+; ==========
+; masc.pl., nom., poss.
+و	ُو	NSuff-wh	[masc.pl.]                   <pos>ُو/NSUFF_MASC_PL_NOM_POSS</pos>
+وه	ُوهُ	NSuff-wh	[masc.pl.] + his;its         <pos>ُو/NSUFF_MASC_PL_NOM+هُ/POSS_PRON_3MS</pos>
+وهما	ُوهُما	NSuff-wh	[masc.pl.] + their           <pos>ُو/NSUFF_MASC_PL_NOM+هُما/POSS_PRON_3D</pos>
+وهم	ُوهُم	NSuff-wh	[masc.pl.] + their           <pos>ُو/NSUFF_MASC_PL_NOM+هُم/POSS_PRON_3MP</pos>
+وها	ُوها	NSuff-wh	[masc.pl.] + its;their;her   <pos>ُو/NSUFF_MASC_PL_NOM+ها/POSS_PRON_3FS</pos>
+وهن	ُوهُنَّ	NSuff-wh	[masc.pl.] + their           <pos>ُو/NSUFF_MASC_PL_NOM+هُنَّ/POSS_PRON_3FP</pos>
+وك	ُوكَ	NSuff-wh	[masc.pl.] + your [masc.sg.] <pos>ُو/NSUFF_MASC_PL_NOM+كَ/POSS_PRON_2MS</pos>
+وك	ُوكِ	NSuff-wh	[masc.pl.] + your [fem.sg.]  <pos>ُو/NSUFF_MASC_PL_NOM+كِ/POSS_PRON_2FS</pos>
+وكما	ُوكُما	NSuff-wh	[masc.pl.] + your [du.]      <pos>ُو/NSUFF_MASC_PL_NOM+كُما/POSS_PRON_2D</pos>
+وكم	ُوكُم	NSuff-wh	[masc.pl.] + your [masc.pl.] <pos>ُو/NSUFF_MASC_PL_NOM+كُم/POSS_PRON_2MP</pos>
+وكن	ُوكُنَّ	NSuff-wh	[masc.pl.] + your [fem.pl.]  <pos>ُو/NSUFF_MASC_PL_NOM+كُنَّ/POSS_PRON_2FP</pos>
+ي	ِيَّ	NSuff-wh	[masc.pl.] + my              <pos>ِي/NSUFF_MASC_PL_NOM+َّ/POSS_PRON_1S</pos>
+ونا	ُونا	NSuff-wh	[masc.pl.] + our             <pos>ُو/NSUFF_MASC_PL_NOM+نا/POSS_PRON_1P</pos>
+;
+; =====================================================================
+; PERFECT VERB SUFFIXES
+; =====================================================================
+; ==========
+; perfect verb DO pron.: Subject is +a 3rd pers.masc.sg, and what remains is the Direct Object
+; (this category is incompatible with any PV stem marked as intransitive)
+;
+ه	َهُ	PVSuff-ah	he/it + it/him         <pos>َ/PVSUFF_SUBJ:3MS+هُ/PRN:3MS</pos>
+هما	َهُما	PVSuff-ah	he/it + them (both)    <pos>َ/PVSUFF_SUBJ:3MS+هُما/PRN:3D</pos>
+هم	َهُم	PVSuff-ah	he/it + them           <pos>َ/PVSUFF_SUBJ:3MS+هُم/PRN:3MP</pos>
+ها	َها	PVSuff-ah	he/it + it/them/her    <pos>َ/PVSUFF_SUBJ:3MS+ها/PRN:3FS</pos>
+هن	َهُنَّ	PVSuff-ah	he/it + them           <pos>َ/PVSUFF_SUBJ:3MS+هُنَّ/PRN:3FP</pos>
+ك	َكَ	PVSuff-ah	he/it + you <pos>َ/PVSUFF_SUBJ:3MS+كَ/PRN:2MS</pos>
+ك	َكِ	PVSuff-ah	he/it + you            <pos>َ/PVSUFF_SUBJ:3MS+كِ/PRN:2FS</pos>
+كما	َكُما	PVSuff-ah	he/it + you (both)     <pos>َ/PVSUFF_SUBJ:3MS+كُما/PRN:2D</pos>
+كم	َكُم	PVSuff-ah	he/it + you            <pos>َ/PVSUFF_SUBJ:3MS+كُم/PRN:2MP</pos>
+كن	َكُنَّ	PVSuff-ah	he/it + you            <pos>َ/PVSUFF_SUBJ:3MS+كُنَّ/PRN:2FP</pos>
+ني	َنِي	PVSuff-ah	he/it + me             <pos>َ/PVSUFF_SUBJ:3MS+نِي/PRN:1S</pos>
+نا	َنا	PVSuff-ah	he/it + us             <pos>َ/PVSUFF_SUBJ:3MS+نا/PRN:1P</pos>
+;
+; ==========
+; perfect verb, suffix begins with consonant "n" so it elides with stems
+; ending in "n" (e.g. kun-~A, rather than kun-nA). Also, as a consonant,
+; it goes only with short stem of hollow verbs (e.g. qul+na qul+nA)
+ن	ْنَ	PVSuff-n	they [fem.pl.]      <pos>نَ/PVSUFF_SUBJ:3FP</pos>
+نا	ْنا	PVSuff-n	we                  <pos>نا/PVSUFF_SUBJ:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+	َّ	PVSuff-~n	they [fem.pl.]      <pos>نَ/PVSUFF_SUBJ:3FP</pos>
+ا	ّا	PVSuff-~n	we                  <pos>نا/PVSUFF_SUBJ:1P</pos>
+;
+; ==========
+; perfect verb suffixes that begin with consonant "n" + DO
+; (these are incompatible with intrans. verbs)
+نه	ْنَهُ	PVSuff-nh	they + it/him                              <pos>نَ/PVSUFF_SUBJ:3FP+هُ/PRN:3MS</pos>
+نهما	ْنَهُما	PVSuff-nh	they + (both of) them                      <pos>نَ/PVSUFF_SUBJ:3FP+هُما/PRN:3D</pos>
+نهم	ْنَهُم	PVSuff-nh	they + them                                <pos>نَ/PVSUFF_SUBJ:3FP+هُم/PRN:3MP</pos>
+نها	ْنَها	PVSuff-nh	they + it/them/her                         <pos>نَ/PVSUFF_SUBJ:3FP+ها/PRN:3FS</pos>
+نهن	ْنَهُنَّ	PVSuff-nh	they + them                                <pos>نَ/PVSUFF_SUBJ:3FP+هُنَّ/PRN:3FP</pos>
+نك	ْنَكَ	PVSuff-nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كَ/PRN:2MS</pos>
+نك	ْنَكِ	PVSuff-nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كِ/PRN:2FS</pos>
+نكما	ْنَكُما	PVSuff-nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُما/PRN:2D</pos>
+نكم	ْنَكُم	PVSuff-nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُم/PRN:2MP</pos>
+نكن	ْنَكُنَّ	PVSuff-nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُنَّ/PRN:2FP</pos>
+نني	ْنَنِي	PVSuff-nh	they + me                                  <pos>نَ/PVSUFF_SUBJ:3FP+نِي/PRN:1S</pos>
+ننا	ْنَنا	PVSuff-nh	they + us                                  <pos>نَ/PVSUFF_SUBJ:3FP+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ه	َّهُ	PVSuff-~nh	they + it/him                              <pos>نَ/PVSUFF_SUBJ:3FP+هُ/PRN:3MS</pos>
+هما	َّهُما	PVSuff-~nh	they + (both of) them                      <pos>نَ/PVSUFF_SUBJ:3FP+هُما/PRN:3D</pos>
+هم	َّهُم	PVSuff-~nh	they + them                                <pos>نَ/PVSUFF_SUBJ:3FP+هُم/PRN:3MP</pos>
+ها	َّها	PVSuff-~nh	they + it/them/her                         <pos>نَ/PVSUFF_SUBJ:3FP+ها/PRN:3FS</pos>
+هن	َّهُنَّ	PVSuff-~nh	they + them                                <pos>نَ/PVSUFF_SUBJ:3FP+هُنَّ/PRN:3FP</pos>
+ك	َّكَ	PVSuff-~nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كَ/PRN:2MS</pos>
+ك	َّكِ	PVSuff-~nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كِ/PRN:2FS</pos>
+كما	َّكُما	PVSuff-~nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُما/PRN:2D</pos>
+كم	َّكُم	PVSuff-~nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُم/PRN:2MP</pos>
+كن	َّكُنَّ	PVSuff-~nh	they + you                                 <pos>نَ/PVSUFF_SUBJ:3FP+كُنَّ/PRN:2FP</pos>
+ني	َّنِي	PVSuff-~nh	they + me                                  <pos>نَ/PVSUFF_SUBJ:3FP+نِي/PRN:1S</pos>
+نا	َّنا	PVSuff-~nh	they + us                                  <pos>نَ/PVSUFF_SUBJ:3FP+نا/PRN:1P</pos>
+;===========
+ناه	ْناهُ	PVSuff-nh	we + it/him                                <pos>نا/PVSUFF_SUBJ:1P+هُ/PRN:3MS</pos>
+ناهما	ْناهُما	PVSuff-nh	we + (both of) them                        <pos>نا/PVSUFF_SUBJ:1P+هُما/PRN:3D</pos>
+ناهم	ْناهُم	PVSuff-nh	we + them                                  <pos>نا/PVSUFF_SUBJ:1P+هُم/PRN:3MP</pos>
+ناها	ْناها	PVSuff-nh	we + it/them/her                           <pos>نا/PVSUFF_SUBJ:1P+ها/PRN:3FS</pos>
+ناهن	ْناهُنَّ	PVSuff-nh	we + them                                  <pos>نا/PVSUFF_SUBJ:1P+هُنَّ/PRN:3FP</pos>
+ناك	ْناكَ	PVSuff-nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كَ/PRN:2MS</pos>
+ناك	ْناكِ	PVSuff-nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كِ/PRN:2FS</pos>
+ناكما	ْناكُما	PVSuff-nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُما/PRN:2D</pos>
+ناكم	ْناكُم	PVSuff-nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُم/PRN:2MP</pos>
+ناكن	ْناكُنَّ	PVSuff-nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُنَّ/PRN:2FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+اه	ّاهُ	PVSuff-~nh	we + it/him                                <pos>نا/PVSUFF_SUBJ:1P+هُ/PRN:3MS</pos>
+اهما	ّاهُما	PVSuff-~nh	we + (both of) them                        <pos>نا/PVSUFF_SUBJ:1P+هُما/PRN:3D</pos>
+اهم	ّاهُم	PVSuff-~nh	we + them                                  <pos>نا/PVSUFF_SUBJ:1P+هُم/PRN:3MP</pos>
+اها	ّاها	PVSuff-~nh	we + it/them/her                           <pos>نا/PVSUFF_SUBJ:1P+ها/PRN:3FS</pos>
+اهن	ّاهُنَّ	PVSuff-~nh	we + them                                  <pos>نا/PVSUFF_SUBJ:1P+هُنَّ/PRN:3FP</pos>
+اك	ّاكَ	PVSuff-~nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كَ/PRN:2MS</pos>
+اك	ّاكِ	PVSuff-~nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كِ/PRN:2FS</pos>
+اكما	ّاكُما	PVSuff-~nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُما/PRN:2D</pos>
+اكم	ّاكُم	PVSuff-~nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُم/PRN:2MP</pos>
+اكن	ّاكُنَّ	PVSuff-~nh	we + you                                   <pos>نا/PVSUFF_SUBJ:1P+كُنَّ/PRN:2FP</pos>
+;
+; ==========
+; perfect verb suffixes that begin with the consonant "t", which elides with verb stems ending in "t" (e.g. >avobat+tu).
+; Also, as a consonant, it attaches only to short-stem form of hollow verbs:
+;  e.g. qul+tu, qul+ta, qul+ti, qul+tumA, qul+tun~a, qul+tum
+ت	ْتُ	PVSuff-t	I                            <pos>تُ/PVSUFF_SUBJ:1S</pos>
+ت	ْتَ	PVSuff-t	you               <pos>تَ/PVSUFF_SUBJ:2MS</pos>
+ت	ْتِ	PVSuff-t	you [fem.sg.]                <pos>تِ/PVSUFF_SUBJ:2FS</pos>
+تما	ْتُما	PVSuff-t	you [du.]                    <pos>تُما/PVSUFF_SUBJ:2D</pos>
+تم	ْتُم	PVSuff-t	you               <pos>تُم/PVSUFF_SUBJ:2MP</pos>
+تن	ْتُنَّ	PVSuff-t	you [fem.pl.]                <pos>تُنَّ/PVSUFF_SUBJ:2FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+	ُّ	PVSuff-~t	I                            <pos>تُ/PVSUFF_SUBJ:1S</pos>
+	َّ	PVSuff-~t	you               <pos>تَ/PVSUFF_SUBJ:2MS</pos>
+	ِّ	PVSuff-~t	you [fem.sg.]                <pos>تِ/PVSUFF_SUBJ:2FS</pos>
+ما	ُّما	PVSuff-~t	you [du.]                    <pos>تُما/PVSUFF_SUBJ:2D</pos>
+م	ُّم	PVSuff-~t	you               <pos>تُم/PVSUFF_SUBJ:2MP</pos>
+ن	ُّنَّ	PVSuff-~t	you [fem.pl.]                <pos>تُنَّ/PVSUFF_SUBJ:2FP</pos>
+;
+; ==========
+; perfect verb suffixes that begin with consonant "t" + DO
+ته	ْتُهُ	PVSuff-th	I + it/him                     <pos>تُ/PVSUFF_SUBJ:1S+هُ/PRN:3MS</pos>
+تهما	ْتُهُما	PVSuff-th	I + them (both)                <pos>تُ/PVSUFF_SUBJ:1S+هُما/PRN:3D</pos>
+تهم	ْتُهُم	PVSuff-th	I + them                       <pos>تُ/PVSUFF_SUBJ:1S+هُم/PRN:3MP</pos>
+تها	ْتُها	PVSuff-th	I + it/them/her                <pos>تُ/PVSUFF_SUBJ:1S+ها/PRN:3FS</pos>
+تهن	ْتُهُنَّ	PVSuff-th	I + them                       <pos>تُ/PVSUFF_SUBJ:1S+هُنَّ/PRN:3FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ه	ُّهُ	PVSuff-~th	I + it/him                     <pos>تُ/PVSUFF_SUBJ:1S+هُ/PRN:3MS</pos>
+هما	ُّهُما	PVSuff-~th	I + them (both)                <pos>تُ/PVSUFF_SUBJ:1S+هُما/PRN:3D</pos>
+هم	ُّهُم	PVSuff-~th	I + them                       <pos>تُ/PVSUFF_SUBJ:1S+هُم/PRN:3MP</pos>
+ها	ُّها	PVSuff-~th	I + it/them/her                <pos>تُ/PVSUFF_SUBJ:1S+ها/PRN:3FS</pos>
+هن	ُّهُنَّ	PVSuff-~th	I + them                       <pos>تُ/PVSUFF_SUBJ:1S+هُنَّ/PRN:3FP</pos>
+; ==========
+ته	ْتَهُ	PVSuff-th	you + it/him                               <pos>تَ/PVSUFF_SUBJ:2MS+هُ/PRN:3MS</pos>
+تهما	ْتَهُما	PVSuff-th	you + them (both)                          <pos>تَ/PVSUFF_SUBJ:2MS+هُما/PRN:3D</pos>
+تهم	ْتَهُم	PVSuff-th	you + them                                 <pos>تَ/PVSUFF_SUBJ:2MS+هُم/PRN:3MP</pos>
+تها	ْتَها	PVSuff-th	you + it/them/her                          <pos>تَ/PVSUFF_SUBJ:2MS+ها/PRN:3FS</pos>
+تهن	ْتَهُنَّ	PVSuff-th	you + them                                 <pos>تَ/PVSUFF_SUBJ:2MS+هُنَّ/PRN:3FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ه	َّهُ	PVSuff-~th	you + it/him                               <pos>تَ/PVSUFF_SUBJ:2MS+هُ/PRN:3MS</pos>
+هما	َّهُما	PVSuff-~th	you + them (both)                          <pos>تَ/PVSUFF_SUBJ:2MS+هُما/PRN:3D</pos>
+هم	َّهُم	PVSuff-~th	you + them                                 <pos>تَ/PVSUFF_SUBJ:2MS+هُم/PRN:3MP</pos>
+ها	َّها	PVSuff-~th	you + it/them/her                          <pos>تَ/PVSUFF_SUBJ:2MS+ها/PRN:3FS</pos>
+هن	َّهُنَّ	PVSuff-~th	you + them                                 <pos>تَ/PVSUFF_SUBJ:2MS+هُنَّ/PRN:3FP</pos>
+; ==========
+ته	ْتِهِ	PVSuff-th	you [fem.sg.] + it/him                               <pos>تِ/PVSUFF_SUBJ:2FS+هِ/PRN:3MS</pos>
+تهما	ْتِهِما	PVSuff-th	you [fem.sg.] + them (both)                          <pos>تِ/PVSUFF_SUBJ:2FS+هِما/PRN:3D</pos>
+تهم	ْتِهِم	PVSuff-th	you [fem.sg.] + them                                 <pos>تِ/PVSUFF_SUBJ:2FS+هِم/PRN:3MP</pos>
+تها	ْتِها	PVSuff-th	you [fem.sg.] + it/them/her                          <pos>تِ/PVSUFF_SUBJ:2FS+ها/PRN:3FS</pos>
+تهن	ْتِهِنَّ	PVSuff-th	you [fem.sg.] + them                                 <pos>تِ/PVSUFF_SUBJ:2FS+هِنَّ/PRN:3FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ه	ِّهِ	PVSuff-~th	you [fem.sg.] + it/him                               <pos>تِ/PVSUFF_SUBJ:2FS+هِ/PRN:3MS</pos>
+هما	ِّهِما	PVSuff-~th	you [fem.sg.] + them (both)                          <pos>تِ/PVSUFF_SUBJ:2FS+هِما/PRN:3D</pos>
+هم	ِّهِم	PVSuff-~th	you [fem.sg.] + them                                 <pos>تِ/PVSUFF_SUBJ:2FS+هِم/PRN:3MP</pos>
+ها	ِّها	PVSuff-~th	you [fem.sg.] + it/them/her                          <pos>تِ/PVSUFF_SUBJ:2FS+ها/PRN:3FS</pos>
+هن	ِّهِنَّ	PVSuff-~th	you [fem.sg.] + them                                 <pos>تِ/PVSUFF_SUBJ:2FS+هِنَّ/PRN:3FP</pos>
+; ==========
+تك	ْتُكَ	PVSuff-th	I + you                                    <pos>تُ/PVSUFF_SUBJ:1S+كَ/PRN:2MS</pos>
+تك	ْتُكِ	PVSuff-th	I + you                                    <pos>تُ/PVSUFF_SUBJ:1S+كِ/PRN:2FS</pos>
+تكما	ْتُكُما	PVSuff-th	I + you (both)                             <pos>تُ/PVSUFF_SUBJ:1S+كُما/PRN:2D</pos>
+تكم	ْتُكُم	PVSuff-th	I + you (pl.)                              <pos>تُ/PVSUFF_SUBJ:1S+كُم/PRN:2MP</pos>
+تكن	ْتُكُنَّ	PVSuff-th	I + you (women)                            <pos>تُ/PVSUFF_SUBJ:1S+كُنَّ/PRN:2FP</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ك	ُّكَ	PVSuff-~th	I + you                                    <pos>تُ/PVSUFF_SUBJ:1S+كَ/PRN:2MS</pos>
+ك	ُّكِ	PVSuff-~th	I + you                                    <pos>تُ/PVSUFF_SUBJ:1S+كِ/PRN:2FS</pos>
+كما	ُّكُما	PVSuff-~th	I + you (both)                             <pos>تُ/PVSUFF_SUBJ:1S+كُما/PRN:2D</pos>
+كم	ُّكُم	PVSuff-~th	I + you (pl.)                              <pos>تُ/PVSUFF_SUBJ:1S+كُم/PRN:2MP</pos>
+كن	ُّكُنَّ	PVSuff-~th	I + you (women)                            <pos>تُ/PVSUFF_SUBJ:1S+كُنَّ/PRN:2FP</pos>
+; ==========
+تني	ْتَنِي	PVSuff-th	you + me                                   <pos>تَ/PVSUFF_SUBJ:2MS+نِي/PRN:1S</pos>
+تنا	ْتَنا	PVSuff-th	you + us                                   <pos>تَ/PVSUFF_SUBJ:2MS+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ني	َّنِي	PVSuff-~th	you + me                                   <pos>تَ/PVSUFF_SUBJ:2MS+نِي/PRN:1S</pos>
+نا	َّنا	PVSuff-~th	you + us                                   <pos>تَ/PVSUFF_SUBJ:2MS+نا/PRN:1P</pos>
+; ==========
+تني	ْتِنِي	PVSuff-th	you [fem.sg.] + me                                   <pos>تِ/PVSUFF_SUBJ:2FS+نِي/PRN:1S</pos>
+تنا	ْتِنا	PVSuff-th	you [fem.sg.] + us                                   <pos>تِ/PVSUFF_SUBJ:2FS+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ني	ِّنِي	PVSuff-~th	you [fem.sg.] + me                                   <pos>تِ/PVSUFF_SUBJ:2FS+نِي/PRN:1S</pos>
+نا	ِّنا	PVSuff-~th	you [fem.sg.] + us                                   <pos>تِ/PVSUFF_SUBJ:2FS+نا/PRN:1P</pos>
+; ==========
+تماه	ْتُماهُ	PVSuff-th	you [du.] + it/him                               <pos>تُما/PVSUFF_SUBJ:2D+هُ/PRN:3MS</pos>
+تماهما	ْتُماهُما	PVSuff-th	you [du.] + them (both)                          <pos>تُما/PVSUFF_SUBJ:2D+هُما/PRN:3D</pos>
+تماهم	ْتُماهُم	PVSuff-th	you [du.] + them                                 <pos>تُما/PVSUFF_SUBJ:2D+هُم/PRN:3MP</pos>
+تماها	ْتُماها	PVSuff-th	you [du.] + it/them/her                          <pos>تُما/PVSUFF_SUBJ:2D+ها/PRN:3FS</pos>
+تماهن	ْتُماهُنَّ	PVSuff-th	you [du.] + them                                 <pos>تُما/PVSUFF_SUBJ:2D+هُنَّ/PRN:3FP</pos>
+تماني	ْتُمانِي	PVSuff-th	you [du.] + me                                   <pos>تُما/PVSUFF_SUBJ:2D+نِي/PRN:1S</pos>
+تمانا	ْتُمانا	PVSuff-th	you [du.] + us                                   <pos>تُما/PVSUFF_SUBJ:2D+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+ماه	ُّماهُ	PVSuff-~th	you [du.] + it/him                               <pos>تُما/PVSUFF_SUBJ:2D+هُ/PRN:3MS</pos>
+ماهما	ُّماهُما	PVSuff-~th	you [du.] + them (both)                          <pos>تُما/PVSUFF_SUBJ:2D+هُما/PRN:3D</pos>
+ماهم	ُّماهُم	PVSuff-~th	you [du.] + them                                 <pos>تُما/PVSUFF_SUBJ:2D+هُم/PRN:3MP</pos>
+ماها	ُّماها	PVSuff-~th	you [du.] + it/them/her                          <pos>تُما/PVSUFF_SUBJ:2D+ها/PRN:3FS</pos>
+ماهن	ُّماهُنَّ	PVSuff-~th	you [du.] + them                                 <pos>تُما/PVSUFF_SUBJ:2D+هُنَّ/PRN:3FP</pos>
+ماني	ُّمانِي	PVSuff-~th	you [du.] + me                                   <pos>تُما/PVSUFF_SUBJ:2D+نِي/PRN:1S</pos>
+مانا	ُّمانا	PVSuff-~th	you [du.] + us                                   <pos>تُما/PVSUFF_SUBJ:2D+نا/PRN:1P</pos>
+; ==========
+تموه	ْتُمُوهُ	PVSuff-th	you + it/him                               <pos>تُم/PVSUFF_SUBJ:2MP+هُ/PRN:3MS</pos>
+تموهما	ْتُمُوهُما	PVSuff-th	you + them (both)                          <pos>تُم/PVSUFF_SUBJ:2MP+هُما/PRN:3D</pos>
+تموهم	ْتُمُوهُم	PVSuff-th	you + them                                 <pos>تُم/PVSUFF_SUBJ:2MP+هُم/PRN:3MP</pos>
+تموها	ْتُمُوها	PVSuff-th	you + it/them/her                          <pos>تُم/PVSUFF_SUBJ:2MP+ها/PRN:3FS</pos>
+تموهن	ْتُمُوهُنَّ	PVSuff-th	you + them                                 <pos>تُم/PVSUFF_SUBJ:2MP+هُنَّ/PRN:3FP</pos>
+تموني	ْتُمُونِي	PVSuff-th	you + me                                   <pos>تُم/PVSUFF_SUBJ:2MP+نِي/PRN:1S</pos>
+تمونا	ْتُمُونا	PVSuff-th	you + us                                   <pos>تُم/PVSUFF_SUBJ:2MP+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+موه	ُّمُوهُ	PVSuff-~th	you + it/him                               <pos>تُم/PVSUFF_SUBJ:2MP+هُ/PRN:3MS</pos>
+موهما	ُّمُوهُما	PVSuff-~th	you + them (both)                          <pos>تُم/PVSUFF_SUBJ:2MP+هُما/PRN:3D</pos>
+موهم	ُّمُوهُم	PVSuff-~th	you + them                                 <pos>تُم/PVSUFF_SUBJ:2MP+هُم/PRN:3MP</pos>
+موها	ُّمُوها	PVSuff-~th	you + it/them/her                          <pos>تُم/PVSUFF_SUBJ:2MP+ها/PRN:3FS</pos>
+موهن	ُّمُوهُنَّ	PVSuff-~th	you + them                                 <pos>تُم/PVSUFF_SUBJ:2MP+هُنَّ/PRN:3FP</pos>
+موني	ُّمُونِي	PVSuff-~th	you + me                                   <pos>تُم/PVSUFF_SUBJ:2MP+نِي/PRN:1S</pos>
+مونا	ُّمُونا	PVSuff-~th	you + us                                   <pos>تُم/PVSUFF_SUBJ:2MP+نا/PRN:1P</pos>
+; ==========
+تنه	ْتُنَّهُ	PVSuff-th	you [fem.pl.] + it/him                               <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُ/PRN:3MS</pos>
+تنهما	ْتُنَّهُما	PVSuff-th	you [fem.pl.] + them (both)                          <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُما/PRN:3D</pos>
+تنهم	ْتُنَّهُم	PVSuff-th	you [fem.pl.] + them                                 <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُم/PRN:3MP</pos>
+تنها	ْتُنَّها	PVSuff-th	you [fem.pl.] + it/them/her                          <pos>تُنَّ/PVSUFF_SUBJ:2FP+ها/PRN:3FS</pos>
+تنهن	ْتُنَّهُنَّ	PVSuff-th	you [fem.pl.] + them                                 <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُنَّ/PRN:3FP</pos>
+تنني	ْتُنَّنِي	PVSuff-th	you [fem.pl.] + me                                   <pos>تُنَّ/PVSUFF_SUBJ:2FP+نِي/PRN:1S</pos>
+تننا	ْتُنَّنا	PVSuff-th	you [fem.pl.] + us                                   <pos>تُنَّ/PVSUFF_SUBJ:2FP+نا/PRN:1P</pos>
+;----------------------------------------------------------------------------------------------------------------------------
+نه	ُّنَّهُ	PVSuff-~th	you [fem.pl.] + it/him                               <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُ/PRN:3MS</pos>
+نهما	ُّنَّهُما	PVSuff-~th	you [fem.pl.] + them (both)                          <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُما/PRN:3D</pos>
+نهم	ُّنَّهُم	PVSuff-~th	you [fem.pl.] + them                                 <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُم/PRN:3MP</pos>
+نها	ُّنَّها	PVSuff-~th	you [fem.pl.] + it/them/her                          <pos>تُنَّ/PVSUFF_SUBJ:2FP+ها/PRN:3FS</pos>
+نهن	ُّنَّهُنَّ	PVSuff-~th	you [fem.pl.] + them                                 <pos>تُنَّ/PVSUFF_SUBJ:2FP+هُنَّ/PRN:3FP</pos>
+نني	ُّنَّنِي	PVSuff-~th	you [fem.pl.] + me                                   <pos>تُنَّ/PVSUFF_SUBJ:2FP+نِي/PRN:1S</pos>
+ننا	ُّنَّنا	PVSuff-~th	you [fem.pl.] + us                                   <pos>تُنَّ/PVSUFF_SUBJ:2FP+نا/PRN:1P</pos>
+;
+; ==========
+; perfect verb suffixes that begin with vowel ("-at" "-atA")
+ت	َت	PVSuff-at	it/they/she                              <pos>َت/PVSUFF_SUBJ:3FS</pos>
+تا	َتا	PVSuff-at	they (both)                              <pos>َتا/PVSUFF_SUBJ:3FD</pos>
+;
+; ==========
+; perfect verb suffixes that begin with vowel + DO
+ته	َتْهُ	PVSuff-ath	it/they/she + it/him                       <pos>َت/PVSUFF_SUBJ:3FS+هُ/PRN:3MS</pos>
+تهما	َتْهُما	PVSuff-ath	it/they/she + them (both)                  <pos>َت/PVSUFF_SUBJ:3FS+هُما/PRN:3D</pos>
+تهم	َتْهُم	PVSuff-ath	it/they/she + them                         <pos>َت/PVSUFF_SUBJ:3FS+هُم/PRN:3MP</pos>
+تها	َتْها	PVSuff-ath	it/they/she + it/them/her                  <pos>َت/PVSUFF_SUBJ:3FS+ها/PRN:3FS</pos>
+تهن	َتْهُنَّ	PVSuff-ath	it/they/she + them                         <pos>َت/PVSUFF_SUBJ:3FS+هُنَّ/PRN:3FP</pos>
+تك	َتْكَ	PVSuff-ath	it/they/she + you                          <pos>َت/PVSUFF_SUBJ:3FS+كَ/PRN:2MS</pos>
+تك	َتْكِ	PVSuff-ath	it/they/she + you                          <pos>َت/PVSUFF_SUBJ:3FS+كِ/PRN:2FS</pos>
+تكما	َتْكُما	PVSuff-ath	it/they/she + you (both)                   <pos>َت/PVSUFF_SUBJ:3FS+كُما/PRN:2D</pos>
+تكم	َتْكُم	PVSuff-ath	it/they/she + you                          <pos>َت/PVSUFF_SUBJ:3FS+كُم/PRN:2MP</pos>
+تكن	َتْكُنَّ	PVSuff-ath	it/they/she + you                          <pos>َت/PVSUFF_SUBJ:3FS+كُنَّ/PRN:2FP</pos>
+تني	َتْنِي	PVSuff-ath	it/they/she + me                           <pos>َت/PVSUFF_SUBJ:3FS+نِي/PRN:1S</pos>
+تنا	َتْنا	PVSuff-ath	it/they/she + us                           <pos>َت/PVSUFF_SUBJ:3FS+نا/PRN:1P</pos>
+;
+تاه	َتاهُ	PVSuff-ath	they (both) + it/him                       <pos>َتا/PVSUFF_SUBJ:3FD+هُ/PRN:3MS</pos>
+تاهما	َتاهُما	PVSuff-ath	they (both) + them (both)                  <pos>َتا/PVSUFF_SUBJ:3FD+هُما/PRN:3D</pos>
+تاهم	َتاهُم	PVSuff-ath	they (both) + them                         <pos>َتا/PVSUFF_SUBJ:3FD+هُم/PRN:3MP</pos>
+تاها	َتاها	PVSuff-ath	they (both) + it/them/her                  <pos>َتا/PVSUFF_SUBJ:3FD+ها/PRN:3FS</pos>
+تاهن	َتاهُنَّ	PVSuff-ath	they (both) + them                         <pos>َتا/PVSUFF_SUBJ:3FD+هُنَّ/PRN:3FP</pos>
+تاك	َتاكَ	PVSuff-ath	they (both) + you                          <pos>َتا/PVSUFF_SUBJ:3FD+كَ/PRN:2MS</pos>
+تاك	َتاكِ	PVSuff-ath	they (both) + you                          <pos>َتا/PVSUFF_SUBJ:3FD+كِ/PRN:2FS</pos>
+تاكما	َتاكُما	PVSuff-ath	they (both) + you (both)                   <pos>َتا/PVSUFF_SUBJ:3FD+كُما/PRN:2D</pos>
+تاكم	َتاكُم	PVSuff-ath	they (both) + you                          <pos>َتا/PVSUFF_SUBJ:3FD+كُم/PRN:2MP</pos>
+تاكن	َتاكُنَّ	PVSuff-ath	they (both) + you                          <pos>َتا/PVSUFF_SUBJ:3FD+كُنَّ/PRN:2FP</pos>
+تاني	َتانِي	PVSuff-ath	they (both) + me                           <pos>َتا/PVSUFF_SUBJ:3FD+نِي/PRN:1S</pos>
+تانا	َتانا	PVSuff-ath	they (both) + us                           <pos>َتا/PVSUFF_SUBJ:3FD+نا/PRN:1P</pos>
+;
+; ==========
+; perfect verb suffixes that begin with long vowel "-A" (i.e. masc.du.)
+ا	ا	PVSuff-A	they (both)                       <pos>ا/PVSUFF_SUBJ:3MD</pos>
+; null  bada>-A = bada|
+		PVSuff-|	they (both)                       <pos>ا/PVSUFF_SUBJ:3MD</pos>
+		CVSuff-|	they (both)                       <pos>ا/CVSUFF_SUBJ:2D</pos>
+;
+; ==========
+; perfect verb suffixes that begin with long vowel "-A"  + DO
+اه	اهُ	PVSuff-Ah	they (both) + it/him                <pos>ا/PVSUFF_SUBJ:3MD+هُ/PRN:3MS</pos>
+اهما	اهُما	PVSuff-Ah	they (both) + them (both)           <pos>ا/PVSUFF_SUBJ:3MD+هُما/PRN:3D</pos>
+اهم	اهُم	PVSuff-Ah	they (both) + them                  <pos>ا/PVSUFF_SUBJ:3MD+هُم/PRN:3MP</pos>
+اها	اها	PVSuff-Ah	they (both) + it/them/her           <pos>ا/PVSUFF_SUBJ:3MD+ها/PRN:3FS</pos>
+اهن	اهُنَّ	PVSuff-Ah	they (both) + them                  <pos>ا/PVSUFF_SUBJ:3MD+هُنَّ/PRN:3FP</pos>
+اك	اكَ	PVSuff-Ah	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كَ/PRN:2MS</pos>
+اك	اكِ	PVSuff-Ah	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كِ/PRN:2FS</pos>
+اكما	اكُما	PVSuff-Ah	they (both) + you (both)            <pos>ا/PVSUFF_SUBJ:3MD+كُما/PRN:2D</pos>
+اكم	اكُم	PVSuff-Ah	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كُم/PRN:2MP</pos>
+اكن	اكُنَّ	PVSuff-Ah	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كُنَّ/PRN:2FP</pos>
+اني	انِي	PVSuff-Ah	they (both) + me                    <pos>ا/PVSUFF_SUBJ:3MD+نِي/PRN:1S</pos>
+انا	انا	PVSuff-Ah	they (both) + us                    <pos>ا/PVSUFF_SUBJ:3MD+نا/PRN:1P</pos>
+;---------------------------------------------------------------------------------------------------------------------------
+; null  bada>-Ahu = bada|-hu
+ه	هُ	PVSuff-|h	they (both) + it/him                <pos>ا/PVSUFF_SUBJ:3MD+هُ/PRN:3MS</pos>
+هما	هُما	PVSuff-|h	they (both) + them (both)           <pos>ا/PVSUFF_SUBJ:3MD+هُما/PRN:3D</pos>
+هم	هُم	PVSuff-|h	they (both) + them                  <pos>ا/PVSUFF_SUBJ:3MD+هُم/PRN:3MP</pos>
+ها	ها	PVSuff-|h	they (both) + it/them/her           <pos>ا/PVSUFF_SUBJ:3MD+ها/PRN:3FS</pos>
+هن	هُنَّ	PVSuff-|h	they (both) + them                  <pos>ا/PVSUFF_SUBJ:3MD+هُنَّ/PRN:3FP</pos>
+ك	كَ	PVSuff-|h	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كَ/PRN:2MS</pos>
+ك	كِ	PVSuff-|h	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كِ/PRN:2FS</pos>
+كما	كُما	PVSuff-|h	they (both) + you (both)            <pos>ا/PVSUFF_SUBJ:3MD+كُما/PRN:2D</pos>
+كم	كُم	PVSuff-|h	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كُم/PRN:2MP</pos>
+كن	كُنَّ	PVSuff-|h	they (both) + you                   <pos>ا/PVSUFF_SUBJ:3MD+كُنَّ/PRN:2FP</pos>
+ني	نِي	PVSuff-|h	they (both) + me                    <pos>ا/PVSUFF_SUBJ:3MD+نِي/PRN:1S</pos>
+نا	نا	PVSuff-|h	they (both) + us                    <pos>ا/PVSUFF_SUBJ:3MD+نا/PRN:1P</pos>
+;
+; ==========
+; perfect verb suffixes that begin with long vowel "-w" (i.e. masc.pl.)
+وا	ُوا	PVSuff-uwA	they                                    <pos>ُوا/PVSUFF_SUBJ:3MP</pos>
+وا	َوْا	PVSuff-awA	they                                    <pos>َوْا/PVSUFF_SUBJ:3MP</pos>
+;
+;-----------
+; Imperative verb suffixes that begin with long vowel "-uw" (Antum)
+وا	ُوا	CVSuff-wA	you [masc.pl]                                     <pos>ُوا/CVSUFF_SUBJ:2MP</pos>
+وا	ُوا	CVSuff-wAo	you [masc.pl]                                     <pos>َواْ/CVSUFF_SUBJ:2MP</pos>
+; with direct object
+وه	ُوهُ	CVSuff-wh	you [masc.pl] + it/him                              <pos>ُو/CVSUFF_SUBJ:2MP+هُ/PRN:3MS</pos>
+وهما	ُوهُما	CVSuff-wh	you [masc.pl] + them (both)                         <pos>ُو/CVSUFF_SUBJ:2MP+هُما/PRN:3D</pos>
+وهم	ُوهُم	CVSuff-wh	you [masc.pl] + them                                <pos>ُو/CVSUFF_SUBJ:2MP+هُم/PRN:3MP</pos>
+وها	ُوها	CVSuff-wh	you [masc.pl] + it/them/her                         <pos>ُو/CVSUFF_SUBJ:2MP+ها/PRN:3FS</pos>
+وهن	ُوهُنَّ	CVSuff-wh	you [masc.pl] + them                                <pos>ُو/CVSUFF_SUBJ:2MP+هُنَّ/PRN:3FP</pos>
+وني	ُونِي	CVSuff-wh	you [masc.pl] + me                                  <pos>ُو/CVSUFF_SUBJ:2MP+نِي/PRN:1S</pos>
+ونا	ُونا	CVSuff-wh	you [masc.pl] + us                                  <pos>ُو/CVSUFF_SUBJ:2MP+نا/PRN:1P</pos>
+;
+; Imperative verb suffixes that begin with long vowel "-iw" (Anti)
+ي	ِي	CVSuff-y	you                                     <pos>ِي/CVSUFF_SUBJ:2FS</pos>
+ي	َيْ	CVSuff-yo	you                                     <pos>َيْ/CVSUFF_SUBJ:2FS</pos>
+; with direct object
+يه	ِيهِ	CVSuff-yh	you [fem.sg.] + it/him                              <pos>ِي/CVSUFF_SUBJ:2FS+هِ/PRN:3MS</pos>
+يهما	ِيهِما	CVSuff-yh	you [fem.sg.] + them (both)                         <pos>ِي/CVSUFF_SUBJ:2FS+هِما/PRN:3D</pos>
+يهم	ِيهِم	CVSuff-yh	you [fem.sg.] + them                                <pos>ِي/CVSUFF_SUBJ:2FS+هِم/PRN:3MP</pos>
+يها	ِيها	CVSuff-yh	you [fem.sg.] + it/them/her                         <pos>ِي/CVSUFF_SUBJ:2FS+ها/PRN:3FS</pos>
+يهن	ِيهِنَّ	CVSuff-yh	you [fem.sg.] + them                                <pos>ِي/CVSUFF_SUBJ:2FS+هِنَّ/PRN:3FP</pos>
+يني	ِينِي	CVSuff-yh	you [fem.sg.] + me                                  <pos>ِي/CVSUFF_SUBJ:2FS+نِي/PRN:1S</pos>
+ينا	ِينا	CVSuff-yh	you [fem.sg.] + us                                  <pos>ِي/CVSUFF_SUBJ:2FS+نا/PRN:1P</pos>
+;
+يه	َيْهِ	CVSuff-yoh	you [fem.sg.] + it/him                              <pos>َيْ/CVSUFF_SUBJ:2FS+هِ/PRN:3MS</pos>
+يهما	َيْهِما	CVSuff-yoh	you [fem.sg.] + them (both)                         <pos>َيْ/CVSUFF_SUBJ:2FS+هِما/PRN:3D</pos>
+يهم	َيْهِم	CVSuff-yoh	you [fem.sg.] + them                                <pos>َيْ/CVSUFF_SUBJ:2FS+هِم/PRN:3MP</pos>
+يها	َيْها	CVSuff-yoh	you [fem.sg.] + it/them/her                         <pos>َيْ/CVSUFF_SUBJ:2FS+ها/PRN:3FS</pos>
+يهن	َيْهِنَّ	CVSuff-yoh	you [fem.sg.] + them                                <pos>َيْ/CVSUFF_SUBJ:2FS+هِنَّ/PRN:3FP</pos>
+يني	َيْنِي	CVSuff-yoh	you [fem.sg.] + me                                  <pos>َيْ/CVSUFF_SUBJ:2FS+نِي/PRN:1S</pos>
+ينا	َيْنا	CVSuff-yoh	you [fem.sg.] + us                                  <pos>َيْ/CVSUFF_SUBJ:2FS+نا/PRN:1P</pos>
+;
+; ==========
+; perfect verb suffixes that begin with long vowel "-uw" + DO
+وه	ُوهُ	PVSuff-uwh	they + it/him                              <pos>ُو/PVSUFF_SUBJ:3MP+هُ/PRN:3MS</pos>
+وهما	ُوهُما	PVSuff-uwh	they + them (both)                         <pos>ُو/PVSUFF_SUBJ:3MP+هُما/PRN:3D</pos>
+وهم	ُوهُم	PVSuff-uwh	they + them                                <pos>ُو/PVSUFF_SUBJ:3MP+هُم/PRN:3MP</pos>
+وها	ُوها	PVSuff-uwh	they + it/them/her                         <pos>ُو/PVSUFF_SUBJ:3MP+ها/PRN:3FS</pos>
+وهن	ُوهُنَّ	PVSuff-uwh	they + them                                <pos>ُو/PVSUFF_SUBJ:3MP+هُنَّ/PRN:3FP</pos>
+وك	ُوكَ	PVSuff-uwh	they + you                                 <pos>ُو/PVSUFF_SUBJ:3MP+كَ/PRN:2MS</pos>
+وك	ُوكِ	PVSuff-uwh	they + you                                 <pos>ُو/PVSUFF_SUBJ:3MP+كِ/PRN:2FS</pos>
+وكما	ُوكُما	PVSuff-uwh	they + you (both)                          <pos>ُو/PVSUFF_SUBJ:3MP+كُما/PRN:2D</pos>
+وكم	ُوكُم	PVSuff-uwh	they + you                                 <pos>ُو/PVSUFF_SUBJ:3MP+كُم/PRN:2MP</pos>
+وكن	ُوكُنَّ	PVSuff-uwh	they + you                                 <pos>ُو/PVSUFF_SUBJ:3MP+كُنَّ/PRN:2FP</pos>
+وني	ُونِي	PVSuff-uwh	they + me                                  <pos>ُو/PVSUFF_SUBJ:3MP+نِي/PRN:1S</pos>
+ونا	ُونا	PVSuff-uwh	they + us                                  <pos>ُو/PVSUFF_SUBJ:3MP+نا/PRN:1P</pos>
+;
+وه	َوْهُ	PVSuff-awh	they + it/him                              <pos>َو/PVSUFF_SUBJ:3MP+هُ/PRN:3MS</pos>
+وهما	َوْهُما	PVSuff-awh	they + them (both)                         <pos>َو/PVSUFF_SUBJ:3MP+هُما/PRN:3D</pos>
+وهم	َوْهُم	PVSuff-awh	they + them                                <pos>َو/PVSUFF_SUBJ:3MP+هُم/PRN:3MP</pos>
+وها	َوْها	PVSuff-awh	they + it/them/her                         <pos>َو/PVSUFF_SUBJ:3MP+ها/PRN:3FS</pos>
+وهن	َوْهُنَّ	PVSuff-awh	they + them                                <pos>َو/PVSUFF_SUBJ:3MP+هُنَّ/PRN:3FP</pos>
+وك	َوْكَ	PVSuff-awh	they + you                                 <pos>َو/PVSUFF_SUBJ:3MP+كَ/PRN:2MS</pos>
+وك	َوْكِ	PVSuff-awh	they + you                                 <pos>َو/PVSUFF_SUBJ:3MP+كِ/PRN:2FS</pos>
+وكما	َوْكُما	PVSuff-awh	they + you (both)                          <pos>َو/PVSUFF_SUBJ:3MP+كُما/PRN:2D</pos>
+وكم	َوْكُم	PVSuff-awh	they + you                                 <pos>َو/PVSUFF_SUBJ:3MP+كُم/PRN:2MP</pos>
+وكن	َوْكُنَّ	PVSuff-awh	they + you                                 <pos>َو/PVSUFF_SUBJ:3MP+كُنَّ/PRN:2FP</pos>
+وني	َوْنِي	PVSuff-awh	they + me                                  <pos>َو/PVSUFF_SUBJ:3MP+نِي/PRN:1S</pos>
+ونا	َوْنا	PVSuff-awh	they + us                                  <pos>َو/PVSUFF_SUBJ:3MP+نا/PRN:1P</pos>
+;
+;
+;
+; =====================================================================
+; IMPERFECT VERB SUFFIXES
+; =====================================================================
+; ==========
+; imperfect Verb Mood Markers:
+; null suffix of __iy, __uw, __aY: ya-boniy ya-doEuw ya-boqaY
+		IVSuff-0_ind	[ind.]    <pos>/IVSUFF_MOOD:I</pos>
+; null suffix of __aY: ya-boqaY yu-doEaY
+		IVSuff-0_sub	[sub.]    <pos>/IVSUFF_MOOD:S</pos>
+; null suffix of __i, __u, __a: ya-boni ya-doEu ya-boqa yu-doEa 
+		IVSuff-0_jus	[jus.]    <pos>/IVSUFF_MOOD:J</pos>
+;=== mood: indicative (mrfwE bAlDmp)
+	ُ	IVSuff-u	[ind.]    <pos>ُ/IVSUFF_MOOD:I</pos>
+;=== mood: subjunctive (mnSwb bAlftHp)
+	َ	IVSuff-a	[sub.]    <pos>َ/IVSUFF_MOOD:S</pos>
+;=== mood: jussive (mjzwm bAlskwn)
+	ْ	IVSuff-o	[jus.]    <pos>ْ/IVSUFF_MOOD:J</pos>
+;--- doubled: ya+tim~+a
+	َ	IVSuff-a_jus	[jus.]    <pos>َ/IVSUFF_MOOD:J</pos>
+; ===========
+; imperfect verb DO pronouns, compatible with all prefixes:
+; subject of verb: undefined (A---h, n---h, t---h, y---h)
+;
+; ===========
+; imperfect verb DO pronouns, compatible with all prefixes:
+; subject of verb: undefined (A---h, n---h, t---h, y---h)
+;
+; suffixes with null mood markers
+;=== mood: indicative: ya-boniy-hi
+ه	هِ	IVSuff-hi_ind	[ind.] + it/him       <pos>/IVSUFF_MOOD:I+هِ/IVSUFF_DO:3MS</pos>
+هما	هِما	IVSuff-hi_ind	[ind.] + them (both)  <pos>/IVSUFF_MOOD:I+هِما/IVSUFF_DO:3D</pos>
+هم	هِم	IVSuff-hi_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هِم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-hi_ind	[ind.] + it/them/her  <pos>/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+هن	هِنَّ	IVSuff-hi_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هِنَّ/IVSUFF_DO:3FP</pos>
+;=== mood: jussive: lam ya-boni-hi
+ه	هِ	IVSuff-hi_jus	it/him       <pos>/IVSUFF+هِ/PRN:3MS</pos>
+هما	هِما	IVSuff-hi_jus	them (both)  <pos>/IVSUFF+هِما/PRN:3D</pos>
+هم	هِم	IVSuff-hi_jus	them         <pos>/IVSUFF+هِم/PRN:3MP</pos>
+ها	ها	IVSuff-hi_jus	it/them/her  <pos>/IVSUFF+ها/PRN:3FS</pos>
+هن	هِنَّ	IVSuff-hi_jus	them         <pos>/IVSUFF+هِنَّ/PRN:3FP</pos>
+;=== mood: indicative: ya-doEuw-hu ya-bokA-hu
+ه	هُ	IVSuff-h_ind	[ind.] + it/him       <pos>/IVSUFF_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_ind	[ind.] + them (both)  <pos>/IVSUFF_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_ind	[ind.] + it/them/her  <pos>/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+;=== mood: subjunctive: liya-bokA-hu
+ه	هُ	IVSuff-h_sub	[sub.] + it/him       <pos>/IVSUFF_MOOD:S+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_sub	[sub.] + them (both)  <pos>/IVSUFF_MOOD:S+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_sub	[sub.] + them         <pos>/IVSUFF_MOOD:S+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_sub	[sub.] + it/them/her  <pos>/IVSUFF_MOOD:S+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_sub	[sub.] + them         <pos>/IVSUFF_MOOD:S+هُنَّ/IVSUFF_DO:3FP</pos>
+;=== mood: jussive: lam ya-boka-hu
+ه	هُ	IVSuff-h_jus	[jus.] + it/him       <pos>/IVSUFF_MOOD:J+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_jus	[jus.] + them (both)  <pos>/IVSUFF_MOOD:J+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_jus	[jus.] + them         <pos>/IVSUFF_MOOD:J+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_jus	[jus.] + it/them/her  <pos>/IVSUFF_MOOD:J+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_jus	[jus.] + them         <pos>/IVSUFF_MOOD:J+هُنَّ/IVSUFF_DO:3FP</pos>
+;
+; suffixes with short vowel mood marker
+;=== mood: indicative (mrfwE bAlDmp)
+ه	ُهُ	IVSuff-uh	[ind.] + it/him       <pos>ُ/IVSUFF_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+هما	ُهُما	IVSuff-uh	[ind.] + them (both)  <pos>ُ/IVSUFF_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+هم	ُهُم	IVSuff-uh	[ind.] + them         <pos>ُ/IVSUFF_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ها	ُها	IVSuff-uh	[ind.] + it/them/her  <pos>ُ/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+هن	ُهُنَّ	IVSuff-uh	[ind.] + them         <pos>ُ/IVSUFF_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+;=== mood: subjunctive (mnSwb bAlftHp)
+ه	َهُ	IVSuff-ah	[sub.] + it/him       <pos>َ/IVSUFF_MOOD:S+هُ/IVSUFF_DO:3MS</pos>
+هما	َهُما	IVSuff-ah	[sub.] + them (both)  <pos>َ/IVSUFF_MOOD:S+هُما/IVSUFF_DO:3D</pos>
+هم	َهُم	IVSuff-ah	[sub.] + them         <pos>َ/IVSUFF_MOOD:S+هُم/IVSUFF_DO:3MP</pos>
+ها	َها	IVSuff-ah	[sub.] + it/them/her  <pos>َ/IVSUFF_MOOD:S+ها/IVSUFF_DO:3FS</pos>
+هن	َهُنَّ	IVSuff-ah	[sub.] + them         <pos>َ/IVSUFF_MOOD:S+هُنَّ/IVSUFF_DO:3FP</pos>
+;=== mood: jussive (mjzwm bAlskwn)
+ه	ْهُ	IVSuff-oh	[jus.] + it/him       <pos>ْ/IVSUFF_MOOD:J+هُ/IVSUFF_DO:3MS</pos>
+هما	ْهُما	IVSuff-oh	[jus.] + them (both)  <pos>ْ/IVSUFF_MOOD:J+هُما/IVSUFF_DO:3D</pos>
+هم	ْهُم	IVSuff-oh	[jus.] + them         <pos>ْ/IVSUFF_MOOD:J+هُم/IVSUFF_DO:3MP</pos>
+ها	ْها	IVSuff-oh	[jus.] + it/them/her  <pos>ْ/IVSUFF_MOOD:J+ها/IVSUFF_DO:3FS</pos>
+هن	ْهُنَّ	IVSuff-oh	[jus.] + them         <pos>ْ/IVSUFF_MOOD:J+هُنَّ/IVSUFF_DO:3FP</pos>
+;    doubled: yu+tim~+ahu
+ه	َهُ	IVSuff-ah_jus	[jus.] + it/him       <pos>َ/IVSUFF_MOOD:J+هُ/IVSUFF_DO:3MS</pos>
+هما	َهُما	IVSuff-ah_jus	[jus.] + them (both)  <pos>َ/IVSUFF_MOOD:J+هُما/IVSUFF_DO:3D</pos>
+هم	َهُم	IVSuff-ah_jus	[jus.] + them         <pos>َ/IVSUFF_MOOD:J+هُم/IVSUFF_DO:3MP</pos>
+ها	َها	IVSuff-ah_jus	[jus.] + it/them/her  <pos>َ/IVSUFF_MOOD:J+ها/IVSUFF_DO:3FS</pos>
+هن	َهُنَّ	IVSuff-ah_jus	[jus.] + them         <pos>َ/IVSUFF_MOOD:J+هُنَّ/IVSUFF_DO:3FP</pos>
+;
+; ==========
+; imperfect verb DO pronouns: 2nd person
+; (incompatible with 2nd pers. prefixes: e.g. t---k)
+; subject of verb: 1st or 3rd
+;
+; suffixes with null mood markers
+;=== mood: indicative: yu-EoTiy-k ya-bokA-k
+ك	كَ	IVSuff-k_ind	[ind.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_ind	[ind.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_ind	[ind.] + you [du.]        <pos>/IVSUFF_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_ind	[ind.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_ind	[ind.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+;=== mood: subjunctive: liya-bokA-k
+ك	كَ	IVSuff-k_sub	[sub.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:S+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_sub	[sub.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:S+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_sub	[sub.] + you [du.]        <pos>/IVSUFF_MOOD:S+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_sub	[sub.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:S+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_sub	[sub.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:S+كُنَّ/IVSUFF_DO:2FP</pos>
+;=== mood: jussive: lam yu-EoTi-k  ya-boka-k
+ك	كَ	IVSuff-k_jus	[jus.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:J+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_jus	[jus.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:J+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_jus	[jus.] + you [du.]        <pos>/IVSUFF_MOOD:J+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_jus	[jus.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:J+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_jus	[jus.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:J+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; suffixes with short vowel mood marker
+;=== mood: indicative
+ك	ُكَ	IVSuff-uk	[ind.] + you [masc.sg.]   <pos>ُ/IVSUFF_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+ك	ُكِ	IVSuff-uk	[ind.] + you [fem.sg.]    <pos>ُ/IVSUFF_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+كما	ُكُما	IVSuff-uk	[ind.] + you [du.]        <pos>ُ/IVSUFF_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+كم	ُكُم	IVSuff-uk	[ind.] + you [masc.pl.]   <pos>ُ/IVSUFF_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+كن	ُكُنَّ	IVSuff-uk	[ind.] + you [fem.pl.]    <pos>ُ/IVSUFF_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+;=== mood: subjunctive
+ك	َكَ	IVSuff-ak	[sub.] + you [masc.sg.]   <pos>َ/IVSUFF_MOOD:S+كَ/IVSUFF_DO:2MS</pos>
+ك	َكِ	IVSuff-ak	[sub.] + you [fem.sg.]    <pos>َ/IVSUFF_MOOD:S+كِ/IVSUFF_DO:2FS</pos>
+كما	َكُما	IVSuff-ak	[sub.] + you [du.]        <pos>َ/IVSUFF_MOOD:S+كُما/IVSUFF_DO:2D</pos>
+كم	َكُم	IVSuff-ak	[sub.] + you [masc.pl.]   <pos>َ/IVSUFF_MOOD:S+كُم/IVSUFF_DO:2MP</pos>
+كن	َكُنَّ	IVSuff-ak	[sub.] + you [fem.pl.]    <pos>َ/IVSUFF_MOOD:S+كُنَّ/IVSUFF_DO:2FP</pos>
+;=== mood: jussive
+ك	ْكَ	IVSuff-ok	[jus.] + you [masc.sg.]   <pos>ْ/IVSUFF_MOOD:J+كَ/IVSUFF_DO:2MS</pos>
+ك	ْكِ	IVSuff-ok	[jus.] + you [fem.sg.]    <pos>ْ/IVSUFF_MOOD:J+كِ/IVSUFF_DO:2FS</pos>
+كما	ْكُما	IVSuff-ok	[jus.] + you [du.]        <pos>ْ/IVSUFF_MOOD:J+كُما/IVSUFF_DO:2D</pos>
+كم	ْكُم	IVSuff-ok	[jus.] + you [masc.pl.]   <pos>ْ/IVSUFF_MOOD:J+كُم/IVSUFF_DO:2MP</pos>
+كن	ْكُنَّ	IVSuff-ok	[jus.] + you [fem.pl.]    <pos>ْ/IVSUFF_MOOD:J+كُنَّ/IVSUFF_DO:2FP</pos>
+;    doubled: yu+tim~+ak
+ك	َكَ	IVSuff-ak_jus	[jus.] + you [masc.sg.]   <pos>َ/IVSUFF_MOOD:J+كَ/IVSUFF_DO:2MS</pos>
+ك	َكِ	IVSuff-ak_jus	[jus.] + you [fem.sg.]    <pos>َ/IVSUFF_MOOD:J+كِ/IVSUFF_DO:2FS</pos>
+كما	َكُما	IVSuff-ak_jus	[jus.] + you [du.]        <pos>َ/IVSUFF_MOOD:J+كُما/IVSUFF_DO:2D</pos>
+كم	َكُم	IVSuff-ak_jus	[jus.] + you [masc.pl.]   <pos>َ/IVSUFF_MOOD:J+كُم/IVSUFF_DO:2MP</pos>
+كن	َكُنَّ	IVSuff-ak_jus	[jus.] + you [fem.pl.]    <pos>َ/IVSUFF_MOOD:J+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; imperfect verb DO pronouns: 1st person
+; (incompatible with 1st person prefixes; e.g. A---ny, n---nA)
+; subject of verb: 2nd or 3rd
+;
+; suffixes with null mood markers
+;=== mood: indicative: yu-EoTiy-niy ya-bokA-nA
+ني	نِي	IVSuff-ny-nA_ind	[ind.] + me       <pos>/IVSUFF_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_ind	[ind.] + us       <pos>/IVSUFF_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;=== mood: subjunctive: liya-bokA-niy
+ني	نِي	IVSuff-ny-nA_sub	[sub.] + me       <pos>/IVSUFF_MOOD:S+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_sub	[sub.] + us       <pos>/IVSUFF_MOOD:S+نا/IVSUFF_DO:1P</pos>
+;=== mood: jussive: lam yu-EoTi-niy  ya-boka-nA
+ني	نِي	IVSuff-ny-nA_jus	[ind.] + me       <pos>/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_jus	[ind.] + us       <pos>/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
+;
+; suffixes with short vowel mood marker
+;=== mood: indicative: ya-Eorif-uniy yu-xATib-unA
+ني	ُنِي	IVSuff-uny-nA	[ind.] + me       <pos>ُ/IVSUFF_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+نا	ُنا	IVSuff-uny-nA	[ind.] + us       <pos>ُ/IVSUFF_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;=== mood: subjunctive: liya-Eorif-aniy liyu-xATib-anA
+ني	َنِي	IVSuff-any-nA	[sub.] + me       <pos>َ/IVSUFF_MOOD:S+نِي/IVSUFF_DO:1S</pos>
+نا	َنا	IVSuff-any-nA	[sub.] + us       <pos>َ/IVSUFF_MOOD:S+نا/IVSUFF_DO:1P</pos>
+;=== mood: jussive: lam ya-Eorif-oniy yu-xATib-onA yu-Hobib-onA
+ني	ْنِي	IVSuff-ony-nA	[jus.] + me       <pos>ْ/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
+نا	ْنا	IVSuff-ony-nA	[jus.] + us       <pos>ْ/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
+; for stems ending in __n: yu-barohin-~iy yu-barohin-~A
+ي	ِّي	IVSuff-~ny-nA	[jus.] + me       <pos>ْ/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
+ا	ّا	IVSuff-~ny-nA	[jus.] + us       <pos>ْ/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
+;    doubled: lam yu-Hib~-anA
+ني	َنِي	IVSuff-any-nA_jus	[jus.] + me       <pos>َ/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
+نا	َنا	IVSuff-any-nA_jus	[jus.] + us       <pos>َ/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; imperfect verb suffix that begins with consonant "n"
+; (as a consonant, it goes with short hollow stems (ta+qul+na) and long doubled (ta+morur+na)
+; mood: undefined (indicative/subjunctive/jussive)
+; subject of verb: 2nd or 3rd (Antun~a or hun~a)
+نه	ْنَهُ	IVSuff-nh	[fem.pl.] + it/him          <pos>نَ/IVSUFF_SUBJ:FP+هُ/IVSUFF_DO:3MS</pos>
+نهما	ْنَهُما	IVSuff-nh	[fem.pl.] + them (both)     <pos>نَ/IVSUFF_SUBJ:FP+هُما/IVSUFF_DO:3D</pos>
+نهم	ْنَهُم	IVSuff-nh	[fem.pl.] + them            <pos>نَ/IVSUFF_SUBJ:FP+هُم/IVSUFF_DO:3MP</pos>
+نها	ْنَها	IVSuff-nh	[fem.pl.] + it/them/her     <pos>نَ/IVSUFF_SUBJ:FP+ها/IVSUFF_DO:3FS</pos>
+نهن	ْنَهُنَّ	IVSuff-nh	[fem.pl.] + them            <pos>نَ/IVSUFF_SUBJ:FP+هُنَّ/IVSUFF_DO:3FP</pos>
+نني	ْنَنِي	IVSuff-nh	[fem.pl.] + me              <pos>نَ/IVSUFF_SUBJ:FP+نِي/IVSUFF_DO:1S</pos>
+ننا	ْنَنا	IVSuff-nh	[fem.pl.] + us              <pos>نَ/IVSUFF_SUBJ:FP+نا/IVSUFF_DO:1P</pos>
+;
+ه	َّهُ	IVSuff-~nh	[fem.pl.] + it/him          <pos>نَ/IVSUFF_SUBJ:FP+هُ/IVSUFF_DO:3MS</pos>
+هما	َّهُما	IVSuff-~nh	[fem.pl.] + them (both)     <pos>نَ/IVSUFF_SUBJ:FP+هُما/IVSUFF_DO:3D</pos>
+هم	َّهُم	IVSuff-~nh	[fem.pl.] + them            <pos>نَ/IVSUFF_SUBJ:FP+هُم/IVSUFF_DO:3MP</pos>
+ها	َّها	IVSuff-~nh	[fem.pl.] + it/them/her     <pos>نَ/IVSUFF_SUBJ:FP+ها/IVSUFF_DO:3FS</pos>
+هن	َّهُنَّ	IVSuff-~nh	[fem.pl.] + them            <pos>نَ/IVSUFF_SUBJ:FP+هُنَّ/IVSUFF_DO:3FP</pos>
+ني	َّنِي	IVSuff-~nh	[fem.pl.] + me              <pos>نَ/IVSUFF_SUBJ:FP+نِي/IVSUFF_DO:1S</pos>
+نا	َّنا	IVSuff-~nh	[fem.pl.] + us              <pos>نَ/IVSUFF_SUBJ:FP+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; imperfect verb suffix that begins with consonant "n"
+; (as a consonant, it goes with short hollow stems (ta+qul+na) and long doubled (ta+morur+na)
+; mood: undefined (indicative/subjunctive/jussive)
+; subject of verb: 2nd or 3rd (Antun~a or hun~a)
+ن	ْنَ	IVSuff-n	    <pos>نَ/IVSUFF_SUBJ:FP</pos>
+;
+	َّ	IVSuff-~n	    <pos>نَ/IVSUFF_SUBJ:FP</pos>
+;
+	َّ	CVSuff-n~	me    <pos>نَ/CVSUFF_SUBJ:2FP</pos>
+ن	ْنَ	CVSuff-n	you    <pos>نَ/CVSUFF_SUBJ:2FP</pos>
+نه	ْنَ	CVSuff-n	you + it/him    <pos>نَ/CVSUFF_SUBJ:2FP+هُ/PRN:3MS</pos>
+نها	ْنَ	CVSuff-n	you + it/them/her    <pos>نَ/CVSUFF_SUBJ:2FP+ها/PRN:3FS</pos>
+نهما	ْنَ	CVSuff-n	you + them (both)    <pos>نَ/CVSUFF_SUBJ:2FP+هُا/PRN:3MD</pos>
+نهم	ْنَ	CVSuff-n	you + them (both)    <pos>نَ/CVSUFF_SUBJ:2FP+هُم/PRN:3MP</pos>
+نهم	ْنَ	CVSuff-n	you + them (both)    <pos>نَ/CVSUFF_SUBJ:2FP+هُنَّ/PRN:3FP</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with consonant "n" + 3rd/2nd pers. DO (y---n, t---n)
+; (3rd or 1st person suffixes are incompatible with 1st pers. prefixes: e.g. A---nny, n---nnA)
+; mood: undefined (indicative/subjunctive/jussive)
+; subject of verb: 2nd or 3rd (Antun~a or hun~a)
+نه	ْنَهُ	IVSuff-nh	it/him          <pos>نَ/IVSUFF_SUBJ:FP+هُ/PRN:3MS</pos>
+نهما	ْنَهُما	IVSuff-nh	them (both)     <pos>نَ/IVSUFF_SUBJ:FP+هُما/PRN:3D</pos>
+نهم	ْنَهُم	IVSuff-nh	them            <pos>نَ/IVSUFF_SUBJ:FP+هُم/PRN:3MP</pos>
+نها	ْنَها	IVSuff-nh	it/them/her     <pos>نَ/IVSUFF_SUBJ:FP+ها/PRN:3FS</pos>
+نهن	ْنَهُنَّ	IVSuff-nh	them            <pos>نَ/IVSUFF_SUBJ:FP+هُنَّ/PRN:3FP</pos>
+نني	ْنَنِي	IVSuff-nh	me              <pos>نَ/IVSUFF_SUBJ:FP+نِي/PRN:1S</pos>
+ننا	ْنَنا	IVSuff-nh	us              <pos>نَ/IVSUFF_SUBJ:FP+نا/PRN:1P</pos>
+;
+ه	َّهُ	IVSuff-~nh	it/him          <pos>نَ/IVSUFF_SUBJ:FP+هُ/PRN:3MS</pos>
+هما	َّهُما	IVSuff-~nh	them (both)     <pos>نَ/IVSUFF_SUBJ:FP+هُما/PRN:3D</pos>
+هم	َّهُم	IVSuff-~nh	them            <pos>نَ/IVSUFF_SUBJ:FP+هُم/PRN:3MP</pos>
+ها	َّها	IVSuff-~nh	it/them/her     <pos>نَ/IVSUFF_SUBJ:FP+ها/PRN:3FS</pos>
+هن	َّهُنَّ	IVSuff-~nh	them            <pos>نَ/IVSUFF_SUBJ:FP+هُنَّ/PRN:3FP</pos>
+ني	َّنِي	IVSuff-~nh	me              <pos>نَ/IVSUFF_SUBJ:FP+نِي/PRN:1S</pos>
+نا	َّنا	IVSuff-~nh	us              <pos>نَ/IVSUFF_SUBJ:FP+نا/PRN:1P</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with consonant "n" + 2nd pers. DO
+; (2nd person DO are incompatible with 2nd pers. prefix: e.g. t---nk)
+; mood: undefined (indicative/subjunctive/jussive)
+; subject of verb: 3rd (hun~a)
+نك	ْنَكَ	IVSuff-nk	[fem.pl.] + you [masc.sg.]   <pos>نَ/IVSUFF_SUBJ:3FP+كَ/IVSUFF_DO:2MS</pos>
+نك	ْنَكِ	IVSuff-nk	[fem.pl.] + you [fem.sg.]    <pos>نَ/IVSUFF_SUBJ:3FP+كِ/IVSUFF_DO:2FS</pos>
+نكما	ْنَكُما	IVSuff-nk	[fem.pl.] + you [du.]        <pos>نَ/IVSUFF_SUBJ:3FP+كُما/IVSUFF_DO:2D</pos>
+نكم	ْنَكُم	IVSuff-nk	[fem.pl.] + you [masc.pl.]   <pos>نَ/IVSUFF_SUBJ:3FP+كُم/IVSUFF_DO:2MP</pos>
+نكن	ْنَكُنَّ	IVSuff-nk	[fem.pl.] + you [fem.pl.]    <pos>نَ/IVSUFF_SUBJ:3FP+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+ك	َّكَ	IVSuff-~nk	[fem.pl.] + you [masc.sg.]   <pos>نَ/IVSUFF_SUBJ:3FP+كَ/IVSUFF_DO:2MS</pos>
+ك	َّكِ	IVSuff-~nk	[fem.pl.] + you [fem.sg.]    <pos>نَ/IVSUFF_SUBJ:3FP+كِ/IVSUFF_DO:2FS</pos>
+كما	َّكُما	IVSuff-~nk	[fem.pl.] + you [du.]        <pos>نَ/IVSUFF_SUBJ:3FP+كُما/IVSUFF_DO:2D</pos>
+كم	َّكُم	IVSuff-~nk	[fem.pl.] + you [masc.pl.]   <pos>نَ/IVSUFF_SUBJ:3FP+كُم/IVSUFF_DO:2MP</pos>
+كن	َّكُنَّ	IVSuff-~nk	[fem.pl.] + you [fem.pl.]    <pos>نَ/IVSUFF_SUBJ:3FP+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; subject of verb: 2nd or 3rd (AntumA or humA)
+ا	ا	IVSuff-A	[du.]           <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ</pos>
+; ya-boda|
+		IVSuff-|	[du.]           <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with long vowel "-A" (du.) + DO
+; mood: subjunctive or jussive
+; subject of verb: 2nd or 3rd (AntumA or humA)
+اه	اهُ	IVSuff-Ah	[du.] + it/him          <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُ/IVSUFF_DO:3MS</pos>
+اهما	اهُما	IVSuff-Ah	[du.] + them (both)     <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُما/IVSUFF_DO:3D</pos>
+اهم	اهُم	IVSuff-Ah	[du.] + them            <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُم/IVSUFF_DO:3MP</pos>
+اها	اها	IVSuff-Ah	[du.] + it/them/her     <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+اهن	اهُنَّ	IVSuff-Ah	[du.] + them            <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُنَّ/IVSUFF_DO:3FP</pos>
+اني	انِي	IVSuff-Ah	[du.] + me              <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+انا	انا	IVSuff-Ah	[du.] + us              <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+;
+ه	هُ	IVSuff-|h	[du.] + it/him          <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-|h	[du.] + them (both)     <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-|h	[du.] + them            <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-|h	[du.] + it/them/her     <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-|h	[du.] + them            <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+هُنَّ/IVSUFF_DO:3FP</pos>
+ني	نِي	IVSuff-|h	[du.] + me              <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-|h	[du.] + us              <pos>ا/IVSUFF_SUBJ:D_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; (2nd person DO are incompatible with 2nd pers. prefix: e.g. t---Ak)
+; mood: subjunctive or jussive
+; subject of verb: 3rd (humA masc/fem: y---Ak, t---Ak)
+اك	اكَ	IVSuff-Ak	[du.] + you [masc.sg.]   <pos>ا/IVSUFF_SUBJ:3D+كَ/IVSUFF_DO:2MS</pos>
+اك	اكِ	IVSuff-Ak	[du.] + you [fem.sg.]    <pos>ا/IVSUFF_SUBJ:3D+كِ/IVSUFF_DO:2FS</pos>
+اكما	اكُما	IVSuff-Ak	[du.] + you [du.]        <pos>ا/IVSUFF_SUBJ:3D+كُما/IVSUFF_DO:2D</pos>
+اكم	اكُم	IVSuff-Ak	[du.] + you [masc.pl.]   <pos>ا/IVSUFF_SUBJ:3D+كُم/IVSUFF_DO:2MP</pos>
+اكن	اكُنَّ	IVSuff-Ak	[du.] + you [fem.pl.]    <pos>ا/IVSUFF_SUBJ:3D+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+ك	كَ	IVSuff-|k	[du.] + you [masc.sg.]   <pos>ا/IVSUFF_SUBJ:3D+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-|k	[du.] + you [fem.sg.]    <pos>ا/IVSUFF_SUBJ:3D+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-|k	[du.] + you [du.]        <pos>ا/IVSUFF_SUBJ:3D+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-|k	[du.] + you [masc.pl.]   <pos>ا/IVSUFF_SUBJ:3D+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-|k	[du.] + you [fem.pl.]    <pos>ا/IVSUFF_SUBJ:3D+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-A" (du.indic.)
+; (as a vowel, it combines with the long stem of hollow verb:eg. y+quwl+An)
+; (and is incompatible with subjunctive prefix "li-")
+; mood: indicative
+; subject of verb: 3rd or 2nd (y---An, t---An)
+ان	انِ	IVSuff-An	[du.]           <pos>انِ/IVSUFF_SUBJ:D_MOOD:I</pos>
+; ya-boda|-ni
+ن	نِ	IVSuff-|n	[du.]           <pos>انِ/IVSUFF_SUBJ:D_MOOD:I</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-A" (du.indic.) + DO
+; mood: indicative
+; subject of verb: 3rd or 2nd (y---Anh, t---Anh)
+انه	انِهِ	IVSuff-Anh	[du.] + it/him          <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِ/IVSUFF_DO:3MS</pos>
+انهما	انِهِما	IVSuff-Anh	[du.] + them (both)     <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِما/IVSUFF_DO:3D</pos>
+انهم	انِهِم	IVSuff-Anh	[du.] + them            <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِم/IVSUFF_DO:3MP</pos>
+انها	انِها	IVSuff-Anh	[du.] + it/them/her     <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+انهن	انِهِنَّ	IVSuff-Anh	[du.] + them            <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِنَّ/IVSUFF_DO:3FP</pos>
+انني	انِنِي	IVSuff-Anh	[du.] + me              <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+اننا	انِنا	IVSuff-Anh	[du.] + us              <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;
+نه	نِهِ	IVSuff-|nh	[du.] + it/him          <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِ/IVSUFF_DO:3MS</pos>
+نهما	نِهِما	IVSuff-|nh	[du.] + them (both)     <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِما/IVSUFF_DO:3D</pos>
+نهم	نِهِم	IVSuff-|nh	[du.] + them            <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِم/IVSUFF_DO:3MP</pos>
+نها	نِها	IVSuff-|nh	[du.] + it/them/her     <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+نهن	نِهِنَّ	IVSuff-|nh	[du.] + them            <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+هِنَّ/IVSUFF_DO:3FP</pos>
+نني	نِنِي	IVSuff-|nh	[du.] + me              <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+ننا	نِنا	IVSuff-|nh	[du.] + us              <pos>انِ/IVSUFF_SUBJ:D_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; (2nd person DO are incompatible with 2nd pers. prefix: e.g. t---Ak)
+; mood: indicative
+; subject of verb: 3rd (humA masc/fem: y---Ak, t---Ak)
+انك	انِكَ	IVSuff-Ank	[du.] + you [masc.sg.]   <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+انك	انِكِ	IVSuff-Ank	[du.] + you [fem.sg.]    <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+انكما	انِكُما	IVSuff-Ank	[du.] + you [du.]        <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+انكم	انِكُم	IVSuff-Ank	[du.] + you [masc.pl.]   <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+انكن	انِكُنَّ	IVSuff-Ank	[du.] + you [fem.pl.]    <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+نك	نِكَ	IVSuff-|nk	[du.] + you [masc.sg.]   <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+نك	نِكِ	IVSuff-|nk	[du.] + you [fem.sg.]    <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+نكما	نِكُما	IVSuff-|nk	[du.] + you [du.]        <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+نكم	نِكُم	IVSuff-|nk	[du.] + you [masc.pl.]   <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+نكن	نِكُنَّ	IVSuff-|nk	[du.] + you [fem.pl.]    <pos>انِ/IVSUFF_SUBJ:3D_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-uw"
+; mood: subjunctive or jussive
+; subject of verb: masc.pl 2nd or 3rd (Antum or hum)
+وا	ُوا	IVSuff-wA	[masc.pl.]      <pos>ُوا/IVSUFF_SUBJ:MP_MOOD:SJ</pos>
+; ya-xo$aY --> ya-xo$-awoA
+وا	َوْا	IVSuff-awA	[masc.pl.]      <pos>َوْا/IVSUFF_SUBJ:MP_MOOD:SJ</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with vowel "-uw" + DO
+; mood: subjunctive or jussive
+; subject of verb: masc.pl 2nd or 3rd (Antum or hum)
+وه	ُوهُ	IVSuff-wh	[masc.pl.] + it/him          <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+هُ/IVSUFF_DO:3MS</pos>
+وهما	ُوهُما	IVSuff-wh	[masc.pl.] + them (both)     <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+هُما/IVSUFF_DO:3D</pos>
+وهم	ُوهُم	IVSuff-wh	[masc.pl.] + them            <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+هُم/IVSUFF_DO:3MP</pos>
+وها	ُوها	IVSuff-wh	[masc.pl.] + it/them/her     <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+وهن	ُوهُنَّ	IVSuff-wh	[masc.pl.] + them            <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+هُنَّ/IVSUFF_DO:3FP</pos>
+وني	ُونِي	IVSuff-wh	[masc.pl.] + me              <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+ونا	ُونا	IVSuff-wh	[masc.pl.] + us              <pos>ُو/IVSUFF_SUBJ:MP_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+; ya-xo$-awohu
+وه	َوْهُ	IVSuff-awh	[masc.pl.] + it/him          <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+هُ/IVSUFF_DO:3MS</pos>
+وهما	َوْهُما	IVSuff-awh	[masc.pl.] + them (both)     <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+هُما/IVSUFF_DO:3D</pos>
+وهم	َوْهُم	IVSuff-awh	[masc.pl.] + them            <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+هُم/IVSUFF_DO:3MP</pos>
+وها	َوْها	IVSuff-awh	[masc.pl.] + it/them/her     <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+وهن	َوْهُنَّ	IVSuff-awh	[masc.pl.] + them            <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+هُنَّ/IVSUFF_DO:3FP</pos>
+وني	َوْنِي	IVSuff-awh	[masc.pl.] + me              <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+ونا	َوْنا	IVSuff-awh	[masc.pl.] + us              <pos>َوْ/IVSUFF_SUBJ:MP_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with vowel "-uw" + 2nd pers. DO
+; (they are incompatible with 2nd person prefix: e.g. ta---wk)
+; mood: subjunctive or jussive
+; subject of verb: masc.pl 3rd (hum)
+وك	ُوكَ	IVSuff-wk	[masc.pl.] + you [masc.sg.]   <pos>ُو/IVSUFF_SUBJ:3MP_MOOD:SJ+كَ/IVSUFF_DO:2MS</pos>
+وك	ُوكِ	IVSuff-wk	[masc.pl.] + you [fem.sg.]    <pos>ُو/IVSUFF_SUBJ:3MP_MOOD:SJ+كِ/IVSUFF_DO:2FS</pos>
+وكما	ُوكُما	IVSuff-wk	[masc.pl.] + you [du.]        <pos>ُو/IVSUFF_SUBJ:3MP_MOOD:SJ+كُما/IVSUFF_DO:2D</pos>
+وكم	ُوكُم	IVSuff-wk	[masc.pl.] + you [masc.pl.]   <pos>ُو/IVSUFF_SUBJ:3MP_MOOD:SJ+كُم/IVSUFF_DO:2MP</pos>
+وكن	ُوكُنَّ	IVSuff-wk	[masc.pl.] + you [fem.pl.]    <pos>ُو/IVSUFF_SUBJ:3MP_MOOD:SJ+كُنَّ/IVSUFF_DO:2FP</pos>
+; ya-xo$-awoka
+وك	َوْكَ	IVSuff-awk	[masc.pl.] + you [masc.sg.]   <pos>َوْ/IVSUFF_SUBJ:3MP_MOOD:SJ+كَ/IVSUFF_DO:2MS</pos>
+وك	َوْكِ	IVSuff-awk	[masc.pl.] + you [fem.sg.]    <pos>َوْ/IVSUFF_SUBJ:3MP_MOOD:SJ+كِ/IVSUFF_DO:2FS</pos>
+وكما	َوْكُما	IVSuff-awk	[masc.pl.] + you [du.]        <pos>َوْ/IVSUFF_SUBJ:3MP_MOOD:SJ+كُما/IVSUFF_DO:2D</pos>
+وكم	َوْكُم	IVSuff-awk	[masc.pl.] + you [masc.pl.]   <pos>َوْ/IVSUFF_SUBJ:3MP_MOOD:SJ+كُم/IVSUFF_DO:2MP</pos>
+وكن	َوْكُنَّ	IVSuff-awk	[masc.pl.] + you [fem.pl.]    <pos>َوْ/IVSUFF_SUBJ:3MP_MOOD:SJ+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-uwna" (indic.)
+; mood: indicative
+; subject of verb: masc.pl 2nd or 3rd (Antum or hum)
+ون	ُونَ	IVSuff-wn	[masc.pl.]      <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I</pos>
+; ya-xo$-awona
+ون	َوْنَ	IVSuff-awn	[masc.pl.]      <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I</pos>
+;
+; ========== former: S049
+; imperfect verb suffixes that begin with vowel "-uwna" (indic.) + DO
+; (incompatible with subjunctive li-)
+; mood: indicative
+; subject of verb: masc.pl 2nd or 3rd (Antum or hum)
+ونه	ُونَهُ	IVSuff-wnh	[masc.pl.] + it/him          <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+ونهما	ُونَهُما	IVSuff-wnh	[masc.pl.] + them (both)     <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+ونهم	ُونَهُم	IVSuff-wnh	[masc.pl.] + them            <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ونها	ُونَها	IVSuff-wnh	[masc.pl.] + it/them/her     <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+ونهن	ُونَهُنَّ	IVSuff-wnh	[masc.pl.] + them            <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+ونني	ُونَنِي	IVSuff-wnh	[masc.pl.] + me              <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+وننا	ُونَنا	IVSuff-wnh	[masc.pl.] + us              <pos>ُونَ/IVSUFF_SUBJ:MP_MOOD:I+نا/IVSUFF_DO:1P</pos>
+; ya-bok-awonahu
+ونه	َوْنَهُ	IVSuff-awnh	[masc.pl.] + it/him          <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+ونهما	َوْنَهُما	IVSuff-awnh	[masc.pl.] + them (both)     <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+ونهم	َوْنَهُم	IVSuff-awnh	[masc.pl.] + them            <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ونها	َوْنَها	IVSuff-awnh	[masc.pl.] + it/them/her     <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+ونهن	َوْنَهُنَّ	IVSuff-awnh	[masc.pl.] + them            <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+ونني	َوْنَنِي	IVSuff-awnh	[masc.pl.] + me              <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+وننا	َوْنَنا	IVSuff-awnh	[masc.pl.] + us              <pos>َوْنَ/IVSUFF_SUBJ:MP_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; imperfect verb suffixes that begin with vowel "-uwna" (indic.) + 2nd person DO
+; (they are incompatible with 2nd pers. prefix: e.g. ta---wnk)
+; mood: indicative
+; subject of verb: masc.pl 3rd (hum)
+ونك	ُونَكَ	IVSuff-wnk	[masc.pl.] + you [masc.sg.]   <pos>ُونَ/IVSUFF_SUBJ:3MP_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+ونك	ُونَكِ	IVSuff-wnk	[masc.pl.] + you [fem.sg.]    <pos>ُونَ/IVSUFF_SUBJ:3MP_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+ونكما	ُونَكُما	IVSuff-wnk	[masc.pl.] + you [du.]        <pos>ُونَ/IVSUFF_SUBJ:3MP_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+ونكم	ُونَكُم	IVSuff-wnk	[masc.pl.] + you [masc.pl.]   <pos>ُونَ/IVSUFF_SUBJ:3MP_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+ونكن	ُونَكُنَّ	IVSuff-wnk	[masc.pl.] + you [fem.pl.]    <pos>ُونَ/IVSUFF_SUBJ:3MP_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+; ya-bok-awonaka
+ونك	َوْنَكَ	IVSuff-awnk	[masc.pl.] + you [masc.sg.]   <pos>َوْنَ/IVSUFF_SUBJ:3MP_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+ونك	َوْنَكِ	IVSuff-awnk	[masc.pl.] + you [fem.sg.]    <pos>َوْنَ/IVSUFF_SUBJ:3MP_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+ونكما	َوْنَكُما	IVSuff-awnk	[masc.pl.] + you [du.]        <pos>َوْنَ/IVSUFF_SUBJ:3MP_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+ونكم	َوْنَكُم	IVSuff-awnk	[masc.pl.] + you [masc.pl.]   <pos>َوْنَ/IVSUFF_SUBJ:3MP_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+ونكن	َوْنَكُنَّ	IVSuff-awnk	[masc.pl.] + you [fem.pl.]    <pos>َوْنَ/IVSUFF_SUBJ:3MP_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-iy" (subjunctive/jussive)
+; (it's compatible only with "ta-" prefix: e.g. ta---iy)
+; mood: subjunctive or jussive
+; subject of verb: 2nd fem.sg. (Anti)
+ي	ِي	IVSuff-y	[fem.sg.]            <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ</pos>
+; ta-bok-ayo
+ي	َيْ	IVSuff-ay	[fem.sg.]            <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-iy" (subjunctive/jussive) + DO
+; mood: subjunctive or jussive
+; subject of verb: 2nd fem.sg. (Anti)
+يه	ِيهِ	IVSuff-yh	[fem.sg.] + it/him          <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+هِ/IVSUFF_DO:3MS</pos>
+يهما	ِيهِما	IVSuff-yh	[fem.sg.] + them (both)     <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+هِما/IVSUFF_DO:3D</pos>
+يهم	ِيهِم	IVSuff-yh	[fem.sg.] + them            <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+هِم/IVSUFF_DO:3MP</pos>
+يها	ِيها	IVSuff-yh	[fem.sg.] + it/them/her     <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+يهن	ِيهِنَّ	IVSuff-yh	[fem.sg.] + them            <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+هِنَّ/IVSUFF_DO:3FP</pos>
+يني	ِينِي	IVSuff-yh	[fem.sg.] + me              <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+ينا	ِينا	IVSuff-yh	[fem.sg.] + us              <pos>ِي/IVSUFF_SUBJ:2FS_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+; ta-bok-ayohi
+يه	َيْهِ	IVSuff-ayh	[fem.sg.] + it/him          <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+هِ/IVSUFF_DO:3MS</pos>
+يهما	َيْهِما	IVSuff-ayh	[fem.sg.] + them (both)     <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+هِما/IVSUFF_DO:3D</pos>
+يهم	َيْهِم	IVSuff-ayh	[fem.sg.] + them            <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+هِم/IVSUFF_DO:3MP</pos>
+يها	َيْها	IVSuff-ayh	[fem.sg.] + it/them/her     <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+ها/IVSUFF_DO:3FS</pos>
+يهن	َيْهِنَّ	IVSuff-ayh	[fem.sg.] + them            <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+هِنَّ/IVSUFF_DO:3FP</pos>
+يني	َيْنِي	IVSuff-ayh	[fem.sg.] + me              <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+نِي/IVSUFF_DO:1S</pos>
+ينا	َيْنا	IVSuff-ayh	[fem.sg.] + us              <pos>َيْ/IVSUFF_SUBJ:2FS_MOOD:SJ+نا/IVSUFF_DO:1P</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-iyna" (indic.)
+; (it's incompatible with subjunctive prefix "li-")
+; mood: indicative
+; subject of verb: 2nd fem.sg. (Anti)
+ين	ِينَ	IVSuff-yn	[fem.sg.]            <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I</pos>
+; ta-bok-ayona
+ين	َيْنَ	IVSuff-ayn	[fem.sg.]            <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I</pos>
+;
+; ==========
+; imperfect verb suffix that begins with vowel "-iyna" (indic.) + DO
+; mood: indicative
+; subject of verb: 2nd fem.sg. (Anti)
+ينه	ِينَهُ	IVSuff-ynh	[fem.sg.] + it/him          <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+ينهما	ِينَهُما	IVSuff-ynh	[fem.sg.] + them (both)     <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+ينهم	ِينَهُم	IVSuff-ynh	[fem.sg.] + them            <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ينها	ِينَها	IVSuff-ynh	[fem.sg.] + it/them/her     <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+ينهن	ِينَهُنَّ	IVSuff-ynh	[fem.sg.] + them            <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+ينني	ِينَنِي	IVSuff-ynh	[fem.sg.] + me              <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+يننا	ِينَنا	IVSuff-ynh	[fem.sg.] + us              <pos>ِينَ/IVSUFF_SUBJ:2FS_MOOD:I+نا/IVSUFF_DO:1P</pos>
+; ta-bok-ayonahu
+ينه	َيْنَهُ	IVSuff-aynh	[fem.sg.] + it/him          <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+ينهما	َيْنَهُما	IVSuff-aynh	[fem.sg.] + them (both)     <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+ينهم	َيْنَهُم	IVSuff-aynh	[fem.sg.] + them            <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ينها	َيْنَها	IVSuff-aynh	[fem.sg.] + it/them/her     <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+ينهن	َيْنَهُنَّ	IVSuff-aynh	[fem.sg.] + them            <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+ينني	َيْنَنِي	IVSuff-aynh	[fem.sg.] + me              <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+يننا	َيْنَنا	IVSuff-aynh	[fem.sg.] + us              <pos>َيْنَ/IVSUFF_SUBJ:2FS_MOOD:I+نا/IVSUFF_DO:1P</pos>
+;
+; =====================================================================
+; FUNCTION-WORD SUFFIXES
+; =====================================================================
+; <ilay-, Ealay-, laday-, fiy-
+ه	هِ	FWSuff-hi	it/him            <pos>هِ/PRN:3MS    </pos>
+هما	هِما	FWSuff-hi	them (both)       <pos>هِما/PRN:3D   </pos>
+هم	هِم	FWSuff-hi	them  <pos>هِم/PRN:3MP   </pos>
+ها	ها	FWSuff-hi	it/them/her       <pos>ها/PRN:3FS</pos>
+هن	هِنَّ	FWSuff-hi	them  <pos>هِنَّ/PRN:3FP </pos>
+;===============================================================================
+; >an~a, bi>an~a, <in~a, ka>an~a, li>an~a, l`kin~a "he"
+ه	هُ	FWSuff-hu-hep	it/he             <pos>هُ/PRN:3MS    </pos>
+هما	هُما	FWSuff-hu-hep	they (both)       <pos>هُما/PRN:3D   </pos>
+هم	هُم	FWSuff-hu-hep	they  <pos>هُم/PRN:3MP</pos>
+ها	ها	FWSuff-hu-hep	it/they/she       <pos>ها/PRN:3FS   </pos>
+هن	هُنَّ	FWSuff-hu-hep	they  <pos>هُنَّ/PRN:3FP </pos>
+كما	كُما	FWSuff-hu-hep	your      <pos>كُما/PRN:2D</pos>
+كم	كُم	FWSuff-hu-hep	your      <pos>كُم/PRN:2MP</pos>
+كن	كُنَّ	FWSuff-hu-hep	your      <pos>كُنَّ/PRN:2FP</pos>
+نا	نا	FWSuff-hu-hep	our                        <pos>نا/PRN:1P</pos>
+ك	كَ	FWSuff-hu-hep	you   <pos>كَ/PRN:2MS    </pos>
+ك	كِ	FWSuff-hu-hep	you   <pos>كِ/PRN:2FS</pos>
+;===============================================================================
+; lakum lahu lahA
+ه	هُ	FWSuff-hu-he	it/he             <pos>هُ/PRN:3MS    </pos>
+هما	هُما	FWSuff-hu-he	they (both)       <pos>هُما/PRN:3D   </pos>
+هم	هُم	FWSuff-hu-he	they  <pos>هُم/PRN:3MP</pos>
+ها	ها	FWSuff-hu-he	it/they/she       <pos>ها/PRN:3FS   </pos>
+هن	هُنَّ	FWSuff-hu-he	they  <pos>هُنَّ/PRN:3FP </pos>
+;-----------------------------------------------------
+; Ean, min, ladun -- "him"
+ه	هُ	FWSuff-hu-him	it/him            <pos>هُ/PRN:3MS    </pos>
+هما	هُما	FWSuff-hu-him	them (both)       <pos>هُما/PRN:3D   </pos>
+هم	هُم	FWSuff-hu-him	them  <pos>هُم/PRN:3MP</pos>
+ها	ها	FWSuff-hu-him	it/them/her       <pos>ها/PRN:3FS   </pos>
+هن	هُنَّ	FWSuff-hu-him	them  <pos>هُنَّ/PRN:3FP </pos>
+;===============================================================================
+; <ilay-, Ealay-, laday-, fiy-
+; >an~a, bi>an~a, <in~a, ka>an~a, li>an~a, l`kin~a
+; Ean, min, ladun
+ك	كَ	FWSuff-k	you   <pos>كَ/PRN:2MS    </pos>
+ك	كِ	FWSuff-k	you   <pos>كِ/PRN:2FS    </pos>
+كما	كُما	FWSuff-k	you (both)        <pos>كُما/PRN:2D   </pos>
+كم	كُم	FWSuff-k	you   <pos>كُم/PRN:2MP   </pos>
+كن	كُنَّ	FWSuff-k	you   <pos>كُنَّ/PRN:2FP </pos>
+;===============================================================================
+; <ilay-, Ealay-, laday-, fiy- "me"
+		FWSuff-0	  
+	َّ	FWSuff-~a	me                <pos>َّ/PRN:1S   </pos>
+;-----------------------------------------------------
+ي	يَ	FWSuff-ya	me                <pos>يَ/PRN:1S     </pos>
+;-----------------------------------------------------
+; >an~a, bi>an~a, <in~a, ka>an~a, li>an~a, l`kin~a "I"
+ني	نِي	FWSuff-niy-I	I                 <pos>نِي/PRN:1S</pos>
+;-----------------------------------------------------
+ني	نِي	FWSuff-niy-me	me                <pos>نِي/PRN:1S</pos>
+;-----------------------------------------------------
+; >an~, bi>an~, <in~, ka>an~, li>an~, l`kin~ "I"
+ي	ِي	FWSuff-iy-I	I                 <pos>ِي/PRN:1S</pos>
+;-----------------------------------------------------
+; maEa, baEoda, bayona, Einoda, etc
+ي	ِي	FWSuff-iy-me	me                <pos>ِي/PRN:1S</pos>
+;-----------------------------------------------------
+; Ean, min, ladun "me"
+ي	ِّي	FWSuff-~iy	me                <pos>ِّي/PRN:1S</pos>
+;===============================================================================
+; <ilay-, Ealay-, laday-, fiy- "us"
+نا	نا	FWSuff-nA-us	us    <pos>نا/PRN:1P     </pos>
+; >an~a, bi>an~a, <in~a, ka>an~a, li>an~a, l`kin~a "we"
+نا	نا	FWSuff-nA-we	we    <pos>نا/PRN:1P     </pos>
+ا	نا	FWSuff-nA-we	we    <pos>نا/PRN:1P     </pos>
+;-----------------------------------------------------
+; >an~, bi>an~, <in~, ka>an~, li>an~, l`kin~ -- "we"
+ا	ا	FWSuff-A	we                <pos>ا/PRN:1P</pos>
+;-----------------------------------------------------
+; Ean, min, ladun -- "us"
+ا	ّا	FWSuff-~A	us                <pos>ّا/PRN:1P</pos>
+;
+; =============================================================================
