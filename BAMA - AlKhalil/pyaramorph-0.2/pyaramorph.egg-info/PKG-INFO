@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyaramorph
+Version: 0.2
+Summary: An Arabic morphological analyzer and lexicon
+Home-page: https://bitbucket.org/alexlee/pyaramorph
+Author: Alex Lee
+Author-email: alexlee@fastmail.net
+License: GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: Arabic
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Education

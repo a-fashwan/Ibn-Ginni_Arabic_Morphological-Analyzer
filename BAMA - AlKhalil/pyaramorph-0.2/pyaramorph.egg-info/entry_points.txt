@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            pyaramorph=pyaramorph.command:main
+        
