@@ -94,10 +94,10 @@ def load_dict(filename, encoding='utf-8'):
                     POS = "%s/IV" % voc
                 elif cat.startswith('IV'):
                     POS = "%s/IV" % voc
-                elif cat.startswith('PV'):
-                    POS = "%s/PV" % voc
                 elif cat.startswith('PV_Pass'):
                     POS = "%s/PV_PASS" % voc
+                elif cat.startswith('PV'):
+                    POS = "%s/PV" % voc
                 elif cat.startswith('CV'):
                     POS = "%s/CV" % voc
                 elif cat.startswith('N') and "NOUN_PROP" in gloss:
