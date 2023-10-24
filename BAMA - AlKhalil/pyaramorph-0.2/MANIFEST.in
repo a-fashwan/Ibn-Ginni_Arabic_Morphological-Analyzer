@@ -1,4 +1,0 @@
-include README.md
-include LICENSE
-include pyaramorph/dict*
-include pyaramorph/table*
