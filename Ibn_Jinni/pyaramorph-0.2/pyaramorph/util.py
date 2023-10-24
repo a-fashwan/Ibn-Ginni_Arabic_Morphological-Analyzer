@@ -92,7 +92,7 @@ def load_dict(filename, encoding='utf-8'):
                     POS = "%s/FUNC_WORD" % voc
                 elif cat.startswith('IV_Pass'):
                     POS = "%s/IV" % voc
-                elif cat.startswith('IV_PASS'):
+                elif cat.startswith('IV'):
                     POS = "%s/IV" % voc
                 elif cat.startswith('PV'):
                     POS = "%s/PV" % voc
