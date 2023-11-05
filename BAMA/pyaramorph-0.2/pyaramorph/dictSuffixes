@@ -996,11 +996,11 @@
 ; ==========
 ; imperfect Verb Mood Markers:
 ; null suffix of __iy, __uw, __aY: ya-boniy ya-doEuw ya-boqaY
-		IVSuff-0_ind	[ind.]    <pos>/IVSUFF_MOOD:I</pos>
+		IVSuff-0_ind	[ind.]    <pos>(null)/IVSUFF_MOOD:I</pos>
 ; null suffix of __aY: ya-boqaY yu-doEaY
-		IVSuff-0_sub	[sub.]    <pos>/IVSUFF_MOOD:S</pos>
+		IVSuff-0_sub	[sub.]    <pos>(null)/IVSUFF_MOOD:S</pos>
 ; null suffix of __i, __u, __a: ya-boni ya-doEu ya-boqa yu-doEa 
-		IVSuff-0_jus	[jus.]    <pos>/IVSUFF_MOOD:J</pos>
+		IVSuff-0_jus	[jus.]    <pos>(null)/IVSUFF_MOOD:J</pos>
 ;=== mood: indicative (mrfwE bAlDmp)
 	ُ	IVSuff-u	[ind.]    <pos>ُ/IVSUFF_MOOD:I</pos>
 ;=== mood: subjunctive (mnSwb bAlftHp)
@@ -1019,35 +1019,35 @@
 ;
 ; suffixes with null mood markers
 ;=== mood: indicative: ya-boniy-hi
-ه	هِ	IVSuff-hi_ind	[ind.] + it/him       <pos>/IVSUFF_MOOD:I+هِ/IVSUFF_DO:3MS</pos>
-هما	هِما	IVSuff-hi_ind	[ind.] + them (both)  <pos>/IVSUFF_MOOD:I+هِما/IVSUFF_DO:3D</pos>
-هم	هِم	IVSuff-hi_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هِم/IVSUFF_DO:3MP</pos>
-ها	ها	IVSuff-hi_ind	[ind.] + it/them/her  <pos>/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
-هن	هِنَّ	IVSuff-hi_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هِنَّ/IVSUFF_DO:3FP</pos>
+ه	هِ	IVSuff-hi_ind	[ind.] + it/him       <pos>(null)/IVSUFF_MOOD:I+هِ/IVSUFF_DO:3MS</pos>
+هما	هِما	IVSuff-hi_ind	[ind.] + them (both)  <pos>(null)/IVSUFF_MOOD:I+هِما/IVSUFF_DO:3D</pos>
+هم	هِم	IVSuff-hi_ind	[ind.] + them         <pos>(null)/IVSUFF_MOOD:I+هِم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-hi_ind	[ind.] + it/them/her  <pos>(null)/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+هن	هِنَّ	IVSuff-hi_ind	[ind.] + them         <pos>(null)/IVSUFF_MOOD:I+هِنَّ/IVSUFF_DO:3FP</pos>
 ;=== mood: jussive: lam ya-boni-hi
-ه	هِ	IVSuff-hi_jus	it/him       <pos>/IVSUFF+هِ/PRN:3MS</pos>
-هما	هِما	IVSuff-hi_jus	them (both)  <pos>/IVSUFF+هِما/PRN:3D</pos>
-هم	هِم	IVSuff-hi_jus	them         <pos>/IVSUFF+هِم/PRN:3MP</pos>
-ها	ها	IVSuff-hi_jus	it/them/her  <pos>/IVSUFF+ها/PRN:3FS</pos>
-هن	هِنَّ	IVSuff-hi_jus	them         <pos>/IVSUFF+هِنَّ/PRN:3FP</pos>
+ه	هِ	IVSuff-hi_jus	it/him       <pos>(null)/IVSUFF+هِ/PRN:3MS</pos>
+هما	هِما	IVSuff-hi_jus	them (both)  <pos>(null)/IVSUFF+هِما/PRN:3D</pos>
+هم	هِم	IVSuff-hi_jus	them         <pos>(null)/IVSUFF+هِم/PRN:3MP</pos>
+ها	ها	IVSuff-hi_jus	it/them/her  <pos>(null)/IVSUFF+ها/PRN:3FS</pos>
+هن	هِنَّ	IVSuff-hi_jus	them         <pos>(null)/IVSUFF+هِنَّ/PRN:3FP</pos>
 ;=== mood: indicative: ya-doEuw-hu ya-bokA-hu
-ه	هُ	IVSuff-h_ind	[ind.] + it/him       <pos>/IVSUFF_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
-هما	هُما	IVSuff-h_ind	[ind.] + them (both)  <pos>/IVSUFF_MOOD:I+هُما/IVSUFF_DO:3D</pos>
-هم	هُم	IVSuff-h_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
-ها	ها	IVSuff-h_ind	[ind.] + it/them/her  <pos>/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
-هن	هُنَّ	IVSuff-h_ind	[ind.] + them         <pos>/IVSUFF_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
+ه	هُ	IVSuff-h_ind	[ind.] + it/him       <pos>(null)/IVSUFF_MOOD:I+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_ind	[ind.] + them (both)  <pos>(null)/IVSUFF_MOOD:I+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_ind	[ind.] + them         <pos>(null)/IVSUFF_MOOD:I+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_ind	[ind.] + it/them/her  <pos>(null)/IVSUFF_MOOD:I+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_ind	[ind.] + them         <pos>(null)/IVSUFF_MOOD:I+هُنَّ/IVSUFF_DO:3FP</pos>
 ;=== mood: subjunctive: liya-bokA-hu
-ه	هُ	IVSuff-h_sub	[sub.] + it/him       <pos>/IVSUFF_MOOD:S+هُ/IVSUFF_DO:3MS</pos>
-هما	هُما	IVSuff-h_sub	[sub.] + them (both)  <pos>/IVSUFF_MOOD:S+هُما/IVSUFF_DO:3D</pos>
-هم	هُم	IVSuff-h_sub	[sub.] + them         <pos>/IVSUFF_MOOD:S+هُم/IVSUFF_DO:3MP</pos>
-ها	ها	IVSuff-h_sub	[sub.] + it/them/her  <pos>/IVSUFF_MOOD:S+ها/IVSUFF_DO:3FS</pos>
-هن	هُنَّ	IVSuff-h_sub	[sub.] + them         <pos>/IVSUFF_MOOD:S+هُنَّ/IVSUFF_DO:3FP</pos>
+ه	هُ	IVSuff-h_sub	[sub.] + it/him       <pos>(null)/IVSUFF_MOOD:S+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_sub	[sub.] + them (both)  <pos>(null)/IVSUFF_MOOD:S+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_sub	[sub.] + them         <pos>(null)/IVSUFF_MOOD:S+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_sub	[sub.] + it/them/her  <pos>(null)/IVSUFF_MOOD:S+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_sub	[sub.] + them         <pos>(null)/IVSUFF_MOOD:S+هُنَّ/IVSUFF_DO:3FP</pos>
 ;=== mood: jussive: lam ya-boka-hu
-ه	هُ	IVSuff-h_jus	[jus.] + it/him       <pos>/IVSUFF_MOOD:J+هُ/IVSUFF_DO:3MS</pos>
-هما	هُما	IVSuff-h_jus	[jus.] + them (both)  <pos>/IVSUFF_MOOD:J+هُما/IVSUFF_DO:3D</pos>
-هم	هُم	IVSuff-h_jus	[jus.] + them         <pos>/IVSUFF_MOOD:J+هُم/IVSUFF_DO:3MP</pos>
-ها	ها	IVSuff-h_jus	[jus.] + it/them/her  <pos>/IVSUFF_MOOD:J+ها/IVSUFF_DO:3FS</pos>
-هن	هُنَّ	IVSuff-h_jus	[jus.] + them         <pos>/IVSUFF_MOOD:J+هُنَّ/IVSUFF_DO:3FP</pos>
+ه	هُ	IVSuff-h_jus	[jus.] + it/him       <pos>(null)/IVSUFF_MOOD:J+هُ/IVSUFF_DO:3MS</pos>
+هما	هُما	IVSuff-h_jus	[jus.] + them (both)  <pos>(null)/IVSUFF_MOOD:J+هُما/IVSUFF_DO:3D</pos>
+هم	هُم	IVSuff-h_jus	[jus.] + them         <pos>(null)/IVSUFF_MOOD:J+هُم/IVSUFF_DO:3MP</pos>
+ها	ها	IVSuff-h_jus	[jus.] + it/them/her  <pos>(null)/IVSUFF_MOOD:J+ها/IVSUFF_DO:3FS</pos>
+هن	هُنَّ	IVSuff-h_jus	[jus.] + them         <pos>(null)/IVSUFF_MOOD:J+هُنَّ/IVSUFF_DO:3FP</pos>
 ;
 ; suffixes with short vowel mood marker
 ;=== mood: indicative (mrfwE bAlDmp)
@@ -1082,23 +1082,23 @@
 ;
 ; suffixes with null mood markers
 ;=== mood: indicative: yu-EoTiy-k ya-bokA-k
-ك	كَ	IVSuff-k_ind	[ind.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
-ك	كِ	IVSuff-k_ind	[ind.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
-كما	كُما	IVSuff-k_ind	[ind.] + you [du.]        <pos>/IVSUFF_MOOD:I+كُما/IVSUFF_DO:2D</pos>
-كم	كُم	IVSuff-k_ind	[ind.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
-كن	كُنَّ	IVSuff-k_ind	[ind.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
+ك	كَ	IVSuff-k_ind	[ind.] + you [masc.sg.]   <pos>(null)/IVSUFF_MOOD:I+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_ind	[ind.] + you [fem.sg.]    <pos>(null)/IVSUFF_MOOD:I+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_ind	[ind.] + you [du.]        <pos>(null)/IVSUFF_MOOD:I+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_ind	[ind.] + you [masc.pl.]   <pos>(null)/IVSUFF_MOOD:I+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_ind	[ind.] + you [fem.pl.]    <pos>(null)/IVSUFF_MOOD:I+كُنَّ/IVSUFF_DO:2FP</pos>
 ;=== mood: subjunctive: liya-bokA-k
-ك	كَ	IVSuff-k_sub	[sub.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:S+كَ/IVSUFF_DO:2MS</pos>
-ك	كِ	IVSuff-k_sub	[sub.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:S+كِ/IVSUFF_DO:2FS</pos>
-كما	كُما	IVSuff-k_sub	[sub.] + you [du.]        <pos>/IVSUFF_MOOD:S+كُما/IVSUFF_DO:2D</pos>
-كم	كُم	IVSuff-k_sub	[sub.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:S+كُم/IVSUFF_DO:2MP</pos>
-كن	كُنَّ	IVSuff-k_sub	[sub.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:S+كُنَّ/IVSUFF_DO:2FP</pos>
+ك	كَ	IVSuff-k_sub	[sub.] + you [masc.sg.]   <pos>(null)/IVSUFF_MOOD:S+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_sub	[sub.] + you [fem.sg.]    <pos>(null)/IVSUFF_MOOD:S+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_sub	[sub.] + you [du.]        <pos>(null)/IVSUFF_MOOD:S+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_sub	[sub.] + you [masc.pl.]   <pos>(null)/IVSUFF_MOOD:S+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_sub	[sub.] + you [fem.pl.]    <pos>(null)/IVSUFF_MOOD:S+كُنَّ/IVSUFF_DO:2FP</pos>
 ;=== mood: jussive: lam yu-EoTi-k  ya-boka-k
-ك	كَ	IVSuff-k_jus	[jus.] + you [masc.sg.]   <pos>/IVSUFF_MOOD:J+كَ/IVSUFF_DO:2MS</pos>
-ك	كِ	IVSuff-k_jus	[jus.] + you [fem.sg.]    <pos>/IVSUFF_MOOD:J+كِ/IVSUFF_DO:2FS</pos>
-كما	كُما	IVSuff-k_jus	[jus.] + you [du.]        <pos>/IVSUFF_MOOD:J+كُما/IVSUFF_DO:2D</pos>
-كم	كُم	IVSuff-k_jus	[jus.] + you [masc.pl.]   <pos>/IVSUFF_MOOD:J+كُم/IVSUFF_DO:2MP</pos>
-كن	كُنَّ	IVSuff-k_jus	[jus.] + you [fem.pl.]    <pos>/IVSUFF_MOOD:J+كُنَّ/IVSUFF_DO:2FP</pos>
+ك	كَ	IVSuff-k_jus	[jus.] + you [masc.sg.]   <pos>(null)/IVSUFF_MOOD:J+كَ/IVSUFF_DO:2MS</pos>
+ك	كِ	IVSuff-k_jus	[jus.] + you [fem.sg.]    <pos>(null)/IVSUFF_MOOD:J+كِ/IVSUFF_DO:2FS</pos>
+كما	كُما	IVSuff-k_jus	[jus.] + you [du.]        <pos>(null)/IVSUFF_MOOD:J+كُما/IVSUFF_DO:2D</pos>
+كم	كُم	IVSuff-k_jus	[jus.] + you [masc.pl.]   <pos>(null)/IVSUFF_MOOD:J+كُم/IVSUFF_DO:2MP</pos>
+كن	كُنَّ	IVSuff-k_jus	[jus.] + you [fem.pl.]    <pos>(null)/IVSUFF_MOOD:J+كُنَّ/IVSUFF_DO:2FP</pos>
 ;
 ; suffixes with short vowel mood marker
 ;=== mood: indicative
@@ -1133,14 +1133,14 @@
 ;
 ; suffixes with null mood markers
 ;=== mood: indicative: yu-EoTiy-niy ya-bokA-nA
-ني	نِي	IVSuff-ny-nA_ind	[ind.] + me       <pos>/IVSUFF_MOOD:I+نِي/IVSUFF_DO:1S</pos>
-نا	نا	IVSuff-ny-nA_ind	[ind.] + us       <pos>/IVSUFF_MOOD:I+نا/IVSUFF_DO:1P</pos>
+ني	نِي	IVSuff-ny-nA_ind	[ind.] + me       <pos>(null)/IVSUFF_MOOD:I+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_ind	[ind.] + us       <pos>(null)/IVSUFF_MOOD:I+نا/IVSUFF_DO:1P</pos>
 ;=== mood: subjunctive: liya-bokA-niy
-ني	نِي	IVSuff-ny-nA_sub	[sub.] + me       <pos>/IVSUFF_MOOD:S+نِي/IVSUFF_DO:1S</pos>
-نا	نا	IVSuff-ny-nA_sub	[sub.] + us       <pos>/IVSUFF_MOOD:S+نا/IVSUFF_DO:1P</pos>
+ني	نِي	IVSuff-ny-nA_sub	[sub.] + me       <pos>(null)/IVSUFF_MOOD:S+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_sub	[sub.] + us       <pos>(null)/IVSUFF_MOOD:S+نا/IVSUFF_DO:1P</pos>
 ;=== mood: jussive: lam yu-EoTi-niy  ya-boka-nA
-ني	نِي	IVSuff-ny-nA_jus	[ind.] + me       <pos>/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
-نا	نا	IVSuff-ny-nA_jus	[ind.] + us       <pos>/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
+ني	نِي	IVSuff-ny-nA_jus	[ind.] + me       <pos>(null)/IVSUFF_MOOD:J+نِي/IVSUFF_DO:1S</pos>
+نا	نا	IVSuff-ny-nA_jus	[ind.] + us       <pos>(null)/IVSUFF_MOOD:J+نا/IVSUFF_DO:1P</pos>
 ;
 ; suffixes with short vowel mood marker
 ;=== mood: indicative: ya-Eorif-uniy yu-xATib-unA

@@ -89,7 +89,12 @@ def load_dict(filename, encoding='utf-8'):
                 if cat.startswith('Pref-0') or cat.startswith('Suff-0'):
                     POS = "" # null prefix or suffix
                 elif cat.startswith('F'):
-                    POS = "%s/FUNC_WORD" % voc
+                    if "<pos>" in gloss:
+                        stemIndex = gloss.index("<pos>")
+                        tagIndex = gloss.rfind("/")
+                        currPOS = gloss[stemIndex: stemIndex + 5] + gloss[tagIndex:] 
+                        currPOS = currPOS.replace("<pos>", "").replace("</pos>", "")
+                        POS = "%s%s" %(voc, currPOS)                        
                 elif cat.startswith('IV_Pass'):
                     POS = "%s/IV" % voc
                 elif cat.startswith('IV'):

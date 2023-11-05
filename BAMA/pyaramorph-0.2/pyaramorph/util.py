@@ -89,16 +89,32 @@ def load_dict(filename, encoding='utf-8'):
                 if cat.startswith('Pref-0') or cat.startswith('Suff-0'):
                     POS = "" # null prefix or suffix
                 elif cat.startswith('F'):
-                    POS = "%s/FUNC_WORD" % voc
+                    if "<pos>" in gloss:
+                        stemIndex = gloss.index("<pos>")
+                        tagIndex = gloss.rfind("/")
+                        currPOS = gloss[stemIndex: stemIndex + 5] + gloss[tagIndex:] 
+                        currPOS = currPOS.replace("<pos>", "").replace("</pos>", "")
+                        POS = "%s%s" %(voc, currPOS)                        
+                elif cat.startswith('IV_Pass'):
+                    POS = "%s/IV" % voc
                 elif cat.startswith('IV'):
-                    POS = "%s/VERB_IMPERFECT" % voc
+                    POS = "%s/IV" % voc
+                elif cat.startswith('PV_Pass'):
+                    POS = "%s/PV_PASS" % voc
                 elif cat.startswith('PV'):
-                    POS = "%s/VERB_PERFECT" % voc
+                    POS = "%s/PV" % voc
                 elif cat.startswith('CV'):
-                    POS = "%s/VERB_IMPERATIVE" % voc
-                elif cat.startswith('N') and p_AZ.search(gloss):
+                    POS = "%s/CV" % voc
+                elif cat.startswith('N') and "NOUN_PROP" in gloss:
                     POS = "%s/NOUN_PROP" % voc # educated guess
-                            # (99% correct)
+                elif cat.startswith('N') and "ADV_TIM" in gloss:
+                    POS = "%s/ADV_TIME" % voc # educated guess
+                elif cat.startswith('N') and "ADV_PLC" in gloss:
+                    POS = "%s/ADV_PLACE" % voc # educated guess
+                elif cat.startswith('N') and "ADV_TPL" in gloss:
+                    POS = "%s/ADV_TIME_PLACE" % voc # educated guess
+                elif cat.startswith('N') and "ADV_MNN" in gloss:
+                    POS = "%s/ADV_MANNER" % voc # educated guess
                 elif cat.startswith('N') and p_iy.search(voc):
                     POS = "%s/NOUN" % voc # (was NOUN_ADJ:
                             # some of these are really ADJ's
